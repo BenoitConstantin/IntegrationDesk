@@ -149,10 +149,12 @@ Prefab:
     - target: {fileID: 114437987990596822, guid: 1afdb1720b290ef46a7486cdb15afe6c,
         type: 2}
       propertyPath: boundGraphSerialization
-      value: '{"version":2.6,"type":"NodeCanvas.StateMachines.FSM","name":"FSM","translation":{"x":-2311.676,"y":-2845.139},"zoomFactor":0.5460769,"nodes":[{"gameManager":{"_name":"gameManager","_targetVariableID":"aa1104e5-1f22-403b-8955-d22b4d82945c"},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"gameObject":{"_value":1},"$type":"DontDestroyOnLoad"},{"gameObject":{"_value":2},"$type":"DontDestroyOnLoad"},{"gameObject":{"_value":3},"$type":"DontDestroyOnLoad"}]},"_position":{"x":5422.157,"y":5239.0},"_name":"Loading
-        Game","$type":"GameManager_LoadingGame","$id":"2"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"Desk","$type":"LoadScene"}]},"_position":{"x":5260.0,"y":5364.0},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"12"},{"gameManager":{"_name":"gameManager","_targetVariableID":"aa1104e5-1f22-403b-8955-d22b4d82945c"},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_transitionEvaluation":"CheckAfterStateFinished","_position":{"x":5012.787,"y":5504.202},"$type":"GameManager_OnDesk","$id":"16"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"TedDesk","$type":"LoadScene"}]},"_position":{"x":5443.0,"y":5534.0},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"20"},{"gameManager":{},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_position":{"x":5668.0,"y":5492.0},"$type":"GameManager_TedDesk","$id":"24"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"Desk","$type":"LoadScene"}]},"_position":{"x":5448.0,"y":5475.0},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"28"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"12"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"12"},"_targetNode":{"$ref":"16"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"eventName":{"_value":"TedDesk"},"saveEventValue":{"_name":""},"$type":"NodeCanvas.Tasks.Conditions.CheckEvent`1[[System.String,
-        mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_invert":true,"$type":"CheckDialogueRunning"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"24"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"eventName":{"_value":"Desk"},"saveEventValue":{"_name":""},"$type":"NodeCanvas.Tasks.Conditions.CheckEvent`1[[System.String,
-        mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_invert":true,"$type":"CheckDialogueRunning"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"16"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+      value: '{"version":2.6,"type":"NodeCanvas.StateMachines.FSM","name":"FSM","translation":{"x":-5242.0,"y":-4446.0},"zoomFactor":0.8982349,"nodes":[{"gameManager":{"_name":"gameManager","_targetVariableID":"aa1104e5-1f22-403b-8955-d22b4d82945c"},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"gameObject":{"_value":1},"$type":"DontDestroyOnLoad"},{"gameObject":{"_value":2},"$type":"DontDestroyOnLoad"},{"gameObject":{"_value":3},"$type":"DontDestroyOnLoad"}]},"_position":{"x":5422.157,"y":5239.0},"_name":"Loading
+        Game","$type":"GameManager_LoadingGame","$id":"2"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"Desk","$type":"LoadScene"}]},"_position":{"x":5621.617,"y":5221.014},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"12"},{"gameManager":{"_name":"gameManager","_targetVariableID":"aa1104e5-1f22-403b-8955-d22b4d82945c"},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_transitionEvaluation":"CheckAfterStateFinished","_position":{"x":5791.882,"y":5240.375},"$type":"GameManager_OnDesk","$id":"16"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"TedDesk","$type":"LoadScene"}]},"_position":{"x":5819.155,"y":5460.618},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"20"},{"gameManager":{},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_position":{"x":6097.69,"y":5433.801},"$type":"GameManager_TedDesk","$id":"24"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"Desk","$type":"LoadScene"}]},"_position":{"x":5917.776,"y":5337.413},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"28"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"Quizz","$type":"LoadScene"}]},"_position":{"x":6317.812,"y":5248.993},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"32"},{"gameManager":{},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_position":{"x":6504.272,"y":5270.057},"$type":"GameManager_Quizz","$id":"36"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"12"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"12"},"_targetNode":{"$ref":"16"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"_invert":true,"$type":"CheckDialogueRunning"},{"eventName":{"_value":"ChangeScene"},"value":{"_value":"TedDesk"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[System.String,
+        mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"eventName":{"_value":"Quizz"},"saveEventValue":{"_name":""},"$type":"NodeCanvas.Tasks.Conditions.CheckEvent`1[[System.String,
+        mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"32"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"24"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"_invert":true,"$type":"CheckDialogueRunning"},{"eventName":{"_value":"ChangeScene"},"value":{"_value":"Desk"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[System.String,
+        mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"eventName":{"_value":"Quizz"},"saveEventValue":{"_name":""},"$type":"NodeCanvas.Tasks.Conditions.CheckEvent`1[[System.String,
+        mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"32"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"16"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"36"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
         Blackboard","_variables":{}}}'
       objectReference: {fileID: 0}
     - target: {fileID: 114437987990596822, guid: 1afdb1720b290ef46a7486cdb15afe6c,
@@ -179,7 +181,7 @@ Prefab:
         type: 2}
       propertyPath: _graph
       value: 
-      objectReference: {fileID: 1027562965}
+      objectReference: {fileID: 1948469488}
     - target: {fileID: 114371651326014122, guid: 1afdb1720b290ef46a7486cdb15afe6c,
         type: 2}
       propertyPath: _serializedBlackboard
@@ -437,28 +439,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1027562965
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: GameManager
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.StateMachines.FSM","name":"FSM","translation":{"x":-2329.0,"y":-2722.0},"zoomFactor":0.5460769,"nodes":[{"gameManager":{"_name":"gameManager","_targetVariableID":"aa1104e5-1f22-403b-8955-d22b4d82945c"},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"gameObject":{"_value":1},"$type":"DontDestroyOnLoad"},{"gameObject":{"_value":2},"$type":"DontDestroyOnLoad"},{"gameObject":{"_value":3},"$type":"DontDestroyOnLoad"}]},"_position":{"x":5422.157,"y":5239.0},"_name":"Loading
-    Game","$type":"GameManager_LoadingGame","$id":"2"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"Desk","$type":"LoadScene"}]},"_position":{"x":5260.0,"y":5364.0},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"12"},{"gameManager":{"_name":"gameManager","_targetVariableID":"aa1104e5-1f22-403b-8955-d22b4d82945c"},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_transitionEvaluation":"CheckAfterStateFinished","_position":{"x":5012.787,"y":5504.202},"$type":"GameManager_OnDesk","$id":"16"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"TedDesk","$type":"LoadScene"}]},"_position":{"x":5443.0,"y":5534.0},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"20"},{"gameManager":{},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_position":{"x":5668.0,"y":5492.0},"$type":"GameManager_TedDesk","$id":"24"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"Desk","$type":"LoadScene"}]},"_position":{"x":5448.0,"y":5475.0},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"28"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"12"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"12"},"_targetNode":{"$ref":"16"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"eventName":{"_value":"TedDesk"},"saveEventValue":{"_name":""},"$type":"NodeCanvas.Tasks.Conditions.CheckEvent`1[[System.String,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_invert":true,"$type":"CheckDialogueRunning"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"24"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"eventName":{"_value":"Desk"},"saveEventValue":{"_name":""},"$type":"NodeCanvas.Tasks.Conditions.CheckEvent`1[[System.String,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},{"_invert":true,"$type":"CheckDialogueRunning"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"16"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences:
-  - {fileID: 0}
-  - {fileID: 550832000}
-  - {fileID: 1157324103}
-  - {fileID: 1326184918}
-  _deserializationFailed: 0
 --- !u!1 &1157324103
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,6 +534,30 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
     type: 2}
   m_PrefabInternal: {fileID: 2085793520}
+--- !u!114 &1948469488
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: GameManager
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.StateMachines.FSM","name":"FSM","translation":{"x":-5200.0,"y":-4449.0},"zoomFactor":0.8982349,"nodes":[{"gameManager":{"_name":"gameManager","_targetVariableID":"aa1104e5-1f22-403b-8955-d22b4d82945c"},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"gameObject":{"_value":1},"$type":"DontDestroyOnLoad"},{"gameObject":{"_value":2},"$type":"DontDestroyOnLoad"},{"gameObject":{"_value":3},"$type":"DontDestroyOnLoad"}]},"_position":{"x":5422.157,"y":5239.0},"_name":"Loading
+    Game","$type":"GameManager_LoadingGame","$id":"2"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"Desk","$type":"LoadScene"}]},"_position":{"x":5621.617,"y":5221.014},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"12"},{"gameManager":{"_name":"gameManager","_targetVariableID":"aa1104e5-1f22-403b-8955-d22b4d82945c"},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_transitionEvaluation":"CheckAfterStateFinished","_position":{"x":5791.882,"y":5240.375},"$type":"GameManager_OnDesk","$id":"16"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"TedDesk","$type":"LoadScene"}]},"_position":{"x":5819.155,"y":5460.618},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"20"},{"gameManager":{},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_position":{"x":6097.69,"y":5433.801},"$type":"GameManager_TedDesk","$id":"24"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"Desk","$type":"LoadScene"}]},"_position":{"x":5917.776,"y":5337.413},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"28"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"Quizz","$type":"LoadScene"}]},"_position":{"x":6317.812,"y":5248.993},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"32"},{"gameManager":{},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_position":{"x":6504.272,"y":5270.057},"$type":"GameManager_Quizz","$id":"36"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"12"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"12"},"_targetNode":{"$ref":"16"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"_invert":true,"$type":"CheckDialogueRunning"},{"eventName":{"_value":"ChangeScene"},"value":{"_value":"TedDesk"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[System.String,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"eventName":{"_value":"Quizz"},"saveEventValue":{"_name":""},"$type":"NodeCanvas.Tasks.Conditions.CheckEvent`1[[System.String,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"32"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"24"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"_invert":true,"$type":"CheckDialogueRunning"},{"eventName":{"_value":"ChangeScene"},"value":{"_value":"Desk"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[System.String,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"eventName":{"_value":"Quizz"},"saveEventValue":{"_name":""},"$type":"NodeCanvas.Tasks.Conditions.CheckEvent`1[[System.String,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"32"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"16"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"36"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 550832000}
+  - {fileID: 1157324103}
+  - {fileID: 1326184918}
+  _deserializationFailed: 0
 --- !u!1001 &2085793520
 Prefab:
   m_ObjectHideFlags: 0

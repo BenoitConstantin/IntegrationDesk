@@ -12,7 +12,13 @@ public abstract class GameManagerState : ActionState {
 
     public bool ChangeRoom(string roomName)
     {
-        FSM.SendEvent(roomName);
+        FSM.SendEvent("ChangeScene", roomName);
+        return true;
+    }
+
+    public bool EnterQuizz()
+    {
+        FSM.SendEvent("Quizz");
         return true;
     }
 
