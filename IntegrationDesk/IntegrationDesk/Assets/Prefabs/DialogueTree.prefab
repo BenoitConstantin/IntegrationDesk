@@ -33,8 +33,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1689437207644898}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.37284544, y: 0.8283174, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51,11 +51,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c3f478ef69fbe04fa9ed3664a8a443e, type: 3}
   m_Name: DialogueTree(SubAsset)
   m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.DialogueTrees.DialogueTree","name":"DialogueTree","nodes":[],"connections":[],"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}},"derivedData":{"actorParameters":[],"$type":"NodeCanvas.DialogueTrees.DialogueTree+DerivedSerializationData"}}'
-  _objectReferences: []
+  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.DialogueTrees.DialogueTree","name":"DialogueTree","translation":{"x":-3380.0,"y":-3562.0},"zoomFactor":0.7500097,"nodes":[{"_condition":{"eventName":{"_value":"accueil"},"_invert":true,"$type":"CheckEventRealized"},"_position":{"x":5263.604,"y":5003.447},"$type":"NodeCanvas.DialogueTrees.ConditionNode","$id":"2"},{"_subTree":{"_value":1},"actorParametersMap":{},"variablesMap":{},"_actorName":"Director","_actorParameterID":"3595a254-7c61-4ead-b73f-98be5f19f522","_position":{"x":5083.156,"y":5148.155},"$type":"NodeCanvas.DialogueTrees.SubDialogueTree","$id":"5"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.DialogueTrees.DTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}},"derivedData":{"actorParameters":[{"_keyName":"Director","_id":"6167f95e-2a71-4714-af82-d016d3283aa5"}],"$type":"NodeCanvas.DialogueTrees.DialogueTree+DerivedSerializationData"}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 6575b2eab82226d4bb7b2652765a6d66, type: 2}
   _deserializationFailed: 0
-  _actorParameters: []
+  _actorParameters:
+  - _keyName: Director
+    _id: 6167f95e-2a71-4714-af82-d016d3283aa5
+    _actorObject: {fileID: 0}
 --- !u!114 &114799707875643748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -67,9 +72,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c32e4b851ebd8fa4ea0645b99be1cf97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boundGraphSerialization: '{"version":2.6,"type":"NodeCanvas.DialogueTrees.DialogueTree","name":"DialogueTree","nodes":[],"connections":[],"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}},"derivedData":{"actorParameters":[],"$type":"NodeCanvas.DialogueTrees.DialogueTree+DerivedSerializationData"}}'
-  boundGraphObjectReferences: []
+  boundGraphSerialization: '{"version":2.6,"type":"NodeCanvas.DialogueTrees.DialogueTree","name":"DialogueTree","translation":{"x":-3380.0,"y":-3562.0},"zoomFactor":0.7500097,"nodes":[{"_condition":{"eventName":{"_value":"accueil"},"_invert":true,"$type":"CheckEventRealized"},"_position":{"x":5263.604,"y":5003.447},"$type":"NodeCanvas.DialogueTrees.ConditionNode","$id":"2"},{"_subTree":{"_value":1},"actorParametersMap":{},"variablesMap":{},"_actorName":"Director","_actorParameterID":"3595a254-7c61-4ead-b73f-98be5f19f522","_position":{"x":5083.156,"y":5148.155},"$type":"NodeCanvas.DialogueTrees.SubDialogueTree","$id":"5"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.DialogueTrees.DTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}},"derivedData":{"actorParameters":[{"_keyName":"Director","_id":"6167f95e-2a71-4714-af82-d016d3283aa5"}],"$type":"NodeCanvas.DialogueTrees.DialogueTree+DerivedSerializationData"}}'
+  boundGraphObjectReferences:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 6575b2eab82226d4bb7b2652765a6d66, type: 2}
   enableAction: 1
   disableAction: 2
   versionUpdateProxyGraph: {fileID: 0}

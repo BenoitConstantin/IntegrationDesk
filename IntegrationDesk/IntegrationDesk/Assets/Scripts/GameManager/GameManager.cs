@@ -7,7 +7,6 @@ public class GameManager : Singleton<GameManager> {
 
     public FSMOwner stateMachine;
 
-
     public bool ChangeRoom(string roomName)
     {
         return ((GameManagerState)(stateMachine.behaviour.currentState)).ChangeRoom(roomName);
