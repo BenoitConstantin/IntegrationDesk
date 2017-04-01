@@ -6,6 +6,7 @@ using NodeCanvas.StateMachines;
 public class GameManager : Singleton<GameManager> {
 
     public FSMOwner stateMachine;
+    public string currentDay = "Lundi";
 
     public bool ChangeRoom(string roomName)
     {

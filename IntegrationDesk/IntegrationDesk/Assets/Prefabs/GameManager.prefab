@@ -54,6 +54,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stateMachine: {fileID: 114437987990596822}
+  currentDay: Lundi
 --- !u!114 &114203233934145596
 MonoBehaviour:
   m_ObjectHideFlags: 0
