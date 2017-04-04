@@ -116,7 +116,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-	<data name="Director.accueil" xml:space="preserve">
+	<data name="Edward.accueil.0" xml:space="preserve">
 		<value>Ce que dit le directeur pour l'accueil de l'alternant</value>
+	</data>
+	<data name="Edward.accueil.1" xml:space="preserve">
+		<value>Ce que dit le directeur pour l'accueil de l'alternant</value>
+	</data>
+	<data name="Edward.accueil.2" xml:space="preserve">
+		<value>Ce que dit le directeur pour l'accueil de l'alternant</value>
+	</data>
+	<data name="Edward.accueil.3" xml:space="preserve">
+		<value>Ce que dit le directeur pour l'accueil de l'alternant</value>
+	</data>
+	<data name="Edward.accueil.4" xml:space="preserve">
+		<value>Ce que dit le directeur pour l'accueil de l'alternant</value>
+	</data>
+	<data name="Edward.accueil.5" xml:space="preserve">
+		<value>Ce que dit le directeur pour l'accueil de l'alternant</value>
+	</data>
+	<data name="Edward.accueil.6" xml:space="preserve">
+		<value>Ce que dit le directeur pour l'accueil de l'alternan</value>
+	</data>
+	<data name="Object.desk.locked.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.desk.locked.1" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.desk.unusable.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.desk.unusable.1" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.notepad.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Player.accueil.0" xml:space="preserve">
+		<value>New Value</value>
 	</data>
 </root>

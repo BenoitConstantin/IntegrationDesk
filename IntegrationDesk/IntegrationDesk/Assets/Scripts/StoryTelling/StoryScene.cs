@@ -7,7 +7,7 @@ using NodeCanvas.DialogueTrees;
 
 public class StoryScene : MonoBehaviour {
 
-    public static Action<string> OnSpeakWithActor;
+    public static Func<string, bool> OnSpeakWithActor;
 
     [SerializeField]
     BehaviourTreeOwner behaviourTree;
@@ -26,8 +26,16 @@ public class StoryScene : MonoBehaviour {
     }
 
 
-    public void SpeakWithActor(string actorName)
+    public bool SpeakWithActor(string actorName)
     {
-        behaviourTree.SendEvent<string>("Speak", actorName);
+        behaviourTree.SendEvent("Speak", actorName);
+        return true;
+    }
+
+    public bool UseObject(IntegrationDeskObject integrationDeskObject)
+    {
+        behaviourTree.SendEvent("Object", integrationDeskObject.ObjectName);
+        dialogueTreeController.blackboard.SetValue("object", integrationDeskObject);
+        return true;
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : IntegrationDeskObject {
+public class Door : MonoBehaviour {
 
     [SerializeField]
     string goToRoomName = "TedDesk";
@@ -12,7 +12,6 @@ public class Door : IntegrationDeskObject {
     {
         ChangeRoom();
     }
-
 
     public void ChangeRoom()
     {

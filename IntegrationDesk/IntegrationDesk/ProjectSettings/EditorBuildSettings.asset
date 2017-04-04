@@ -13,3 +13,5 @@ EditorBuildSettings:
     path: Assets/Scenes/TedDesk.unity
   - enabled: 1
     path: Assets/Scenes/Quizz.unity
+  - enabled: 1
+    path: Assets/Scenes/DevelopersRoom.unity

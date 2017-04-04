@@ -116,7 +116,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-	<data name="Director.accueil" xml:space="preserve">
-		<value>Bienvenue</value>
+	<data name="Edward.accueil.0" xml:space="preserve">
+		<value>Bonjour ! Vous devez être notre nouveau développeur c'est bien cela ?</value>
+	</data>
+	<data name="Edward.accueil.1" xml:space="preserve">
+		<value>Je me présente, je suis Edward votre directeur.</value>
+	</data>
+	<data name="Edward.accueil.2" xml:space="preserve">
+		<value>Je suis ravi de vous accueillir parmi nous, jespère que vous vous sentirez bien et que vous vous entendrez avec l'équipe, c'est important à mes yeux. </value>
+	</data>
+	<data name="Edward.accueil.3" xml:space="preserve">
+		<value>Toutefois je n'ai pas trop d'inquiétudes à ce sujet, vous m'avez l'air d'un jeune motivé et vous serez entre de bonne mains. Voici votre bureau, je vous laisse vous installer.</value>
+	</data>
+	<data name="Edward.accueil.4" xml:space="preserve">
+		<value>Excusez moi de ne pouvoir rester plus longtemps en votre compagnie mais j'ai une réunion importante. N'hésitez pas à prendre le temps de connaitre vos collègues de travail, c'est important de savoir avec qui on partage les tâches.</value>
+	</data>
+	<data name="Edward.accueil.5" xml:space="preserve">
+		<value>Ah ! une dernière chose, si vous avez la moindre question, adressez-vous a Maria. C'est une personne très impliquée, rigoureuse et sérieuse dans son travail. Je vous retrouverai plus tard !</value>
+	</data>
+	<data name="Edward.accueil.6" xml:space="preserve">
+		<value>Encore une fois bienvenue parmi nous et pas de bétises hein ! Je n'aime pas avoir à jouer de mon rôle hiérarchique... Bonne journée à vous.</value>
+	</data>
+	<data name="Object.desk.locked.0" xml:space="preserve">
+		<value>Allé au travail ! Il est temps de montrer ce que l'on sait faire et de... Raaah ça commence ! Ils ont même pas été capable de créer mes identifiants avant mon arrivée... ça promet l'organisation !</value>
+	</data>
+	<data name="Object.desk.locked.1" xml:space="preserve">
+		<value>Super ! Je fais comment pour travailler moi ?</value>
+	</data>
+	<data name="Object.desk.unusable.0" xml:space="preserve">
+		<value>Inutilisable pour le moment... et visiblement faut pas s'attendre à un miracle. Tiens un identifiant ! C'est bizarre d'étiqueter les affaires comme ça... ils sont vraiment maniaque à ce point ?!</value>
+	</data>
+	<data name="Object.desk.unusable.1" xml:space="preserve">
+		<value>Je devrais peut être le noter alors.</value>
+	</data>
+	<data name="Object.notepad.0" xml:space="preserve">
+		<value>Je suis informaticien ! Pas secrétaire... Mais bon ça peut peut être servir ou à défaut leurs faire plaisir...</value>
+	</data>
+	<data name="Player.accueil.0" xml:space="preserve">
+		<value>Wow... ça commence bien ! J'ai même pas commencé à faire mes preuves que déjà on me prend de haut... et la journée commence à peine.</value>
 	</data>
 </root>

@@ -10,21 +10,33 @@ using NodeCanvas;
     public class SmartSay : DTNode {
 
         public Statement statement = new Statement("Smart ID...");
+        public int textsCount = 1;
 
         Statement tempStatement = new Statement("");
+        int count = 0;
 
         protected override Status OnExecute(Component agent, IBlackboard bb)
         {
-            tempStatement = new Statement(SmartLocalization.LanguageManager.Instance.GetTextValue(statement.text));
+            tempStatement = new Statement(SmartLocalization.LanguageManager.Instance.GetTextValue(statement.text+ "."+ count));
             tempStatement = tempStatement.BlackboardReplace(bb);
-            DialogueTree.RequestSubtitles(new SubtitlesRequestInfo((IDialogueActor)agent, tempStatement, OnStatementFinish));
-             return Status.Running;
+
+            DialogueTree.RequestSubtitles(new SubtitlesRequestInfo(finalActor, tempStatement, OnStatementFinish));
+            return Status.Running;
         }
 
         void OnStatementFinish()
         {
-            status = Status.Success;
-            DLGTree.Continue();
+            count++;
+            if (count < textsCount)
+            {
+                DLGTree.EnterNode(this);
+            }
+            else
+            {
+                count = 0;
+                status = Status.Success;
+                DLGTree.Continue();
+            }
         }
 
         ////////////////////////////////////////
@@ -40,16 +52,13 @@ using NodeCanvas;
 
         protected override void OnNodeInspectorGUI()
         {
-
             base.OnNodeInspectorGUI();
-            var areaStyle = new GUIStyle(GUI.skin.GetStyle("TextArea"));
-            areaStyle.wordWrap = true;
 
-            GUILayout.Label("Dialogue Text");
-            statement.text = UnityEditor.EditorGUILayout.TextArea(statement.text, areaStyle, GUILayout.Height(100));
-            statement.audio = UnityEditor.EditorGUILayout.ObjectField("Audio File", statement.audio, typeof(AudioClip), false) as AudioClip;
+            GUILayout.Label("Dialogue Text Smart ID");
+            statement.text = UnityEditor.EditorGUILayout.TextField(statement.text);
             statement.meta = UnityEditor.EditorGUILayout.TextField("Metadata", statement.meta);
-        }
+            textsCount = UnityEditor.EditorGUILayout.IntField("Texts Count", textsCount);
+    }
 
     #endif
 }

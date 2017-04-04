@@ -7,7 +7,7 @@ using EquilibreGames;
 public class StoryTellingSavedData : SavedData {
 
 
-    List<string> eventRealized = new List<string>(); 
+    public List<string> eventRealized = new List<string>(); 
 
 
     public bool EventIsRealized(string eventName)

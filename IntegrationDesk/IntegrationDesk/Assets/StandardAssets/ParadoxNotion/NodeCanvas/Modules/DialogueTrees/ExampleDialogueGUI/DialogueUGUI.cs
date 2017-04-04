@@ -18,6 +18,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 			public float finalDelay     = 1.2f;
 		}
 
+        public DialogueActor dialogActor;
 
 		//Options...
 		[Header("Input Options")]
@@ -95,7 +96,9 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 
 
 		void OnSubtitlesRequest(SubtitlesRequestInfo info){
-			StartCoroutine(Internal_OnSubtitlesRequestInfo(info));
+
+            if(info.actor.name.Equals(dialogActor.name))
+			    StartCoroutine(Internal_OnSubtitlesRequestInfo(info));
 		}
 
 		IEnumerator Internal_OnSubtitlesRequestInfo(SubtitlesRequestInfo info){
