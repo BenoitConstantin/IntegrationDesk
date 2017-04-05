@@ -34,7 +34,7 @@ public class StoryScene : MonoBehaviour {
 
     public bool UseObject(IntegrationDeskObject integrationDeskObject)
     {
-        behaviourTree.SendEvent("Object", integrationDeskObject.ObjectName);
+        behaviourTree.SendEvent("Object", integrationDeskObject.StoryEvent);
         dialogueTreeController.blackboard.SetValue("object", integrationDeskObject);
         return true;
     }

@@ -137,6 +137,18 @@
 	<data name="Edward.accueil.6" xml:space="preserve">
 		<value>Encore une fois bienvenue parmi nous et pas de bétises hein ! Je n'aime pas avoir à jouer de mon rôle hiérarchique... Bonne journée à vous.</value>
 	</data>
+	<data name="Object.chocolate.dontEat.0" xml:space="preserve">
+		<value>Faut quand même pas abuser des bonnes choses ! En plus je ne sais toujours pas si c'est un cadeau empoisonné ou de la courtoisie mal placée...</value>
+	</data>
+	<data name="Object.chocolate.eat.0" xml:space="preserve">
+		<value>Oh des chocolats ! Ça c'est gentil. Je me demande toutefois si c'est pour booster mon moral ou si c'est vraiment de la bonté... affaire à suivre. Dans le doute j'en mange un quand même !</value>
+	</data>
+	<data name="Object.coffeeCup.dontDrink.0" xml:space="preserve">
+		<value>Si je commence comme ça, je vais finir nerveux, insomniaque et proche de l'arrêt cardiaque. Mieux vaut garder ça pour un moment plus propice.</value>
+	</data>
+	<data name="Object.coffeeCup.look.0" xml:space="preserve">
+		<value>Quel genre d'entreprise offre une tasse à café à ces employés dès le premier jour ? A croire qu'ils savent à quel point le travail qu'ils demandent est fatiguant... c'est vraiment étrange !</value>
+	</data>
 	<data name="Object.desk.locked.0" xml:space="preserve">
 		<value>Allé au travail ! Il est temps de montrer ce que l'on sait faire et de... Raaah ça commence ! Ils ont même pas été capable de créer mes identifiants avant mon arrivée... ça promet l'organisation !</value>
 	</data>
@@ -149,8 +161,23 @@
 	<data name="Object.desk.unusable.1" xml:space="preserve">
 		<value>Je devrais peut être le noter alors.</value>
 	</data>
-	<data name="Object.notepad.0" xml:space="preserve">
+	<data name="Object.employmentContract.taken.0" xml:space="preserve">
+		<value>Ah, mon contrat de travail ! Enfin quelque chose d'interessant aujourd'hui. Voyons donc la partie rémunéra... ok décidemment il y a vraiment rien a faire, cette journée est horrible... Je vais garder ça avec moi tout de même, ça peut toujours servir.</value>
+	</data>
+	<data name="Object.goodPracticeGuide.taken.0" xml:space="preserve">
+		<value>Non mais décidémment, on se moque de moi ou quoi ? Maria ne m'a même pas rencontré que déjà elle me conseille sur mes "pratiques" !</value>
+	</data>
+	<data name="Object.goodPracticeGuide.taken.1" xml:space="preserve">
+		<value>On croit rêver !! Enfin de toute manière c'est pas comme si j'avais grand chose à faire...entre mon ordinateur qui est inutilisable et Ted qui est tout sauf pressé de me venir en aide... Maria a au moins le chic de me donner du travail ! Lisons un peu ce qu'il y a la dedans...</value>
+	</data>
+	<data name="Object.mariaLetter.taken.0" xml:space="preserve">
+		<value>Alors celle la elle est pas mal ! On a vraiment pas le même sens du mot "accueil" je crois ! M'écrire une lettre au lieu de me voir en personne... Cette Maria promet d'être particulièrement interessante. Enfin, au moins ça fera rire mes amis</value>
+	</data>
+	<data name="Object.notepad.taken.0" xml:space="preserve">
 		<value>Je suis informaticien ! Pas secrétaire... Mais bon ça peut peut être servir ou à défaut leurs faire plaisir...</value>
+	</data>
+	<data name="Object.pencil.taken.0" xml:space="preserve">
+		<value>Un crayon ! Mais c'est l'âge de pierre ici ou quoi ?! Je sens que la semaine va être longue... Enfin, mieux vaut leurs faire plaisir.</value>
 	</data>
 	<data name="Player.accueil.0" xml:space="preserve">
 		<value>Wow... ça commence bien ! J'ai même pas commencé à faire mes preuves que déjà on me prend de haut... et la journée commence à peine.</value>

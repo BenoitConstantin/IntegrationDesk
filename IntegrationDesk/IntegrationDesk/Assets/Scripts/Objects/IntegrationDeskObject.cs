@@ -8,11 +8,11 @@ public class IntegrationDeskObject : MonoBehaviour {
     StoryScene storyScene;
 
     [SerializeField]
-    string objectName;
+    StoryEvent storyEvent;
 
-    public string ObjectName
+    public StoryEvent StoryEvent
     {
-        get { return objectName; }
+        get { return storyEvent; }
     }
 
 

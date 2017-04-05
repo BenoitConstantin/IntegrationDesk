@@ -137,6 +137,12 @@
 	<data name="Edward.accueil.6" xml:space="preserve">
 		<value>Ce que dit le directeur pour l'accueil de l'alternan</value>
 	</data>
+	<data name="Object.chocolate.dontEat.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.chocolate.eat.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
 	<data name="Object.desk.locked.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
@@ -149,10 +155,31 @@
 	<data name="Object.desk.unusable.1" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Object.notepad.0" xml:space="preserve">
+	<data name="Object.employmentContract.taken.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.goodPracticeGuide.taken.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.goodPracticeGuide.taken.1" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.mariaLetter.taken.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.notepad.taken.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.pencil.taken.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
 	<data name="Player.accueil.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.coffeeCup.look.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.coffeeCup.dontDrink.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
 </root>
