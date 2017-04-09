@@ -149,16 +149,16 @@
 	<data name="Object.coffeeCup.look.0" xml:space="preserve">
 		<value>Quel genre d'entreprise offre une tasse à café à ces employés dès le premier jour ? A croire qu'ils savent à quel point le travail qu'ils demandent est fatiguant... c'est vraiment étrange !</value>
 	</data>
-	<data name="Object.desk.locked.0" xml:space="preserve">
+	<data name="Object.computer.locked.0" xml:space="preserve">
 		<value>Allé au travail ! Il est temps de montrer ce que l'on sait faire et de... Raaah ça commence ! Ils ont même pas été capable de créer mes identifiants avant mon arrivée... ça promet l'organisation !</value>
 	</data>
-	<data name="Object.desk.locked.1" xml:space="preserve">
+	<data name="Object.computer.locked.1" xml:space="preserve">
 		<value>Super ! Je fais comment pour travailler moi ?</value>
 	</data>
-	<data name="Object.desk.unusable.0" xml:space="preserve">
+	<data name="Object.computer.unusable.0" xml:space="preserve">
 		<value>Inutilisable pour le moment... et visiblement faut pas s'attendre à un miracle. Tiens un identifiant ! C'est bizarre d'étiqueter les affaires comme ça... ils sont vraiment maniaque à ce point ?!</value>
 	</data>
-	<data name="Object.desk.unusable.1" xml:space="preserve">
+	<data name="Object.computer.unusable.1" xml:space="preserve">
 		<value>Je devrais peut être le noter alors.</value>
 	</data>
 	<data name="Object.employmentContract.taken.0" xml:space="preserve">
@@ -173,11 +173,23 @@
 	<data name="Object.mariaLetter.taken.0" xml:space="preserve">
 		<value>Alors celle la elle est pas mal ! On a vraiment pas le même sens du mot "accueil" je crois ! M'écrire une lettre au lieu de me voir en personne... Cette Maria promet d'être particulièrement interessante. Enfin, au moins ça fera rire mes amis</value>
 	</data>
+	<data name="Object.materialList.dontRead.0" xml:space="preserve">
+		<value>Je vais éviter de me faire mal... cette liste c'est vraiment honteux !</value>
+	</data>
+	<data name="Object.materialList.read.0" xml:space="preserve">
+		<value>Voyons voir un peu ce sur quoi travaille Ted... C'est tout ?! Le mec a l'air tout le temps fatigué alors qu'il n'a qu'une petite liste de matériel à gérer. Non mais on se moque de moi ??</value>
+	</data>
 	<data name="Object.notepad.taken.0" xml:space="preserve">
 		<value>Je suis informaticien ! Pas secrétaire... Mais bon ça peut peut être servir ou à défaut leurs faire plaisir...</value>
 	</data>
 	<data name="Object.pencil.taken.0" xml:space="preserve">
 		<value>Un crayon ! Mais c'est l'âge de pierre ici ou quoi ?! Je sens que la semaine va être longue... Enfin, mieux vaut leurs faire plaisir.</value>
+	</data>
+	<data name="Object.tedComputer.look.0" xml:space="preserve">
+		<value>Bien évidemment lui, il a un ordinateur qui fonctionne ! Tsss... ça me donne vraiment envie de lui montrer ce que c'est que de ne pas pouvoir travailler ! Bon calmons-nous, tout va rentrer dans l'ordre et au pire je ne suis pas responsable...</value>
+	</data>
+	<data name="Object.tedComputer.dontDisturb.0" xml:space="preserve">
+		<value>C'est vraiment tentant mais... je ne pense pas y gagner à mettre en retard le déjà très lent Ted</value>
 	</data>
 	<data name="Player.accueil.0" xml:space="preserve">
 		<value>Wow... ça commence bien ! J'ai même pas commencé à faire mes preuves que déjà on me prend de haut... et la journée commence à peine.</value>

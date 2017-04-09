@@ -143,16 +143,22 @@
 	<data name="Object.chocolate.eat.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Object.desk.locked.0" xml:space="preserve">
+	<data name="Object.coffeeCup.dontDrink.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Object.desk.locked.1" xml:space="preserve">
+	<data name="Object.coffeeCup.look.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Object.desk.unusable.0" xml:space="preserve">
+	<data name="Object.computer.locked.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Object.desk.unusable.1" xml:space="preserve">
+	<data name="Object.computer.locked.1" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.computer.unusable.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.computer.unusable.1" xml:space="preserve">
 		<value>New Value</value>
 	</data>
 	<data name="Object.employmentContract.taken.0" xml:space="preserve">
@@ -167,19 +173,25 @@
 	<data name="Object.mariaLetter.taken.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
+	<data name="Object.materialList.dontRead.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.materialList.read.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
 	<data name="Object.notepad.taken.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
 	<data name="Object.pencil.taken.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
+	<data name="Object.tedComputer.look.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.tedComputer.dontDisturb.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
 	<data name="Player.accueil.0" xml:space="preserve">
-		<value>New Value</value>
-	</data>
-	<data name="Object.coffeeCup.look.0" xml:space="preserve">
-		<value>New Value</value>
-	</data>
-	<data name="Object.coffeeCup.dontDrink.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
 </root>
