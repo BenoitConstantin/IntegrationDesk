@@ -137,6 +137,18 @@
 	<data name="Edward.accueil.6" xml:space="preserve">
 		<value>Encore une fois bienvenue parmi nous et pas de bétises hein ! Je n'aime pas avoir à jouer de mon rôle hiérarchique... Bonne journée à vous.</value>
 	</data>
+	<data name="Object.charlesComputer.dontUse.0" xml:space="preserve">
+		<value>Laisse tomber, c'est déjà un miracle qu'il n'est pas cadnassé sa tour...</value>
+	</data>
+	<data name="Object.charlesComputer.locked.0" xml:space="preserve">
+		<value>Alors sur quoi travaille t'il en ce moment.. Vérouillé ? Il vérouille sérieusement sa session ? Bonjour le partage d'informations et la confiance... je sens que je vais bien m'entendre avec lui...</value>
+	</data>
+	<data name="Object.charlesFamilyPicture.dontLook.0" xml:space="preserve">
+		<value>Euh.. c'est bon c'est qu'une photo ! Charles va me prendre pour un fou si je continues de regarder sa photo comme ça !</value>
+	</data>
+	<data name="Object.charlesFamilyPicture.look.0" xml:space="preserve">
+		<value>Pauvres enfants, ce mec a l'air aussi rigide qu'une porte. Enfin au moins il sourit la dessus, ça change...</value>
+	</data>
 	<data name="Object.chocolate.dontEat.0" xml:space="preserve">
 		<value>Faut quand même pas abuser des bonnes choses ! En plus je ne sais toujours pas si c'est un cadeau empoisonné ou de la courtoisie mal placée...</value>
 	</data>
@@ -164,6 +176,12 @@
 	<data name="Object.employmentContract.taken.0" xml:space="preserve">
 		<value>Ah, mon contrat de travail ! Enfin quelque chose d'interessant aujourd'hui. Voyons donc la partie rémunéra... ok décidemment il y a vraiment rien a faire, cette journée est horrible... Je vais garder ça avec moi tout de même, ça peut toujours servir.</value>
 	</data>
+	<data name="Object.followArray.dontRead.0" xml:space="preserve">
+		<value>A priori rien de nouveau dans la mémoire de mes deux collègues...</value>
+	</data>
+	<data name="Object.followArray.read.0" xml:space="preserve">
+		<value>Alala, les mecs travaillent un peu donc ils se sentent obligé d'afficher partout leurs travaux. C'est pas croyable... Enfin je préfère croire que c'est ça plutôt que d'imaginer qu'ils notent tout pour pouvoir s'en rappeler.</value>
+	</data>
 	<data name="Object.goodPracticeGuide.taken.0" xml:space="preserve">
 		<value>Non mais décidémment, on se moque de moi ou quoi ? Maria ne m'a même pas rencontré que déjà elle me conseille sur mes "pratiques" !</value>
 	</data>
@@ -185,11 +203,23 @@
 	<data name="Object.pencil.taken.0" xml:space="preserve">
 		<value>Un crayon ! Mais c'est l'âge de pierre ici ou quoi ?! Je sens que la semaine va être longue... Enfin, mieux vaut leurs faire plaisir.</value>
 	</data>
+	<data name="Object.tedComputer.dontDisturb.0" xml:space="preserve">
+		<value>C'est vraiment tentant mais... je ne pense pas y gagner à mettre en retard le déjà très lent Ted</value>
+	</data>
 	<data name="Object.tedComputer.look.0" xml:space="preserve">
 		<value>Bien évidemment lui, il a un ordinateur qui fonctionne ! Tsss... ça me donne vraiment envie de lui montrer ce que c'est que de ne pas pouvoir travailler ! Bon calmons-nous, tout va rentrer dans l'ordre et au pire je ne suis pas responsable...</value>
 	</data>
-	<data name="Object.tedComputer.dontDisturb.0" xml:space="preserve">
-		<value>C'est vraiment tentant mais... je ne pense pas y gagner à mettre en retard le déjà très lent Ted</value>
+	<data name="Object.yannChildrenDraw.dontLook.0" xml:space="preserve">
+		<value>Le mystère sur l'auteur de cette oeuvre indescriptible reste entier...</value>
+	</data>
+	<data name="Object.yannChildrenDraw.look.0" xml:space="preserve">
+		<value>Tiens, il doit avoir des enfants également.. enfin j'ose espérer que ce n'est pas lui qui dessine comme ça !! Mais avec lui faut s'attendre à tout... je vais éviter de lui poser la question pour ne pas le froisser, on sait jamais...</value>
+	</data>
+	<data name="Object.yannComputer.dirty" xml:space="preserve">
+		<value>Arg ! C'est sale !! Le mec mange sur son clavier ou quoi ?? C'est pas croyable de voir ça ! Note à soi-même : Ne jamais laisser son ordinateur à Yann ne serait ce qu'une demi-journée...</value>
+	</data>
+	<data name="Object.yannComputer.dontUse" xml:space="preserve">
+		<value>Même pas en rêve ! J'ai déjà assez mangé comme ça !!</value>
 	</data>
 	<data name="Player.accueil.0" xml:space="preserve">
 		<value>Wow... ça commence bien ! J'ai même pas commencé à faire mes preuves que déjà on me prend de haut... et la journée commence à peine.</value>
