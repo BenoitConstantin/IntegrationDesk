@@ -91,7 +91,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &98135259
+--- !u!114 &27832859
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
@@ -99,22 +99,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a686a47eee2fa44cb0a34b5d86e4d5e, type: 3}
-  m_Name: StoryScene
+  m_Script: {fileID: 11500000, guid: 2c3f478ef69fbe04fa9ed3664a8a443e, type: 3}
+  m_Name: DialogueTree
   m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.BehaviourTrees.BehaviourTree","name":"BehaviourTree","translation":{"x":-2127.0,"y":-3553.0},"zoomFactor":0.6884742,"nodes":[{"_nodeColor":{"r":0.7019608,"g":1.0,"b":0.4980392,"a":1.0},"_position":{"x":3807.853,"y":5259.796},"$type":"NodeCanvas.BehaviourTrees.Selector","$id":"2"},{"_position":{"x":3326.058,"y":5415.682},"$type":"NodeCanvas.BehaviourTrees.Optional","$id":"3"},{"_action":{"actions":[{"actorName":"Edward","dialogueTreeController":1,"$type":"GetActor"},{"actorName":"Player","dialogueTreeController":1,"$type":"GetActor"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":3326.472,"y":5459.283},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"4"},{"_position":{"x":3654.543,"y":5420.121},"$type":"NodeCanvas.BehaviourTrees.Optional","$id":"9"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":3656.369,"y":5471.127},"_tag":"ObjectDisabled","$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"10"},{"_position":{"x":3020.341,"y":5730.384},"_name":"NotePad","$type":"NodeCanvas.BehaviourTrees.Optional","$id":"11"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":3009.374,"y":5784.362},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"12"},{"_condition":{"storyEvent":"TAKE_NOTEPAD","$type":"CheckEventRealized"},"_position":{"x":2890.327,"y":5850.935},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"13"},{"_action":{"setTo":"Deactivate","overrideAgent":{"_value":2},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},"_position":{"x":3079.412,"y":5853.417},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"15"},{"_position":{"x":3379.022,"y":5703.586},"_name":"Pencil","$type":"NodeCanvas.BehaviourTrees.Optional","$id":"18"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":3374.646,"y":5760.871},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"19"},{"_condition":{"storyEvent":"TAKE_PENCIL","$type":"CheckEventRealized"},"_position":{"x":3270.78,"y":5847.824},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"20"},{"_action":{"setTo":"Deactivate","overrideAgent":{"_value":3},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},"_position":{"x":3455.736,"y":5855.784},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"22"},{"_position":{"x":3718.781,"y":5711.906},"_name":"MariaLetter","$type":"NodeCanvas.BehaviourTrees.Optional","$id":"25"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":3712.589,"y":5777.195},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"26"},{"_condition":{"storyEvent":"TAKE_MARIA_LETTER","$type":"CheckEventRealized"},"_position":{"x":3612.376,"y":5854.366},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"27"},{"_action":{"setTo":"Deactivate","overrideAgent":{"_value":4},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},"_position":{"x":3779.14,"y":5854.117},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"29"},{"_position":{"x":4082.494,"y":5740.148},"_name":"employmentContract","$type":"NodeCanvas.BehaviourTrees.Optional","$id":"32"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":4108.269,"y":5802.388},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"33"},{"_condition":{"storyEvent":"TAKE_EMPLOYMENT_CONTRACT","$type":"CheckEventRealized"},"_position":{"x":3998.378,"y":5874.466},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"34"},{"_action":{"setTo":"Deactivate","overrideAgent":{"_value":5},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},"_position":{"x":4172.345,"y":5876.592},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"36"},{"_position":{"x":4488.779,"y":5753.526},"_name":"employmentContract","$type":"NodeCanvas.BehaviourTrees.Optional","$id":"39"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":4525.094,"y":5804.192},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"40"},{"_condition":{"storyEvent":"TAKE_GOOD_PRACTICE_GUIDE","$type":"CheckEventRealized"},"_position":{"x":4430.137,"y":5880.281},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"41"},{"_action":{"setTo":"Deactivate","overrideAgent":{"_value":6},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},"_position":{"x":4597.473,"y":5880.627},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"43"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":4031.573,"y":5458.16},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"46"},{"_action":{"dialogueTreeController":{"_value":1},"$type":"NodeCanvas.Tasks.Actions.StartDialogueTree"},"_position":{"x":3988.986,"y":5515.783},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"47"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"9"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"46"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"10"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"11"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"18"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"25"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"32"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"39"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"11"},"_targetNode":{"$ref":"12"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"12"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"12"},"_targetNode":{"$ref":"15"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"18"},"_targetNode":{"$ref":"19"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"19"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"19"},"_targetNode":{"$ref":"22"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"25"},"_targetNode":{"$ref":"26"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"26"},"_targetNode":{"$ref":"27"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"26"},"_targetNode":{"$ref":"29"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"33"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"33"},"_targetNode":{"$ref":"34"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"33"},"_targetNode":{"$ref":"36"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"39"},"_targetNode":{"$ref":"40"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"41"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"43"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"46"},"_targetNode":{"$ref":"47"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
+  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.DialogueTrees.DialogueTree","name":"DialogueTree","translation":{"x":-1615.926,"y":-1693.188},"zoomFactor":0.3663467,"nodes":[{"conditions":[{"day":"Lundi","$type":"CheckDay"}],"_position":{"x":5026.657,"y":4989.39},"$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"2"},{"conditions":[{"_invert":true,"$type":"CheckEventRealized"},{"eventName":{"_value":"Object"},"value":{"_value":"USE_COMPUTER"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"eventName":{"_value":"Object"},"value":{"_value":"USE_CHOCOLATE"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"eventName":{"_value":"Object"},"value":{"_value":"USE_COFFEECUP"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},null],"_position":{"x":4846.645,"y":5192.458},"$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"5"},{"statement":{"_text":"Edward.accueil"},"textsCount":7,"_actorName":"Edward","_actorParameterID":"3c01917a-24b3-4fcf-8d9e-81a84c3cef8d","_position":{"x":4425.118,"y":5399.211},"$type":"SmartSay","$id":"17"},{"_action":{"$type":"RealizeStoryEvent"},"_position":{"x":4422.567,"y":5484.481},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"19"},{"statement":{"_text":"Player.accueil"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4430.605,"y":5561.812},"$type":"SmartSay","$id":"21"},{"mode":"LIMIT_TO_MAX","_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_collapsed":true,"_position":{"x":4621.679,"y":5421.988},"_tag":"Computer","$type":"SequencedConditionNode","$id":"23"},{"statement":{"_text":"Object.computer.locked"},"textsCount":2,"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4461.687,"y":5596.988},"$type":"SmartSay","$id":"24"},{"statement":{"_text":"Object.computer.unusable"},"textsCount":2,"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4648.687,"y":5594.988},"$type":"SmartSay","$id":"26"},{"mode":"LIMIT_TO_MAX","_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_collapsed":true,"_position":{"x":4792.426,"y":5430.305},"_tag":"Chocolate","$type":"SequencedConditionNode","$id":"28"},{"statement":{"_text":"Object.chocolate.eat"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4669.373,"y":5549.57},"$type":"SmartSay","$id":"29"},{"statement":{"_text":"Object.chocolate.dontEat"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4830.318,"y":5548.183},"$type":"SmartSay","$id":"31"},{"conditions":[{"storyEvent":"USE_COFFEECUP","$type":"CheckEventRealized"},null],"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_collapsed":true,"_position":{"x":4989.646,"y":5448.893},"_name":"","_tag":"CoffeeCup","$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"33"},{"statement":{"_text":"Object.coffeeCup.dontDrink"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4707.636,"y":5732.219},"$type":"SmartSay","$id":"36"},{"statement":{"_text":"Object.coffeeCup.look"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4954.636,"y":5728.219},"$type":"SmartSay","$id":"38"},{"_action":{"storyEvent":"USE_COFFEECUP","$type":"RealizeStoryEvent"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4970.636,"y":5809.219},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"40"},{"conditions":[{"eventName":{"_value":"Object"},"value":{"_value":"TAKE_NOTEPAD"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"eventName":{"_value":"Object"},"value":{"_value":"TAKE_PENCIL"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"eventName":{"_value":"Object"},"value":{"_value":"TAKE_MARIA_LETTER"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"eventName":{"_value":"Object"},"value":{"_value":"TAKE_EMPLOYMENT_CONTRACT"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"eventName":{"_value":"Object"},"value":{"_value":"TAKE_GOOD_PRACTICE_GUIDE"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"_position":{"x":5436.644,"y":5295.216},"_name":"","_tag":"ObjectToTake","$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"42"},{"statement":{"_text":"Object.notepad.taken"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5141.452,"y":5502.197},"$type":"SmartSay","$id":"59"},{"_action":{"storyEvent":"TAKE_NOTEPAD","$type":"RealizeStoryEvent"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5154.452,"y":5576.197},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"61"},{"statement":{"_text":"Object.pencil.taken"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5340.141,"y":5500.845},"$type":"SmartSay","$id":"63"},{"_action":{"storyEvent":"TAKE_PENCIL","$type":"RealizeStoryEvent"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5347.944,"y":5577.656},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"65"},{"statement":{"_text":"Object.mariaLetter.taken"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5534.417,"y":5503.945},"$type":"SmartSay","$id":"67"},{"_action":{"storyEvent":"TAKE_MARIA_LETTER","$type":"RealizeStoryEvent"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5558.008,"y":5585.194},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"69"},{"statement":{"_text":"Object.employmentContract.taken"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5735.211,"y":5508.963},"$type":"SmartSay","$id":"71"},{"_action":{"storyEvent":"TAKE_EMPLOYMENT_CONTRACT","$type":"RealizeStoryEvent"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5783.537,"y":5581.994},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"73"},{"statement":{"_text":"Object.goodPracticeGuide.taken"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5969.9,"y":5513.16},"$type":"SmartSay","$id":"75"},{"_action":{"storyEvent":"TAKE_GOOD_PRACTICE_GUIDE","$type":"RealizeStoryEvent"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":6009.789,"y":5586.192},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"77"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"17"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"23"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"33"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"42"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"17"},"_targetNode":{"$ref":"19"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"19"},"_targetNode":{"$ref":"21"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"23"},"_targetNode":{"$ref":"24"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"23"},"_targetNode":{"$ref":"26"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"29"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"33"},"_targetNode":{"$ref":"36"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"33"},"_targetNode":{"$ref":"38"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"38"},"_targetNode":{"$ref":"40"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"59"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"63"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"67"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"71"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"75"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"59"},"_targetNode":{"$ref":"61"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"63"},"_targetNode":{"$ref":"65"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"67"},"_targetNode":{"$ref":"69"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"71"},"_targetNode":{"$ref":"73"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"75"},"_targetNode":{"$ref":"77"},"$type":"NodeCanvas.DialogueTrees.DTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}},"derivedData":{"actorParameters":[{"_keyName":"Edward","_id":"3c01917a-24b3-4fcf-8d9e-81a84c3cef8d","_actorObject":1},{"_keyName":"Player","_id":"bdf95645-0dea-44af-b9f4-7f4384983892","_actorObject":2}],"$type":"NodeCanvas.DialogueTrees.DialogueTree+DerivedSerializationData"}}'
   _objectReferences:
   - {fileID: 0}
-  - {fileID: 1086804860}
-  - {fileID: 1846893996}
-  - {fileID: 420069923}
-  - {fileID: 857312838}
-  - {fileID: 1253783596}
-  - {fileID: 1358990241}
+  - {fileID: 0}
+  - {fileID: 0}
   _deserializationFailed: 0
-  repeat: 1
-  updateInterval: 0
+  _actorParameters:
+  - _keyName: Edward
+    _id: 3c01917a-24b3-4fcf-8d9e-81a84c3cef8d
+    _actorObject: {fileID: 0}
+  - _keyName: Player
+    _id: bdf95645-0dea-44af-b9f4-7f4384983892
+    _actorObject: {fileID: 0}
 --- !u!1 &135023136
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,6 +150,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 688006504}
+  - {fileID: 1951253012}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -256,7 +266,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 420069922}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.2, y: -4.08, z: 0}
+  m_LocalPosition: {x: 3.98, y: -2.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1421798777}
@@ -319,7 +329,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 39672fb5ad4c7db49bf0b16be444933e, type: 3}
   m_Color: {r: 1, g: 0.8929007, b: 0.029411793, a: 1}
   m_FlipX: 0
@@ -430,7 +440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad115aca74ce3c4891b3f6de0b4aae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boundGraphSerialization: '{"version":2.6,"type":"NodeCanvas.BehaviourTrees.BehaviourTree","name":"BehaviourTree","translation":{"x":-2127.0,"y":-3553.0},"zoomFactor":0.6884742,"nodes":[{"_nodeColor":{"r":0.7019608,"g":1.0,"b":0.4980392,"a":1.0},"_position":{"x":3807.853,"y":5259.796},"$type":"NodeCanvas.BehaviourTrees.Selector","$id":"2"},{"_position":{"x":3326.058,"y":5415.682},"$type":"NodeCanvas.BehaviourTrees.Optional","$id":"3"},{"_action":{"actions":[{"actorName":"Edward","dialogueTreeController":1,"$type":"GetActor"},{"actorName":"Player","dialogueTreeController":1,"$type":"GetActor"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":3326.472,"y":5459.283},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"4"},{"_position":{"x":3654.543,"y":5420.121},"$type":"NodeCanvas.BehaviourTrees.Optional","$id":"9"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":3656.369,"y":5471.127},"_tag":"ObjectDisabled","$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"10"},{"_position":{"x":3020.341,"y":5730.384},"_name":"NotePad","$type":"NodeCanvas.BehaviourTrees.Optional","$id":"11"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":3009.374,"y":5784.362},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"12"},{"_condition":{"storyEvent":"TAKE_NOTEPAD","$type":"CheckEventRealized"},"_position":{"x":2890.327,"y":5850.935},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"13"},{"_action":{"setTo":"Deactivate","overrideAgent":{"_value":2},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},"_position":{"x":3079.412,"y":5853.417},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"15"},{"_position":{"x":3379.022,"y":5703.586},"_name":"Pencil","$type":"NodeCanvas.BehaviourTrees.Optional","$id":"18"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":3374.646,"y":5760.871},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"19"},{"_condition":{"storyEvent":"TAKE_PENCIL","$type":"CheckEventRealized"},"_position":{"x":3270.78,"y":5847.824},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"20"},{"_action":{"setTo":"Deactivate","overrideAgent":{"_value":3},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},"_position":{"x":3455.736,"y":5855.784},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"22"},{"_position":{"x":3718.781,"y":5711.906},"_name":"MariaLetter","$type":"NodeCanvas.BehaviourTrees.Optional","$id":"25"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":3712.589,"y":5777.195},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"26"},{"_condition":{"storyEvent":"TAKE_MARIA_LETTER","$type":"CheckEventRealized"},"_position":{"x":3612.376,"y":5854.366},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"27"},{"_action":{"setTo":"Deactivate","overrideAgent":{"_value":4},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},"_position":{"x":3779.14,"y":5854.117},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"29"},{"_position":{"x":4082.494,"y":5740.148},"_name":"employmentContract","$type":"NodeCanvas.BehaviourTrees.Optional","$id":"32"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":4108.269,"y":5802.388},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"33"},{"_condition":{"storyEvent":"TAKE_EMPLOYMENT_CONTRACT","$type":"CheckEventRealized"},"_position":{"x":3998.378,"y":5874.466},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"34"},{"_action":{"setTo":"Deactivate","overrideAgent":{"_value":5},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},"_position":{"x":4172.345,"y":5876.592},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"36"},{"_position":{"x":4488.779,"y":5753.526},"_name":"employmentContract","$type":"NodeCanvas.BehaviourTrees.Optional","$id":"39"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":4525.094,"y":5804.192},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"40"},{"_condition":{"storyEvent":"TAKE_GOOD_PRACTICE_GUIDE","$type":"CheckEventRealized"},"_position":{"x":4430.137,"y":5880.281},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"41"},{"_action":{"setTo":"Deactivate","overrideAgent":{"_value":6},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},"_position":{"x":4597.473,"y":5880.627},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"43"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":4031.573,"y":5458.16},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"46"},{"_action":{"dialogueTreeController":{"_value":1},"$type":"NodeCanvas.Tasks.Actions.StartDialogueTree"},"_position":{"x":3988.986,"y":5515.783},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"47"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"9"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"46"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"10"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"11"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"18"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"25"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"32"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"39"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"11"},"_targetNode":{"$ref":"12"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"12"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"12"},"_targetNode":{"$ref":"15"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"18"},"_targetNode":{"$ref":"19"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"19"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"19"},"_targetNode":{"$ref":"22"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"25"},"_targetNode":{"$ref":"26"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"26"},"_targetNode":{"$ref":"27"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"26"},"_targetNode":{"$ref":"29"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"33"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"33"},"_targetNode":{"$ref":"34"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"33"},"_targetNode":{"$ref":"36"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"39"},"_targetNode":{"$ref":"40"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"41"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"43"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"46"},"_targetNode":{"$ref":"47"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+  boundGraphSerialization: '{"version":2.6,"type":"NodeCanvas.BehaviourTrees.BehaviourTree","name":"BehaviourTree","translation":{"x":-1240.306,"y":-2175.757},"zoomFactor":0.4384839,"nodes":[{"_nodeColor":{"r":0.7019608,"g":1.0,"b":0.4980392,"a":1.0},"_position":{"x":3807.853,"y":5259.796},"$type":"NodeCanvas.BehaviourTrees.Selector","$id":"2"},{"_position":{"x":3326.058,"y":5415.682},"$type":"NodeCanvas.BehaviourTrees.Optional","$id":"3"},{"_action":{"actions":[{"actorName":"Edward","dialogueTreeController":1,"$type":"GetActor"},{"actorName":"Player","dialogueTreeController":1,"$type":"GetActor"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":3326.472,"y":5459.283},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"4"},{"_position":{"x":3654.543,"y":5420.121},"$type":"NodeCanvas.BehaviourTrees.Optional","$id":"9"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":3656.369,"y":5471.127},"_tag":"ObjectDisabled","$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"10"},{"_position":{"x":3020.341,"y":5730.384},"_name":"NotePad","$type":"NodeCanvas.BehaviourTrees.Optional","$id":"11"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":3009.374,"y":5784.362},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"12"},{"_condition":{"storyEvent":"TAKE_NOTEPAD","$type":"CheckEventRealized"},"_position":{"x":2890.327,"y":5850.935},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"13"},{"_action":{"setTo":"Deactivate","overrideAgent":{"_value":2},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},"_position":{"x":3079.412,"y":5853.417},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"15"},{"_position":{"x":3379.022,"y":5703.586},"_name":"Pencil","$type":"NodeCanvas.BehaviourTrees.Optional","$id":"18"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":3374.646,"y":5760.871},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"19"},{"_condition":{"storyEvent":"TAKE_PENCIL","$type":"CheckEventRealized"},"_position":{"x":3270.78,"y":5847.824},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"20"},{"_action":{"setTo":"Deactivate","overrideAgent":{"_value":3},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},"_position":{"x":3455.736,"y":5855.784},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"22"},{"_position":{"x":3718.781,"y":5711.906},"_name":"MariaLetter","$type":"NodeCanvas.BehaviourTrees.Optional","$id":"25"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":3712.589,"y":5777.195},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"26"},{"_condition":{"storyEvent":"TAKE_MARIA_LETTER","$type":"CheckEventRealized"},"_position":{"x":3612.376,"y":5854.366},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"27"},{"_action":{"setTo":"Deactivate","overrideAgent":{"_value":4},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},"_position":{"x":3779.14,"y":5854.117},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"29"},{"_position":{"x":4082.494,"y":5740.148},"_name":"employmentContract","$type":"NodeCanvas.BehaviourTrees.Optional","$id":"32"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":4108.269,"y":5802.388},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"33"},{"_condition":{"storyEvent":"TAKE_EMPLOYMENT_CONTRACT","$type":"CheckEventRealized"},"_position":{"x":3998.378,"y":5874.466},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"34"},{"_action":{"setTo":"Deactivate","overrideAgent":{"_value":5},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},"_position":{"x":4172.345,"y":5876.592},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"36"},{"_position":{"x":4488.779,"y":5753.526},"_name":"employmentContract","$type":"NodeCanvas.BehaviourTrees.Optional","$id":"39"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":4525.094,"y":5804.192},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"40"},{"_condition":{"storyEvent":"TAKE_GOOD_PRACTICE_GUIDE","$type":"CheckEventRealized"},"_position":{"x":4430.137,"y":5880.281},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"41"},{"_action":{"setTo":"Deactivate","overrideAgent":{"_value":6},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},"_position":{"x":4597.473,"y":5880.627},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"43"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":4031.573,"y":5458.16},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"46"},{"_action":{"dialogueTreeController":{"_value":1},"$type":"NodeCanvas.Tasks.Actions.StartDialogueTree"},"_position":{"x":3988.986,"y":5515.783},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"47"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"9"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"46"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"10"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"11"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"18"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"25"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"32"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"39"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"11"},"_targetNode":{"$ref":"12"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"12"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"12"},"_targetNode":{"$ref":"15"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"18"},"_targetNode":{"$ref":"19"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"19"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"19"},"_targetNode":{"$ref":"22"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"25"},"_targetNode":{"$ref":"26"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"26"},"_targetNode":{"$ref":"27"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"26"},"_targetNode":{"$ref":"29"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"33"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"33"},"_targetNode":{"$ref":"34"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"33"},"_targetNode":{"$ref":"36"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"39"},"_targetNode":{"$ref":"40"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"41"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"43"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"46"},"_targetNode":{"$ref":"47"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
     Blackboard","_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
   boundGraphObjectReferences:
   - {fileID: 0}
@@ -443,7 +453,7 @@ MonoBehaviour:
   enableAction: 0
   disableAction: 0
   versionUpdateProxyGraph: {fileID: 0}
-  _graph: {fileID: 98135259}
+  _graph: {fileID: 1180811668}
   _blackboard: {fileID: 541049990}
 --- !u!114 &541049992
 MonoBehaviour:
@@ -575,7 +585,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 372b9ab8a2ecd3d478a55be61f2687a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -673,7 +683,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: f864c7582241a6d49bbb768895dfcd28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -766,44 +776,11 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 7754692317dacee4998083996dc22195, type: 3}
   m_Color: {r: 0.027771046, g: 0.015895322, b: 0.3602941, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!114 &1064533657
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c3f478ef69fbe04fa9ed3664a8a443e, type: 3}
-  m_Name: DialogueTree
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.DialogueTrees.DialogueTree","name":"DialogueTree","translation":{"x":-4421.0,"y":-4315.0},"zoomFactor":0.839722,"nodes":[{"conditions":[{"day":"Lundi","$type":"CheckDay"}],"_position":{"x":5026.657,"y":4989.39},"$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"2"},{"conditions":[{"_invert":true,"$type":"CheckEventRealized"},{"eventName":{"_value":"Object"},"value":{"_value":"USE_COMPUTER"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"eventName":{"_value":"Object"},"value":{"_value":"USE_CHOCOLATE"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"eventName":{"_value":"Object"},"value":{"_value":"USE_COFFEECUP"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},null],"_position":{"x":4846.645,"y":5192.458},"$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"5"},{"statement":{"_text":"Edward.accueil"},"textsCount":7,"_actorName":"Edward","_actorParameterID":"3c01917a-24b3-4fcf-8d9e-81a84c3cef8d","_position":{"x":4425.118,"y":5399.211},"$type":"SmartSay","$id":"17"},{"_action":{"$type":"RealizeStoryEvent"},"_position":{"x":4422.567,"y":5484.481},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"19"},{"statement":{"_text":"Player.accueil"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4430.605,"y":5561.812},"$type":"SmartSay","$id":"21"},{"mode":"LIMIT_TO_MAX","_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_collapsed":true,"_position":{"x":4621.679,"y":5421.988},"_tag":"Computer","$type":"SequencedConditionNode","$id":"23"},{"statement":{"_text":"Object.computer.locked"},"textsCount":2,"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4461.687,"y":5596.988},"$type":"SmartSay","$id":"24"},{"statement":{"_text":"Object.computer.unusable"},"textsCount":2,"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4648.687,"y":5594.988},"$type":"SmartSay","$id":"26"},{"mode":"LIMIT_TO_MAX","_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_collapsed":true,"_position":{"x":4792.426,"y":5430.305},"_tag":"Chocolate","$type":"SequencedConditionNode","$id":"28"},{"statement":{"_text":"Object.chocolate.eat"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4669.373,"y":5549.57},"$type":"SmartSay","$id":"29"},{"statement":{"_text":"Object.chocolate.dontEat"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4830.318,"y":5548.183},"$type":"SmartSay","$id":"31"},{"conditions":[{"storyEvent":"USE_COFFEECUP","$type":"CheckEventRealized"},null],"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_collapsed":true,"_position":{"x":4989.646,"y":5448.893},"_name":"","_tag":"CoffeeCup","$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"33"},{"statement":{"_text":"Object.coffeeCup.dontDrink"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4707.636,"y":5732.219},"$type":"SmartSay","$id":"36"},{"statement":{"_text":"Object.coffeeCup.look"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4954.636,"y":5728.219},"$type":"SmartSay","$id":"38"},{"_action":{"storyEvent":"USE_COFFEECUP","$type":"RealizeStoryEvent"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4970.636,"y":5809.219},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"40"},{"conditions":[{"eventName":{"_value":"Object"},"value":{"_value":"TAKE_NOTEPAD"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"eventName":{"_value":"Object"},"value":{"_value":"TAKE_PENCIL"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"eventName":{"_value":"Object"},"value":{"_value":"TAKE_MARIA_LETTER"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"eventName":{"_value":"Object"},"value":{"_value":"TAKE_EMPLOYMENT_CONTRACT"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"eventName":{"_value":"Object"},"value":{"_value":"TAKE_GOOD_PRACTICE_GUIDE"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"_position":{"x":5436.644,"y":5295.216},"_name":"","_tag":"ObjectToTake","$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"42"},{"statement":{"_text":"Object.notepad.taken"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5141.452,"y":5502.197},"$type":"SmartSay","$id":"59"},{"_action":{"storyEvent":"TAKE_NOTEPAD","$type":"RealizeStoryEvent"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5154.452,"y":5576.197},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"61"},{"statement":{"_text":"Object.pencil.taken"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5340.141,"y":5500.845},"$type":"SmartSay","$id":"63"},{"_action":{"storyEvent":"TAKE_PENCIL","$type":"RealizeStoryEvent"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5347.944,"y":5577.656},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"65"},{"statement":{"_text":"Object.mariaLetter.taken"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5534.417,"y":5503.945},"$type":"SmartSay","$id":"67"},{"_action":{"storyEvent":"TAKE_MARIA_LETTER","$type":"RealizeStoryEvent"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5558.008,"y":5585.194},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"69"},{"statement":{"_text":"Object.employmentContract.taken"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5735.211,"y":5508.963},"$type":"SmartSay","$id":"71"},{"_action":{"storyEvent":"TAKE_EMPLOYMENT_CONTRACT","$type":"RealizeStoryEvent"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5783.537,"y":5581.994},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"73"},{"statement":{"_text":"Object.goodPracticeGuide.taken"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5969.9,"y":5513.16},"$type":"SmartSay","$id":"75"},{"_action":{"storyEvent":"TAKE_GOOD_PRACTICE_GUIDE","$type":"RealizeStoryEvent"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":6009.789,"y":5586.192},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"77"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"17"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"23"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"33"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"42"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"17"},"_targetNode":{"$ref":"19"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"19"},"_targetNode":{"$ref":"21"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"23"},"_targetNode":{"$ref":"24"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"23"},"_targetNode":{"$ref":"26"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"29"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"31"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"33"},"_targetNode":{"$ref":"36"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"33"},"_targetNode":{"$ref":"38"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"38"},"_targetNode":{"$ref":"40"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"59"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"63"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"67"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"71"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"42"},"_targetNode":{"$ref":"75"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"59"},"_targetNode":{"$ref":"61"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"63"},"_targetNode":{"$ref":"65"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"67"},"_targetNode":{"$ref":"69"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"71"},"_targetNode":{"$ref":"73"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"75"},"_targetNode":{"$ref":"77"},"$type":"NodeCanvas.DialogueTrees.DTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}},"derivedData":{"actorParameters":[{"_keyName":"Edward","_id":"3c01917a-24b3-4fcf-8d9e-81a84c3cef8d","_actorObject":1},{"_keyName":"Player","_id":"bdf95645-0dea-44af-b9f4-7f4384983892","_actorObject":2}],"$type":"NodeCanvas.DialogueTrees.DialogueTree+DerivedSerializationData"}}'
-  _objectReferences:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  _deserializationFailed: 0
-  _actorParameters:
-  - _keyName: Edward
-    _id: 3c01917a-24b3-4fcf-8d9e-81a84c3cef8d
-    _actorObject: {fileID: 0}
-  - _keyName: Player
-    _id: bdf95645-0dea-44af-b9f4-7f4384983892
-    _actorObject: {fileID: 0}
 --- !u!1 &1086804859
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,7 +808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c32e4b851ebd8fa4ea0645b99be1cf97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boundGraphSerialization: '{"version":2.6,"type":"NodeCanvas.DialogueTrees.DialogueTree","name":"DialogueTree","translation":{"x":-4421.0,"y":-4315.0},"zoomFactor":0.839722,"nodes":[{"conditions":[{"day":"Lundi","$type":"CheckDay"}],"_position":{"x":5026.657,"y":4989.39},"$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"2"},{"conditions":[{"_invert":true,"$type":"CheckEventRealized"},{"eventName":{"_value":"Object"},"value":{"_value":"USE_COMPUTER"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
+  boundGraphSerialization: '{"version":2.6,"type":"NodeCanvas.DialogueTrees.DialogueTree","name":"DialogueTree","translation":{"x":-1615.926,"y":-1693.188},"zoomFactor":0.3663467,"nodes":[{"conditions":[{"day":"Lundi","$type":"CheckDay"}],"_position":{"x":5026.657,"y":4989.39},"$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"2"},{"conditions":[{"_invert":true,"$type":"CheckEventRealized"},{"eventName":{"_value":"Object"},"value":{"_value":"USE_COMPUTER"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
     Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"eventName":{"_value":"Object"},"value":{"_value":"USE_CHOCOLATE"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
     Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"eventName":{"_value":"Object"},"value":{"_value":"USE_COFFEECUP"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
     Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},null],"_position":{"x":4846.645,"y":5192.458},"$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"5"},{"statement":{"_text":"Edward.accueil"},"textsCount":7,"_actorName":"Edward","_actorParameterID":"3c01917a-24b3-4fcf-8d9e-81a84c3cef8d","_position":{"x":4425.118,"y":5399.211},"$type":"SmartSay","$id":"17"},{"_action":{"$type":"RealizeStoryEvent"},"_position":{"x":4422.567,"y":5484.481},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"19"},{"statement":{"_text":"Player.accueil"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4430.605,"y":5561.812},"$type":"SmartSay","$id":"21"},{"mode":"LIMIT_TO_MAX","_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_collapsed":true,"_position":{"x":4621.679,"y":5421.988},"_tag":"Computer","$type":"SequencedConditionNode","$id":"23"},{"statement":{"_text":"Object.computer.locked"},"textsCount":2,"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4461.687,"y":5596.988},"$type":"SmartSay","$id":"24"},{"statement":{"_text":"Object.computer.unusable"},"textsCount":2,"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4648.687,"y":5594.988},"$type":"SmartSay","$id":"26"},{"mode":"LIMIT_TO_MAX","_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_collapsed":true,"_position":{"x":4792.426,"y":5430.305},"_tag":"Chocolate","$type":"SequencedConditionNode","$id":"28"},{"statement":{"_text":"Object.chocolate.eat"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4669.373,"y":5549.57},"$type":"SmartSay","$id":"29"},{"statement":{"_text":"Object.chocolate.dontEat"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4830.318,"y":5548.183},"$type":"SmartSay","$id":"31"},{"conditions":[{"storyEvent":"USE_COFFEECUP","$type":"CheckEventRealized"},null],"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_collapsed":true,"_position":{"x":4989.646,"y":5448.893},"_name":"","_tag":"CoffeeCup","$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"33"},{"statement":{"_text":"Object.coffeeCup.dontDrink"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4707.636,"y":5732.219},"$type":"SmartSay","$id":"36"},{"statement":{"_text":"Object.coffeeCup.look"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4954.636,"y":5728.219},"$type":"SmartSay","$id":"38"},{"_action":{"storyEvent":"USE_COFFEECUP","$type":"RealizeStoryEvent"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4970.636,"y":5809.219},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"40"},{"conditions":[{"eventName":{"_value":"Object"},"value":{"_value":"TAKE_NOTEPAD"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
@@ -848,7 +825,7 @@ MonoBehaviour:
   enableAction: 1
   disableAction: 2
   versionUpdateProxyGraph: {fileID: 0}
-  _graph: {fileID: 1064533657}
+  _graph: {fileID: 27832859}
   _blackboard: {fileID: 0}
 --- !u!4 &1086804861
 Transform:
@@ -863,6 +840,30 @@ Transform:
   m_Father: {fileID: 541049993}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1180811668
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a686a47eee2fa44cb0a34b5d86e4d5e, type: 3}
+  m_Name: StoryScene
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.BehaviourTrees.BehaviourTree","name":"BehaviourTree","translation":{"x":-1240.306,"y":-2175.757},"zoomFactor":0.4384839,"nodes":[{"_nodeColor":{"r":0.7019608,"g":1.0,"b":0.4980392,"a":1.0},"_position":{"x":3807.853,"y":5259.796},"$type":"NodeCanvas.BehaviourTrees.Selector","$id":"2"},{"_position":{"x":3326.058,"y":5415.682},"$type":"NodeCanvas.BehaviourTrees.Optional","$id":"3"},{"_action":{"actions":[{"actorName":"Edward","dialogueTreeController":1,"$type":"GetActor"},{"actorName":"Player","dialogueTreeController":1,"$type":"GetActor"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":3326.472,"y":5459.283},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"4"},{"_position":{"x":3654.543,"y":5420.121},"$type":"NodeCanvas.BehaviourTrees.Optional","$id":"9"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":3656.369,"y":5471.127},"_tag":"ObjectDisabled","$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"10"},{"_position":{"x":3020.341,"y":5730.384},"_name":"NotePad","$type":"NodeCanvas.BehaviourTrees.Optional","$id":"11"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":3009.374,"y":5784.362},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"12"},{"_condition":{"storyEvent":"TAKE_NOTEPAD","$type":"CheckEventRealized"},"_position":{"x":2890.327,"y":5850.935},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"13"},{"_action":{"setTo":"Deactivate","overrideAgent":{"_value":2},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},"_position":{"x":3079.412,"y":5853.417},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"15"},{"_position":{"x":3379.022,"y":5703.586},"_name":"Pencil","$type":"NodeCanvas.BehaviourTrees.Optional","$id":"18"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":3374.646,"y":5760.871},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"19"},{"_condition":{"storyEvent":"TAKE_PENCIL","$type":"CheckEventRealized"},"_position":{"x":3270.78,"y":5847.824},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"20"},{"_action":{"setTo":"Deactivate","overrideAgent":{"_value":3},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},"_position":{"x":3455.736,"y":5855.784},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"22"},{"_position":{"x":3718.781,"y":5711.906},"_name":"MariaLetter","$type":"NodeCanvas.BehaviourTrees.Optional","$id":"25"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":3712.589,"y":5777.195},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"26"},{"_condition":{"storyEvent":"TAKE_MARIA_LETTER","$type":"CheckEventRealized"},"_position":{"x":3612.376,"y":5854.366},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"27"},{"_action":{"setTo":"Deactivate","overrideAgent":{"_value":4},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},"_position":{"x":3779.14,"y":5854.117},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"29"},{"_position":{"x":4082.494,"y":5740.148},"_name":"employmentContract","$type":"NodeCanvas.BehaviourTrees.Optional","$id":"32"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":4108.269,"y":5802.388},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"33"},{"_condition":{"storyEvent":"TAKE_EMPLOYMENT_CONTRACT","$type":"CheckEventRealized"},"_position":{"x":3998.378,"y":5874.466},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"34"},{"_action":{"setTo":"Deactivate","overrideAgent":{"_value":5},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},"_position":{"x":4172.345,"y":5876.592},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"36"},{"_position":{"x":4488.779,"y":5753.526},"_name":"employmentContract","$type":"NodeCanvas.BehaviourTrees.Optional","$id":"39"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":4525.094,"y":5804.192},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"40"},{"_condition":{"storyEvent":"TAKE_GOOD_PRACTICE_GUIDE","$type":"CheckEventRealized"},"_position":{"x":4430.137,"y":5880.281},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"41"},{"_action":{"setTo":"Deactivate","overrideAgent":{"_value":6},"$type":"NodeCanvas.Tasks.Actions.SetObjectActive"},"_position":{"x":4597.473,"y":5880.627},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"43"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":4031.573,"y":5458.16},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"46"},{"_action":{"dialogueTreeController":{"_value":1},"$type":"NodeCanvas.Tasks.Actions.StartDialogueTree"},"_position":{"x":3988.986,"y":5515.783},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"47"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"9"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"46"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"10"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"11"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"18"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"25"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"32"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"39"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"11"},"_targetNode":{"$ref":"12"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"12"},"_targetNode":{"$ref":"13"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"12"},"_targetNode":{"$ref":"15"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"18"},"_targetNode":{"$ref":"19"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"19"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"19"},"_targetNode":{"$ref":"22"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"25"},"_targetNode":{"$ref":"26"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"26"},"_targetNode":{"$ref":"27"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"26"},"_targetNode":{"$ref":"29"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"33"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"33"},"_targetNode":{"$ref":"34"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"33"},"_targetNode":{"$ref":"36"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"39"},"_targetNode":{"$ref":"40"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"41"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"43"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"46"},"_targetNode":{"$ref":"47"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 1086804860}
+  - {fileID: 1846893996}
+  - {fileID: 420069923}
+  - {fileID: 857312838}
+  - {fileID: 1253783596}
+  - {fileID: 1358990241}
+  _deserializationFailed: 0
+  repeat: 1
+  updateInterval: 0
 --- !u!1001 &1233546536
 Prefab:
   m_ObjectHideFlags: 0
@@ -905,6 +906,11 @@ Prefab:
     - target: {fileID: 4541509612866402, guid: 3efb89b15b5ae2f42be27cbea1694705, type: 2}
       propertyPath: m_LocalScale.y
       value: 32.315414
+      objectReference: {fileID: 0}
+    - target: {fileID: 212608487405267376, guid: 3efb89b15b5ae2f42be27cbea1694705,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3efb89b15b5ae2f42be27cbea1694705, type: 2}
@@ -997,7 +1003,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 4dee826dfcfdac8469cef251811f5cd6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1136,7 +1142,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1358990240}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.86, y: 2.62, z: 0}
+  m_LocalPosition: {x: 3.73, y: 1.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1421798777}
@@ -1199,7 +1205,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68fd4aaad85be2f47af8f2fb5e1b8985, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1264,7 +1270,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1846893995}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.63, y: -0.38, z: 0}
+  m_LocalPosition: {x: 2.63, y: -2.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1421798777}
@@ -1327,8 +1333,77 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 36465bbca3afc634eaf1edcacc9922f7, type: 3}
   m_Color: {r: 0, g: 0.41911763, b: 0.072261676, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1001 &1951253011
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 135023137}
+    m_Modifications:
+    - target: {fileID: 4541509612866402, guid: 3efb89b15b5ae2f42be27cbea1694705, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 7.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541509612866402, guid: 3efb89b15b5ae2f42be27cbea1694705, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541509612866402, guid: 3efb89b15b5ae2f42be27cbea1694705, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541509612866402, guid: 3efb89b15b5ae2f42be27cbea1694705, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541509612866402, guid: 3efb89b15b5ae2f42be27cbea1694705, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541509612866402, guid: 3efb89b15b5ae2f42be27cbea1694705, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541509612866402, guid: 3efb89b15b5ae2f42be27cbea1694705, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541509612866402, guid: 3efb89b15b5ae2f42be27cbea1694705, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541509612866402, guid: 3efb89b15b5ae2f42be27cbea1694705, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 32.31542
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541509612866402, guid: 3efb89b15b5ae2f42be27cbea1694705, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 16.33568
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578785535158390, guid: 3efb89b15b5ae2f42be27cbea1694705, type: 2}
+      propertyPath: m_Name
+      value: Door (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114648062637620800, guid: 3efb89b15b5ae2f42be27cbea1694705,
+        type: 2}
+      propertyPath: goToRoomName
+      value: DevDesk
+      objectReference: {fileID: 0}
+    - target: {fileID: 212608487405267376, guid: 3efb89b15b5ae2f42be27cbea1694705,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3efb89b15b5ae2f42be27cbea1694705, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1951253012 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4541509612866402, guid: 3efb89b15b5ae2f42be27cbea1694705,
+    type: 2}
+  m_PrefabInternal: {fileID: 1951253011}

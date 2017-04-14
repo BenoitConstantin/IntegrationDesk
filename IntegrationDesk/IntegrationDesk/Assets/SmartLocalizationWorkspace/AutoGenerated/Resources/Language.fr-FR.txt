@@ -221,7 +221,10 @@
 	<data name="Object.yannComputer.dontUse" xml:space="preserve">
 		<value>Même pas en rêve ! J'ai déjà assez mangé comme ça !!</value>
 	</data>
-	<data name="Player.accueil.0" xml:space="preserve">
-		<value>Wow... ça commence bien ! J'ai même pas commencé à faire mes preuves que déjà on me prend de haut... et la journée commence à peine.</value>
+	<data name="Yann.presentation.0" xml:space="preserve">
+		<value>Ah bonjour, bienvenue dans notre équipe ! Je t'aurai bien serrer la main mais j'ai les mains grasses... En tout cas ravi de faire ta connaissance, j'espère que nos échanges seront fructueux et collaboratifs !</value>
+	</data>
+	<data name="Yann.presentation.dontWantToExchange.0" xml:space="preserve">
+		<value>Mouais...ben pour le moment j'ai tout sauf envie d'échanger avec toi...</value>
 	</data>
 </root>

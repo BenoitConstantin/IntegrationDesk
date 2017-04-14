@@ -143,6 +143,12 @@
 	<data name="Object.charlesComputer.locked.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
+	<data name="Object.charlesFamilyPicture.dontLook.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.charlesFamilyPicture.look.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
 	<data name="Object.chocolate.dontEat.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
@@ -203,25 +209,22 @@
 	<data name="Object.tedComputer.look.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
+	<data name="Object.yannChildrenDraw.dontLook.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.yannChildrenDraw.look.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
 	<data name="Object.yannComputer.dirty" xml:space="preserve">
 		<value>New Value</value>
 	</data>
 	<data name="Object.yannComputer.dontUse" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Player.accueil.0" xml:space="preserve">
+	<data name="Yann.presentation.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Object.charlesFamilyPicture.look.0" xml:space="preserve">
-		<value>New Value</value>
-	</data>
-	<data name="Object.charlesFamilyPicture.dontLook.0" xml:space="preserve">
-		<value>New Value</value>
-	</data>
-	<data name="Object.yannChildrenDraw.look.0" xml:space="preserve">
-		<value>New Value</value>
-	</data>
-	<data name="Object.yannChildrenDraw.dontLook.0" xml:space="preserve">
+	<data name="Yann.presentation.dontWantToExchange.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
 </root>
