@@ -18,6 +18,7 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 			public float finalDelay     = 1.2f;
 		}
 
+        public DialogueActor dialogActor;
 
 		//Options...
 		[Header("Input Options")]
@@ -95,7 +96,9 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 
 
 		void OnSubtitlesRequest(SubtitlesRequestInfo info){
-			StartCoroutine(Internal_OnSubtitlesRequestInfo(info));
+
+            if(info.actor.name.Equals(dialogActor.name))
+			    StartCoroutine(Internal_OnSubtitlesRequestInfo(info));
 		}
 
 		IEnumerator Internal_OnSubtitlesRequestInfo(SubtitlesRequestInfo info){
@@ -199,8 +202,10 @@ namespace NodeCanvas.DialogueTrees.UI.Examples{
 
 
 		void OnMultipleChoiceRequest(MultipleChoiceRequestInfo info){
+            if ((dialogActor.name != "Player")) //Crade
+                return;
 
-			optionsGroup.gameObject.SetActive(true);
+                optionsGroup.gameObject.SetActive(true);
 			var buttonHeight = optionButton.GetComponent<RectTransform>().rect.height;
 			optionsGroup.sizeDelta = new Vector2(optionsGroup.sizeDelta.x, (info.options.Values.Count * buttonHeight) + 20);
 

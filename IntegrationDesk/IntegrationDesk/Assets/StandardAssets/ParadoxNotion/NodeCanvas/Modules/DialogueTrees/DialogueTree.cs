@@ -246,7 +246,7 @@ namespace NodeCanvas.DialogueTrees{
 			previousDialogue = currentDialogue;
 			currentDialogue = this;
 
-			Debug.Log(string.Format("<b>DialogueTree:</b> Dialogue Started '{0}'", this.name));
+			//Debug.Log(string.Format("<b>DialogueTree:</b> Dialogue Started '{0}'", this.name));
 			if (OnDialogueStarted != null){
 				OnDialogueStarted(this);
 			}
@@ -276,7 +276,7 @@ namespace NodeCanvas.DialogueTrees{
 
 			currentNode = null;
 
-			Debug.Log(string.Format("<b>DialogueTree:</b> Dialogue Finished '{0}'", this.name));
+			//Debug.Log(string.Format("<b>DialogueTree:</b> Dialogue Finished '{0}'", this.name));
 			if (OnDialogueFinished != null){
 				OnDialogueFinished(this);
 			}

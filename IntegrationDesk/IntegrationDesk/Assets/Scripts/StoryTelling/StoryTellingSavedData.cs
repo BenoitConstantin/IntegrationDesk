@@ -7,19 +7,25 @@ using EquilibreGames;
 public class StoryTellingSavedData : SavedData {
 
 
-    List<string> eventRealized = new List<string>(); 
+    public List<StoryEvent> eventRealized = new List<StoryEvent>(); 
 
 
-    public bool EventIsRealized(string eventName)
+    public bool EventIsRealized(StoryEvent storyEvent)
     {
-        return eventRealized.Find( (x =>  x.Equals(eventName) )) != null;
+       foreach(StoryEvent i in eventRealized)
+        {
+            if (i == storyEvent)
+                return true;
+        }
+
+        return false;
     }
 
-    public void RealizeEvent(string eventName)
+    public void RealizeEvent(StoryEvent storyEvent)
     {
-        if(!EventIsRealized(eventName))
+        if(!EventIsRealized(storyEvent))
         {
-            eventRealized.Add(eventName);
+            eventRealized.Add(storyEvent);
         }
     }
 }

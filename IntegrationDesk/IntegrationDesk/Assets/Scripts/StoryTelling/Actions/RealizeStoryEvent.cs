@@ -6,11 +6,11 @@ using EquilibreGames;
 
 public class RealizeStoryEvent : ActionTask {
 
-    public BBParameter<string> eventName;
+    public StoryEvent storyEvent;
 
     protected override void OnExecute()
     {
-        PersistentDataSystem.Instance.GetSavedData<StoryTellingSavedData>().RealizeEvent(eventName.value);
+        PersistentDataSystem.Instance.GetSavedData<StoryTellingSavedData>().RealizeEvent(storyEvent);
         EndAction();
     }
 }

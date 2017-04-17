@@ -6,10 +6,10 @@ using EquilibreGames;
 
 public class CheckEventRealized : ConditionTask{
 
-    public BBParameter<string> eventName;
+    public StoryEvent storyEvent;
 
     protected override bool OnCheck()
     {
-        return PersistentDataSystem.Instance.GetSavedData<StoryTellingSavedData>().EventIsRealized(eventName.value);
+        return PersistentDataSystem.Instance.GetSavedData<StoryTellingSavedData>().EventIsRealized(storyEvent);
     }
 }

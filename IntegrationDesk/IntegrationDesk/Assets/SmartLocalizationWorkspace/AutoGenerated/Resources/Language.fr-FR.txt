@@ -116,7 +116,115 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-	<data name="Director.accueil" xml:space="preserve">
-		<value>Bienvenue</value>
+	<data name="Edward.accueil.0" xml:space="preserve">
+		<value>Bonjour ! Vous devez être notre nouveau développeur c'est bien cela ?</value>
+	</data>
+	<data name="Edward.accueil.1" xml:space="preserve">
+		<value>Je me présente, je suis Edward votre directeur.</value>
+	</data>
+	<data name="Edward.accueil.2" xml:space="preserve">
+		<value>Je suis ravi de vous accueillir parmi nous, jespère que vous vous sentirez bien et que vous vous entendrez avec l'équipe, c'est important à mes yeux. </value>
+	</data>
+	<data name="Edward.accueil.3" xml:space="preserve">
+		<value>Toutefois je n'ai pas trop d'inquiétudes à ce sujet, vous m'avez l'air d'un jeune motivé et vous serez entre de bonne mains. Voici votre bureau, je vous laisse vous installer.</value>
+	</data>
+	<data name="Edward.accueil.4" xml:space="preserve">
+		<value>Excusez moi de ne pouvoir rester plus longtemps en votre compagnie mais j'ai une réunion importante. N'hésitez pas à prendre le temps de connaitre vos collègues de travail, c'est important de savoir avec qui on partage les tâches.</value>
+	</data>
+	<data name="Edward.accueil.5" xml:space="preserve">
+		<value>Ah ! une dernière chose, si vous avez la moindre question, adressez-vous a Maria. C'est une personne très impliquée, rigoureuse et sérieuse dans son travail. Je vous retrouverai plus tard !</value>
+	</data>
+	<data name="Edward.accueil.6" xml:space="preserve">
+		<value>Encore une fois bienvenue parmi nous et pas de bétises hein ! Je n'aime pas avoir à jouer de mon rôle hiérarchique... Bonne journée à vous.</value>
+	</data>
+	<data name="Object.charlesComputer.dontUse.0" xml:space="preserve">
+		<value>Laisse tomber, c'est déjà un miracle qu'il n'est pas cadnassé sa tour...</value>
+	</data>
+	<data name="Object.charlesComputer.locked.0" xml:space="preserve">
+		<value>Alors sur quoi travaille t'il en ce moment.. Vérouillé ? Il vérouille sérieusement sa session ? Bonjour le partage d'informations et la confiance... je sens que je vais bien m'entendre avec lui...</value>
+	</data>
+	<data name="Object.charlesFamilyPicture.dontLook.0" xml:space="preserve">
+		<value>Euh.. c'est bon c'est qu'une photo ! Charles va me prendre pour un fou si je continues de regarder sa photo comme ça !</value>
+	</data>
+	<data name="Object.charlesFamilyPicture.look.0" xml:space="preserve">
+		<value>Pauvres enfants, ce mec a l'air aussi rigide qu'une porte. Enfin au moins il sourit la dessus, ça change...</value>
+	</data>
+	<data name="Object.chocolate.dontEat.0" xml:space="preserve">
+		<value>Faut quand même pas abuser des bonnes choses ! En plus je ne sais toujours pas si c'est un cadeau empoisonné ou de la courtoisie mal placée...</value>
+	</data>
+	<data name="Object.chocolate.eat.0" xml:space="preserve">
+		<value>Oh des chocolats ! Ça c'est gentil. Je me demande toutefois si c'est pour booster mon moral ou si c'est vraiment de la bonté... affaire à suivre. Dans le doute j'en mange un quand même !</value>
+	</data>
+	<data name="Object.coffeeCup.dontDrink.0" xml:space="preserve">
+		<value>Si je commence comme ça, je vais finir nerveux, insomniaque et proche de l'arrêt cardiaque. Mieux vaut garder ça pour un moment plus propice.</value>
+	</data>
+	<data name="Object.coffeeCup.look.0" xml:space="preserve">
+		<value>Quel genre d'entreprise offre une tasse à café à ces employés dès le premier jour ? A croire qu'ils savent à quel point le travail qu'ils demandent est fatiguant... c'est vraiment étrange !</value>
+	</data>
+	<data name="Object.computer.locked.0" xml:space="preserve">
+		<value>Allé au travail ! Il est temps de montrer ce que l'on sait faire et de... Raaah ça commence ! Ils ont même pas été capable de créer mes identifiants avant mon arrivée... ça promet l'organisation !</value>
+	</data>
+	<data name="Object.computer.locked.1" xml:space="preserve">
+		<value>Super ! Je fais comment pour travailler moi ?</value>
+	</data>
+	<data name="Object.computer.unusable.0" xml:space="preserve">
+		<value>Inutilisable pour le moment... et visiblement faut pas s'attendre à un miracle. Tiens un identifiant ! C'est bizarre d'étiqueter les affaires comme ça... ils sont vraiment maniaque à ce point ?!</value>
+	</data>
+	<data name="Object.computer.unusable.1" xml:space="preserve">
+		<value>Je devrais peut être le noter alors.</value>
+	</data>
+	<data name="Object.employmentContract.taken.0" xml:space="preserve">
+		<value>Ah, mon contrat de travail ! Enfin quelque chose d'interessant aujourd'hui. Voyons donc la partie rémunéra... ok décidemment il y a vraiment rien a faire, cette journée est horrible... Je vais garder ça avec moi tout de même, ça peut toujours servir.</value>
+	</data>
+	<data name="Object.followArray.dontRead.0" xml:space="preserve">
+		<value>A priori rien de nouveau dans la mémoire de mes deux collègues...</value>
+	</data>
+	<data name="Object.followArray.read.0" xml:space="preserve">
+		<value>Alala, les mecs travaillent un peu donc ils se sentent obligé d'afficher partout leurs travaux. C'est pas croyable... Enfin je préfère croire que c'est ça plutôt que d'imaginer qu'ils notent tout pour pouvoir s'en rappeler.</value>
+	</data>
+	<data name="Object.goodPracticeGuide.taken.0" xml:space="preserve">
+		<value>Non mais décidémment, on se moque de moi ou quoi ? Maria ne m'a même pas rencontré que déjà elle me conseille sur mes "pratiques" !</value>
+	</data>
+	<data name="Object.goodPracticeGuide.taken.1" xml:space="preserve">
+		<value>On croit rêver !! Enfin de toute manière c'est pas comme si j'avais grand chose à faire...entre mon ordinateur qui est inutilisable et Ted qui est tout sauf pressé de me venir en aide... Maria a au moins le chic de me donner du travail ! Lisons un peu ce qu'il y a la dedans...</value>
+	</data>
+	<data name="Object.mariaLetter.taken.0" xml:space="preserve">
+		<value>Alors celle la elle est pas mal ! On a vraiment pas le même sens du mot "accueil" je crois ! M'écrire une lettre au lieu de me voir en personne... Cette Maria promet d'être particulièrement interessante. Enfin, au moins ça fera rire mes amis</value>
+	</data>
+	<data name="Object.materialList.dontRead.0" xml:space="preserve">
+		<value>Je vais éviter de me faire mal... cette liste c'est vraiment honteux !</value>
+	</data>
+	<data name="Object.materialList.read.0" xml:space="preserve">
+		<value>Voyons voir un peu ce sur quoi travaille Ted... C'est tout ?! Le mec a l'air tout le temps fatigué alors qu'il n'a qu'une petite liste de matériel à gérer. Non mais on se moque de moi ??</value>
+	</data>
+	<data name="Object.notepad.taken.0" xml:space="preserve">
+		<value>Je suis informaticien ! Pas secrétaire... Mais bon ça peut peut être servir ou à défaut leurs faire plaisir...</value>
+	</data>
+	<data name="Object.pencil.taken.0" xml:space="preserve">
+		<value>Un crayon ! Mais c'est l'âge de pierre ici ou quoi ?! Je sens que la semaine va être longue... Enfin, mieux vaut leurs faire plaisir.</value>
+	</data>
+	<data name="Object.tedComputer.dontDisturb.0" xml:space="preserve">
+		<value>C'est vraiment tentant mais... je ne pense pas y gagner à mettre en retard le déjà très lent Ted</value>
+	</data>
+	<data name="Object.tedComputer.look.0" xml:space="preserve">
+		<value>Bien évidemment lui, il a un ordinateur qui fonctionne ! Tsss... ça me donne vraiment envie de lui montrer ce que c'est que de ne pas pouvoir travailler ! Bon calmons-nous, tout va rentrer dans l'ordre et au pire je ne suis pas responsable...</value>
+	</data>
+	<data name="Object.yannChildrenDraw.dontLook.0" xml:space="preserve">
+		<value>Le mystère sur l'auteur de cette oeuvre indescriptible reste entier...</value>
+	</data>
+	<data name="Object.yannChildrenDraw.look.0" xml:space="preserve">
+		<value>Tiens, il doit avoir des enfants également.. enfin j'ose espérer que ce n'est pas lui qui dessine comme ça !! Mais avec lui faut s'attendre à tout... je vais éviter de lui poser la question pour ne pas le froisser, on sait jamais...</value>
+	</data>
+	<data name="Object.yannComputer.dirty" xml:space="preserve">
+		<value>Arg ! C'est sale !! Le mec mange sur son clavier ou quoi ?? C'est pas croyable de voir ça ! Note à soi-même : Ne jamais laisser son ordinateur à Yann ne serait ce qu'une demi-journée...</value>
+	</data>
+	<data name="Object.yannComputer.dontUse" xml:space="preserve">
+		<value>Même pas en rêve ! J'ai déjà assez mangé comme ça !!</value>
+	</data>
+	<data name="Yann.presentation.0" xml:space="preserve">
+		<value>Ah bonjour, bienvenue dans notre équipe ! Je t'aurai bien serrer la main mais j'ai les mains grasses... En tout cas ravi de faire ta connaissance, j'espère que nos échanges seront fructueux et collaboratifs !</value>
+	</data>
+	<data name="Yann.presentation.dontWantToExchange.0" xml:space="preserve">
+		<value>Mouais...ben pour le moment j'ai tout sauf envie d'échanger avec toi...</value>
 	</data>
 </root>

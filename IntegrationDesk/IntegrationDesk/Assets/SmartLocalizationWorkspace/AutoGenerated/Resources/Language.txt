@@ -116,7 +116,115 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-	<data name="Director.accueil" xml:space="preserve">
+	<data name="Edward.accueil.0" xml:space="preserve">
 		<value>Ce que dit le directeur pour l'accueil de l'alternant</value>
+	</data>
+	<data name="Edward.accueil.1" xml:space="preserve">
+		<value>Ce que dit le directeur pour l'accueil de l'alternant</value>
+	</data>
+	<data name="Edward.accueil.2" xml:space="preserve">
+		<value>Ce que dit le directeur pour l'accueil de l'alternant</value>
+	</data>
+	<data name="Edward.accueil.3" xml:space="preserve">
+		<value>Ce que dit le directeur pour l'accueil de l'alternant</value>
+	</data>
+	<data name="Edward.accueil.4" xml:space="preserve">
+		<value>Ce que dit le directeur pour l'accueil de l'alternant</value>
+	</data>
+	<data name="Edward.accueil.5" xml:space="preserve">
+		<value>Ce que dit le directeur pour l'accueil de l'alternant</value>
+	</data>
+	<data name="Edward.accueil.6" xml:space="preserve">
+		<value>Ce que dit le directeur pour l'accueil de l'alternan</value>
+	</data>
+	<data name="Object.charlesComputer.dontUse.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.charlesComputer.locked.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.charlesFamilyPicture.dontLook.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.charlesFamilyPicture.look.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.chocolate.dontEat.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.chocolate.eat.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.coffeeCup.dontDrink.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.coffeeCup.look.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.computer.locked.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.computer.locked.1" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.computer.unusable.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.computer.unusable.1" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.employmentContract.taken.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.followArray.dontRead.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.followArray.read.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.goodPracticeGuide.taken.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.goodPracticeGuide.taken.1" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.mariaLetter.taken.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.materialList.dontRead.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.materialList.read.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.notepad.taken.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.pencil.taken.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.tedComputer.dontDisturb.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.tedComputer.look.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.yannChildrenDraw.dontLook.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.yannChildrenDraw.look.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.yannComputer.dirty" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Object.yannComputer.dontUse" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Yann.presentation.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Yann.presentation.dontWantToExchange.0" xml:space="preserve">
+		<value>New Value</value>
 	</data>
 </root>
