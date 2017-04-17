@@ -13,10 +13,10 @@ public class Quizz : MonoBehaviour {
     public GameObject questionPrefab;       // le prefab de QR qu'on instancie dans le contentPanel
     List<QuizzQuestionGUI> questionGUIs;    // les prefab de QR actuellement instanciés
     
-    [HideInInspector]
+    // [HideInInspector]
     public List<QuizzQuestion> questions;   // les questions du quizz
-    bool visible = true;
     public CanvasGroup canvasGroup;         // le CanvasGroup gérant le quizz (permet de masquer celui-ci)
+    bool visible = true;
     
     void Start() {
         if (instance == null)

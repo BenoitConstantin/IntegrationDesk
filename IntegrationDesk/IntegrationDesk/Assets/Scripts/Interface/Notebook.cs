@@ -9,10 +9,10 @@ public class Notebook : MonoBehaviour {
         get { return instance; }
     }
     
-    public Text textObj;
-    public List<string> entries;
+    public Text textObj;            // l'objet dans lequel est affiché le contenu du journal
+    public List<string> entries;    // les entrées du journal. Nécessite d'appeler UpdateNotebookContent après mise à jour
+    public CanvasGroup canvasGroup; // le CanvasGroup gérant le notebook (permet de masquer celui-ci)
     bool visible = true;
-    public CanvasGroup canvasGroup;         // le CanvasGroup gérant le notebook (permet de masquer celui-ci)
     
 	void Start () {
         if (instance == null)
@@ -20,6 +20,7 @@ public class Notebook : MonoBehaviour {
         UpdateNotebookContent();
 	}
     
+    // met à jour le texte du notebook
     public void UpdateNotebookContent()
     {
         string combined = "";
