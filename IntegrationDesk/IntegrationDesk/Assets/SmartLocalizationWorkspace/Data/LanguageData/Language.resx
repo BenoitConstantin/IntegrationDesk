@@ -215,16 +215,34 @@
 	<data name="Object.yannChildrenDraw.look.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Object.yannComputer.dirty" xml:space="preserve">
+	<data name="Object.yannComputer.dirty.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Object.yannComputer.dontUse" xml:space="preserve">
+	<data name="Object.yannComputer.dontUse.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Yann.alreadyTalkAboutAccount.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Yann.beAutonome.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Yann.classicButNotDontKnowHowToDo.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Yann.classicProbleme.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Yann.dontDisturbHim.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
 	<data name="Yann.presentation.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
 	<data name="Yann.presentation.dontWantToExchange.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Yann.thxForHelp.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
 </root>

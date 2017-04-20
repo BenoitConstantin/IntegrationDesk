@@ -215,16 +215,34 @@
 	<data name="Object.yannChildrenDraw.look.0" xml:space="preserve">
 		<value>Tiens, il doit avoir des enfants également.. enfin j'ose espérer que ce n'est pas lui qui dessine comme ça !! Mais avec lui faut s'attendre à tout... je vais éviter de lui poser la question pour ne pas le froisser, on sait jamais...</value>
 	</data>
-	<data name="Object.yannComputer.dirty" xml:space="preserve">
+	<data name="Object.yannComputer.dirty.0" xml:space="preserve">
 		<value>Arg ! C'est sale !! Le mec mange sur son clavier ou quoi ?? C'est pas croyable de voir ça ! Note à soi-même : Ne jamais laisser son ordinateur à Yann ne serait ce qu'une demi-journée...</value>
 	</data>
-	<data name="Object.yannComputer.dontUse" xml:space="preserve">
+	<data name="Object.yannComputer.dontUse.0" xml:space="preserve">
 		<value>Même pas en rêve ! J'ai déjà assez mangé comme ça !!</value>
+	</data>
+	<data name="Yann.alreadyTalkAboutAccount.0" xml:space="preserve">
+		<value>Oui je sais, tu m'en a déjà parlé ! Tu comptes être impatient comme ça à chaque fois ?</value>
+	</data>
+	<data name="Yann.beAutonome.0" xml:space="preserve">
+		<value>Ecoute, tu as l'air bien gentil mais j'ai beaucoup de travail. Faut savoir être un peu autonome ici sinon tu t'en sortiras jamais !</value>
+	</data>
+	<data name="Yann.classicButNotDontKnowHowToDo.0" xml:space="preserve">
+		<value>Alors le mec me dis que c'est classique mais il ne sait toujours pas comment faire... super ! Si j'ai besoin de rien, je t'appelerai...</value>
+	</data>
+	<data name="Yann.classicProbleme.0" xml:space="preserve">
+		<value>Ah oui le classique problème des nouveaux arrivants... Reviens dans quelques minutes je vais voir comment accélérer ta demande</value>
+	</data>
+	<data name="Yann.dontDisturbHim.0" xml:space="preserve">
+		<value>Rolala... eh ben ! Faut vraiment pas le déranger lorsqu'il mange quoi...</value>
 	</data>
 	<data name="Yann.presentation.0" xml:space="preserve">
 		<value>Ah bonjour, bienvenue dans notre équipe ! Je t'aurai bien serrer la main mais j'ai les mains grasses... En tout cas ravi de faire ta connaissance, j'espère que nos échanges seront fructueux et collaboratifs !</value>
 	</data>
 	<data name="Yann.presentation.dontWantToExchange.0" xml:space="preserve">
 		<value>Mouais...ben pour le moment j'ai tout sauf envie d'échanger avec toi...</value>
+	</data>
+	<data name="Yann.thxForHelp.0" xml:space="preserve">
+		<value>Wouah ok... super ! Ben.. merci pour ton aide hein</value>
 	</data>
 </root>
