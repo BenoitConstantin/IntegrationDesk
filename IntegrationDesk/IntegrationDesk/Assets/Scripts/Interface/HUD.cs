@@ -23,7 +23,6 @@ public class HUD : MonoBehaviour {
     List<InventoryItemGUI> inventoryItemGUIs;   // liste des items dans l'inventaire (gameobjects, pas classes)
     
     public enum HUDMode {                       // type d'interaction possibles dans le hud (pour les 3 boutons de gauche)
-        exploration,                            // uniquement "chercher" est disponible
         npc,                                    // uniquement "montrer" et "parler" sont dispo
         npcShow,                                // uniquement "montrer" et "parler" sont dispo, la barre d'inventaire est disponible
         none                                    // rien n'est dispo
@@ -36,7 +35,7 @@ public class HUD : MonoBehaviour {
             bool isNPCShow = mode == HUDMode.npcShow;
             bool isActive = mode != HUDMode.none;
             buttons.SpeakButton.interactable = isNPC && isActive;
-            buttons.LookButton.interactable = !isNPC && isActive;
+            buttons.LookButton.interactable = isNPC && isActive;
             buttons.ShowButton.interactable = isNPC && isActive;
             foreach (InventoryItemGUI item in inventoryItemGUIs)
                 item.SetInteractable(isNPCShow);
@@ -85,6 +84,10 @@ public class HUD : MonoBehaviour {
     }
     public Buttons buttons;                     // groupe de boutons d'action
     
+    public IntegrationDeskNPC currentNPC;       // le NPC actuellement affiché (on peut lui parler ou lui montrer un objet)
+    public Image npcBackground;                 // l'image de fond lors de dialogue avec un NPC
+    public Image npcSprite;                     // le sprite du NPC
+    
     
     
     void Start()
@@ -96,6 +99,7 @@ public class HUD : MonoBehaviour {
         Quizz.Instance.Hide();
         Notebook.Instance.Hide();
         Mode = HUDMode.none;
+        DeselectNPC();
     }
     
     // Supprime et réinstancie les visuels de l'inventaire
@@ -119,20 +123,26 @@ public class HUD : MonoBehaviour {
         Debug.Log("Action PARLER");
         if (Mode == HUDMode.npcShow)
             Mode = HUDMode.npc;
-        // TODO
+        
+        if (currentNPC == null)
+        {
+            Debug.LogError("HUD: tentative de parler à un NPC mais aucun NPC n'a été sélectionné ?");
+            return;
+        }
+        currentNPC.Speak();
     }
     // Appelé lors d'un clic sur le bouton "chercher"
     public void OnLookButton()
     {
         Debug.Log("Action CHERCHER");
-        // TODO
+        
+        DeselectNPC();
     }
     // Appelé lors d'un clic sur le bouton "montrer"
     public void OnShowButton()
     {
         Debug.Log("Action MONTRER");
         Mode = HUDMode.npcShow;
-        // TODO
     }
     // Appelé lors d'un clic sur le bouton notebook
     public void OnOpenNotebook()
@@ -145,7 +155,10 @@ public class HUD : MonoBehaviour {
     public void OnInventoryItemClicked(InventoryItem item)
     {
         Debug.Log("Clic objet " + item.name);
-        // TODO
+        if (currentNPC != null)
+            currentNPC.Show(item.name);
+        else
+            Debug.LogError("Impossible de montrer l'objet car pas de NPC");
     }
     
     // masque l'intégralité de l'interface
@@ -164,5 +177,22 @@ public class HUD : MonoBehaviour {
     public bool IsVisible()
     {
         return visible;
+    }
+    
+    public void SelectNPC(IntegrationDeskNPC npc)
+    {
+        currentNPC = npc;
+        Mode = HUDMode.npc;
+        npcSprite.sprite = npc.NpcSprite;
+        npcSprite.color = Color.white;
+        npcBackground.color = Color.white;
+    }
+    public void DeselectNPC()
+    {
+        currentNPC = null;
+        Mode = HUDMode.none;
+        npcSprite.sprite = null;
+        npcSprite.color = new Color(0,0,0,0);
+        npcBackground.color = new Color(0,0,0,0);
     }
 }

@@ -18,6 +18,7 @@ public class IntegrationDeskObject : MonoBehaviour {
 
     public void OnMouseDown()
     {
+        HUD.Instance.DeselectNPC();
         storyScene.UseObject(this);
     }
 
