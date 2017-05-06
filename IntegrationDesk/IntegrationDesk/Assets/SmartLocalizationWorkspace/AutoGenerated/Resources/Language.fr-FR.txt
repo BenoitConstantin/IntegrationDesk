@@ -116,6 +116,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+	<data name="Charles.alreadyTalkAboutAccount" xml:space="preserve">
+		<value>Deux minutes, y a pas que toi et tes problèmes ici !</value>
+	</data>
+	<data name="Charles.beAutonome" xml:space="preserve">
+		<value>Mais là tu tombes mal ! Je suis occupé. Dépèche toi de régler ton problème, j'ai besoin d'un coup de main</value>
+	</data>
+	<data name="Charles.classicButNotDontKnowHowToDo" xml:space="preserve">
+		<value>Euh.. et du coup tu m'aides ou... ?</value>
+	</data>
+	<data name="Charles.classicProbleme" xml:space="preserve">
+		<value>Décidément c'est toujours la même chose. Faut vraiment que je vois à mettre à jour le processus d'accueil des nouveaux arrivants. Voyons voir...</value>
+	</data>
+	<data name="Charles.dontDisturbHim" xml:space="preserve">
+		<value>Bon... ok et je fais quoi alors ? Je rentre chez moi ? Je serre le café ?</value>
+	</data>
+	<data name="Charles.presentation" xml:space="preserve">
+		<value>Bonjour ! Moi c'est Charles, je serai ton collaborateur. J'espère que tu es opérationnel et autonome</value>
+	</data>
+	<data name="Charles.presentation.dontWantToExchange" xml:space="preserve">
+		<value>Ou autrement dit, ne me demande jamais quoi que ce soit... la collaboration, la vraie !</value>
+	</data>
+	<data name="Charles.thxForHelp" xml:space="preserve">
+		<value>Et tu crois pas que ça irai plus vite si tu me donnais un coup de main ?!</value>
+	</data>
 	<data name="Edward.accueil.0" xml:space="preserve">
 		<value>Bonjour ! Vous devez être notre nouveau développeur c'est bien cela ?</value>
 	</data>
@@ -220,6 +244,30 @@
 	</data>
 	<data name="Object.yannComputer.dontUse.0" xml:space="preserve">
 		<value>Même pas en rêve ! J'ai déjà assez mangé comme ça !!</value>
+	</data>
+	<data name="Ted.alreadyTalkAboutAccount" xml:space="preserve">
+		<value>Je vais vraiment finir par fermer mon bureau à clé si ça continue...</value>
+	</data>
+	<data name="Ted.beAutonome" xml:space="preserve">
+		<value>Et merci mais je sais, tout le monde a des problèmes ! J'ai des problèmes avec la gestion des stocks, tu as des problèmes avec ton compte, c'est cool non ?! Ça nous fait un point commun !</value>
+	</data>
+	<data name="Ted.classicButNotDontKnowHowToDo" xml:space="preserve">
+		<value>Formaliser une demande ?! J'ai jamais rien entendu d'aussi idiot. Genre il faut quoi ? Une dissertation ? Un schéma ?</value>
+	</data>
+	<data name="Ted.classicProbleme" xml:space="preserve">
+		<value>Je comprends mais désolé j'ai un gros problème avec les stocks sur les bras pour le moment. Et puis lorsque tu sauras formaliser une demande comme il faut, là on pourra s'entendre.</value>
+	</data>
+	<data name="Ted.dontDisturbHim" xml:space="preserve">
+		<value>Tant que tu y est débranche le téléphone, débranche ton ordinateur du réseau et finis ta nuit tranquillement...</value>
+	</data>
+	<data name="Ted.presentation.0" xml:space="preserve">
+		<value>Ouais ouais et moi c'est Ted.. enchanté et tout le tralala</value>
+	</data>
+	<data name="Ted.presentation.tired" xml:space="preserve">
+		<value>C'est la première fois que je vois quelqu'un fatigué a l'idée de parler... un vrai phénomène ce Ted</value>
+	</data>
+	<data name="Ted.thxForHelp" xml:space="preserve">
+		<value>Ted, zéro, le café un ! Faudrait pas qu'il en boit trop, ça risquerait d'être dangereux pour sa santé...</value>
 	</data>
 	<data name="Yann.alreadyTalkAboutAccount.0" xml:space="preserve">
 		<value>Oui je sais, tu m'en a déjà parlé ! Tu comptes être impatient comme ça à chaque fois ?</value>

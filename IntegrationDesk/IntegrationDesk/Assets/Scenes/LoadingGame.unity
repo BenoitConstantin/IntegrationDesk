@@ -108,13 +108,7 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &71721946 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114172087275872318, guid: d5c807b9c26ae4f40b582820037509d3,
-    type: 2}
-  m_PrefabInternal: {fileID: 1720549369}
-  m_Script: {fileID: 11500000, guid: 3d71fb7c52372e244baf2e69a9d0d116, type: 3}
---- !u!114 &143655514
+--- !u!114 &46183258
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
@@ -140,6 +134,12 @@ MonoBehaviour:
   - {fileID: 1157324103}
   - {fileID: 1326184918}
   _deserializationFailed: 0
+--- !u!114 &71721946 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114172087275872318, guid: d5c807b9c26ae4f40b582820037509d3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1720549369}
+  m_Script: {fileID: 11500000, guid: 3d71fb7c52372e244baf2e69a9d0d116, type: 3}
 --- !u!224 &198721754 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
@@ -382,7 +382,7 @@ Prefab:
         type: 2}
       propertyPath: _graph
       value: 
-      objectReference: {fileID: 143655514}
+      objectReference: {fileID: 46183258}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1afdb1720b290ef46a7486cdb15afe6c, type: 2}
   m_IsPrefabParent: 0
@@ -1346,6 +1346,11 @@ Prefab:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114172087275872318, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: _portrait
+      value: 
+      objectReference: {fileID: 2800000, guid: f3a818fbc162fc5448d70adec4f5947b, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d5c807b9c26ae4f40b582820037509d3, type: 2}
   m_IsPrefabParent: 0
@@ -1481,6 +1486,11 @@ Prefab:
       propertyPath: m_PreserveAspect
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114172087275872318, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: _portrait
+      value: 
+      objectReference: {fileID: 2800000, guid: 5dbc3233aa23eda48bb0cc0242ceb77e, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d5c807b9c26ae4f40b582820037509d3, type: 2}
   m_IsPrefabParent: 0

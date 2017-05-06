@@ -116,6 +116,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+	<data name="Charles.alreadyTalkAboutAccount" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Charles.beAutonome" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Charles.classicButNotDontKnowHowToDo" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Charles.classicProbleme" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Charles.dontDisturbHim" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Charles.presentation" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Charles.presentation.dontWantToExchange" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Charles.thxForHelp" xml:space="preserve">
+		<value>New Value</value>
+	</data>
 	<data name="Edward.accueil.0" xml:space="preserve">
 		<value>Ce que dit le directeur pour l'accueil de l'alternant</value>
 	</data>
@@ -219,6 +243,30 @@
 		<value>New Value</value>
 	</data>
 	<data name="Object.yannComputer.dontUse.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Ted.alreadyTalkAboutAccount" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Ted.beAutonome" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Ted.classicButNotDontKnowHowToDo" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Ted.classicProbleme" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Ted.dontDisturbHim" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Ted.presentation.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Ted.presentation.tired" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Ted.thxForHelp" xml:space="preserve">
 		<value>New Value</value>
 	</data>
 	<data name="Yann.alreadyTalkAboutAccount.0" xml:space="preserve">
