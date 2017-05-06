@@ -7,13 +7,22 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/LoadingGame.unity
+    guid: d97ba166083dced469eba9bfeec93f23
   - enabled: 1
     path: Assets/Scenes/Desk.unity
+    guid: 238b426d00ef1bf439407eea77dd0804
   - enabled: 1
     path: Assets/Scenes/TedDesk.unity
-  - enabled: 1
+    guid: ec588fa3c3145a8439b759801d3202a9
+  - enabled: 0
     path: Assets/Scenes/Quizz.unity
-  - enabled: 1
+    guid: 3f22302cff79ebc4eafe700f234e00f5
+  - enabled: 0
     path: Assets/Scenes/DevelopersRoom.unity
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/DevDesk.unity
+    guid: 96c5fa4a0333ada449a4c3d178f1e6f0
+  - enabled: 1
+    path: Assets/Scenes/GenericInterface.unity
+    guid: b5b47acf11bd085449735e1b9f2f8b3c

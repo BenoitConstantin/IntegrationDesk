@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 7
+  serializedVersion: 8
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -25,6 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -41,7 +42,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 7
+  serializedVersion: 9
   m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
@@ -53,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
-    serializedVersion: 4
+    serializedVersion: 8
     m_Resolution: 2
     m_BakeResolution: 40
     m_TextureWidth: 1024
@@ -66,13 +67,27 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_DirectLightInLightProbes: 1
     m_FinalGather: 0
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
+    m_MixedBakeMode: 1
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFiltering: 0
+    m_PVRFilteringMode: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousColorSigma: 1
+    m_PVRFilteringAtrousNormalSigma: 1
+    m_PVRFilteringAtrousPositionSigma: 1
   m_LightingDataAsset: {fileID: 0}
-  m_RuntimeCPUUsage: 25
+  m_ShadowMaskMode: 2
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -89,6 +104,8 @@ NavMeshSettings:
     minRegionArea: 2
     manualCellSize: 0
     cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &71721946 stripped
@@ -97,6 +114,32 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1720549369}
   m_Script: {fileID: 11500000, guid: 3d71fb7c52372e244baf2e69a9d0d116, type: 3}
+--- !u!114 &143655514
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: GameManager
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.StateMachines.FSM","name":"FSM","translation":{"x":-4030.0,"y":-3783.0},"zoomFactor":0.7500097,"nodes":[{"gameManager":{"_name":"gameManager","_targetVariableID":"aa1104e5-1f22-403b-8955-d22b4d82945c"},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"gameObject":{"_value":1},"$type":"DontDestroyOnLoad"},{"gameObject":{"_value":2},"$type":"DontDestroyOnLoad"},{"gameObject":{"_value":3},"$type":"DontDestroyOnLoad"}]},"_position":{"x":5422.157,"y":5239.0},"_name":"Loading
+    Game","$type":"GameManager_LoadingGame","$id":"2"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"Desk","$type":"LoadScene"}]},"_position":{"x":5606.061,"y":5166.569},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"12"},{"gameManager":{"_name":"gameManager","_targetVariableID":"aa1104e5-1f22-403b-8955-d22b4d82945c"},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_transitionEvaluation":"CheckAfterStateFinished","_position":{"x":5808.549,"y":5193.707},"$type":"GameManager_OnDesk","$id":"16"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"TedDesk","$type":"LoadScene"}]},"_position":{"x":5736.932,"y":5369.505},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"20"},{"gameManager":{},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_position":{"x":5778.798,"y":5486.023},"$type":"GameManager_TedDesk","$id":"24"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"Desk","$type":"LoadScene"}]},"_position":{"x":5973.332,"y":5322.968},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"28"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"Quizz","$type":"LoadScene"}]},"_position":{"x":6304.479,"y":5223.437},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"32"},{"gameManager":{},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_position":{"x":6499.827,"y":5222.279},"$type":"GameManager_Quizz","$id":"36"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"DevDesk","$type":"LoadScene"}]},"_position":{"x":5603.6,"y":5585.17},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"40"},{"gameManager":{},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_position":{"x":5777.258,"y":5605.262},"$type":"GameManager_DevDesk","$id":"44"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"12"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"12"},"_targetNode":{"$ref":"16"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"_invert":true,"$type":"CheckDialogueRunning"},{"eventName":{"_value":"ChangeScene"},"value":{"_value":"TedDesk"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[System.String,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"eventName":{"_value":"Quizz"},"saveEventValue":{"_name":""},"$type":"NodeCanvas.Tasks.Conditions.CheckEvent`1[[System.String,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"32"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"_invert":true,"$type":"CheckDialogueRunning"},{"eventName":{"_value":"ChangeScene"},"value":{"_value":"DevDesk"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[System.String,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"40"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"24"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"_invert":true,"$type":"CheckDialogueRunning"},{"eventName":{"_value":"ChangeScene"},"value":{"_value":"Desk"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[System.String,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"eventName":{"_value":"Quizz"},"saveEventValue":{"_name":""},"$type":"NodeCanvas.Tasks.Conditions.CheckEvent`1[[System.String,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"32"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"16"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"36"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"44"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"_invert":true,"$type":"CheckDialogueRunning"},{"eventName":{"_value":"ChangeScene"},"value":{"_value":"Desk"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[System.String,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"44"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 550832000}
+  - {fileID: 1157324103}
+  - {fileID: 1326184918}
+  _deserializationFailed: 0
 --- !u!224 &198721754 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
@@ -108,58 +151,166 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1599408808}
   m_Script: {fileID: 11500000, guid: 3d71fb7c52372e244baf2e69a9d0d116, type: 3}
---- !u!114 &324150971
+--- !u!1001 &516766333
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 947379728}
+    m_Modifications:
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458376343040516, guid: d5c807b9c26ae4f40b582820037509d3, type: 2}
+      propertyPath: m_Name
+      value: Charles
+      objectReference: {fileID: 0}
+    - target: {fileID: 114172087275872318, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: _name
+      value: Charles
+      objectReference: {fileID: 0}
+    - target: {fileID: 224965506000180532, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 590.19995
+      objectReference: {fileID: 0}
+    - target: {fileID: 224965506000180532, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 18.984993
+      objectReference: {fileID: 0}
+    - target: {fileID: 224965506000180532, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224965506000180532, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224965506000180532, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 295.09998
+      objectReference: {fileID: 0}
+    - target: {fileID: 224965506000180532, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224507089758427172, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.800003
+      objectReference: {fileID: 0}
+    - target: {fileID: 114172087275872318, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: _portrait
+      value: 
+      objectReference: {fileID: 2800000, guid: 30f61e6f10ad1d8409a466e84b3f4059, type: 3}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d5c807b9c26ae4f40b582820037509d3, type: 2}
+  m_IsPrefabParent: 0
+--- !u!224 &516766334 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+    type: 2}
+  m_PrefabInternal: {fileID: 516766333}
+--- !u!114 &516766335 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: GameManager
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.StateMachines.FSM","name":"FSM","translation":{"x":-4030.0,"y":-3783.0},"zoomFactor":0.7500097,"nodes":[{"gameManager":{"_name":"gameManager","_targetVariableID":"aa1104e5-1f22-403b-8955-d22b4d82945c"},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"gameObject":{"_value":1},"$type":"DontDestroyOnLoad"},{"gameObject":{"_value":2},"$type":"DontDestroyOnLoad"},{"gameObject":{"_value":3},"$type":"DontDestroyOnLoad"}]},"_position":{"x":5422.157,"y":5239.0},"_name":"Loading
-    Game","$type":"GameManager_LoadingGame","$id":"2"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"Desk","$type":"LoadScene"}]},"_position":{"x":5606.061,"y":5166.569},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"12"},{"gameManager":{"_name":"gameManager","_targetVariableID":"aa1104e5-1f22-403b-8955-d22b4d82945c"},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_transitionEvaluation":"CheckAfterStateFinished","_position":{"x":5808.549,"y":5193.707},"$type":"GameManager_OnDesk","$id":"16"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"TedDesk","$type":"LoadScene"}]},"_position":{"x":5736.932,"y":5369.505},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"20"},{"gameManager":{},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_position":{"x":5778.798,"y":5486.023},"$type":"GameManager_TedDesk","$id":"24"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"Desk","$type":"LoadScene"}]},"_position":{"x":5973.332,"y":5322.968},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"28"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"Quizz","$type":"LoadScene"}]},"_position":{"x":6304.479,"y":5223.437},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"32"},{"gameManager":{},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_position":{"x":6499.827,"y":5222.279},"$type":"GameManager_Quizz","$id":"36"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"DevDesk","$type":"LoadScene"}]},"_position":{"x":5603.6,"y":5585.17},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"40"},{"gameManager":{},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_position":{"x":5777.258,"y":5605.262},"$type":"GameManager_DevDesk","$id":"44"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"12"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"12"},"_targetNode":{"$ref":"16"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"_invert":true,"$type":"CheckDialogueRunning"},{"eventName":{"_value":"ChangeScene"},"value":{"_value":"TedDesk"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[System.String,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"eventName":{"_value":"Quizz"},"saveEventValue":{"_name":""},"$type":"NodeCanvas.Tasks.Conditions.CheckEvent`1[[System.String,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"32"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"_invert":true,"$type":"CheckDialogueRunning"},{"eventName":{"_value":"ChangeScene"},"value":{"_value":"DevDesk"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[System.String,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"40"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"24"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"_invert":true,"$type":"CheckDialogueRunning"},{"eventName":{"_value":"ChangeScene"},"value":{"_value":"Desk"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[System.String,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"eventName":{"_value":"Quizz"},"saveEventValue":{"_name":""},"$type":"NodeCanvas.Tasks.Conditions.CheckEvent`1[[System.String,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"32"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"16"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"36"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"44"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"_invert":true,"$type":"CheckDialogueRunning"},{"eventName":{"_value":"ChangeScene"},"value":{"_value":"Desk"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[System.String,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"44"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences:
-  - {fileID: 0}
-  - {fileID: 550832000}
-  - {fileID: 1157324103}
-  - {fileID: 1326184918}
-  _deserializationFailed: 0
---- !u!114 &415621647
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
-  m_Name: GameManager
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.StateMachines.FSM","name":"FSM","translation":{"x":-4030.0,"y":-3783.0},"zoomFactor":0.7500097,"nodes":[{"gameManager":{"_name":"gameManager","_targetVariableID":"aa1104e5-1f22-403b-8955-d22b4d82945c"},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"gameObject":{"_value":1},"$type":"DontDestroyOnLoad"},{"gameObject":{"_value":2},"$type":"DontDestroyOnLoad"},{"gameObject":{"_value":3},"$type":"DontDestroyOnLoad"}]},"_position":{"x":5422.157,"y":5239.0},"_name":"Loading
-    Game","$type":"GameManager_LoadingGame","$id":"2"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"Desk","$type":"LoadScene"}]},"_position":{"x":5606.061,"y":5166.569},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"12"},{"gameManager":{"_name":"gameManager","_targetVariableID":"aa1104e5-1f22-403b-8955-d22b4d82945c"},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_transitionEvaluation":"CheckAfterStateFinished","_position":{"x":5808.549,"y":5193.707},"$type":"GameManager_OnDesk","$id":"16"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"TedDesk","$type":"LoadScene"}]},"_position":{"x":5736.932,"y":5369.505},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"20"},{"gameManager":{},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_position":{"x":5778.798,"y":5486.023},"$type":"GameManager_TedDesk","$id":"24"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"Desk","$type":"LoadScene"}]},"_position":{"x":5973.332,"y":5322.968},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"28"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"Quizz","$type":"LoadScene"}]},"_position":{"x":6304.479,"y":5223.437},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"32"},{"gameManager":{},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_position":{"x":6499.827,"y":5222.279},"$type":"GameManager_Quizz","$id":"36"},{"_actionList":{"executionMode":"ActionsRunInParallel","actions":[{"sceneName":"DevDesk","$type":"LoadScene"}]},"_position":{"x":5603.6,"y":5585.17},"_name":"LoadScene","$type":"NodeCanvas.StateMachines.ActionState","$id":"40"},{"gameManager":{},"_actionList":{"executionMode":"ActionsRunInParallel","actions":[]},"_position":{"x":5777.258,"y":5605.262},"$type":"GameManager_DevDesk","$id":"44"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"12"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"12"},"_targetNode":{"$ref":"16"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"_invert":true,"$type":"CheckDialogueRunning"},{"eventName":{"_value":"ChangeScene"},"value":{"_value":"TedDesk"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[System.String,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"eventName":{"_value":"Quizz"},"saveEventValue":{"_name":""},"$type":"NodeCanvas.Tasks.Conditions.CheckEvent`1[[System.String,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"32"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"_invert":true,"$type":"CheckDialogueRunning"},{"eventName":{"_value":"ChangeScene"},"value":{"_value":"DevDesk"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[System.String,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"16"},"_targetNode":{"$ref":"40"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"24"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"_invert":true,"$type":"CheckDialogueRunning"},{"eventName":{"_value":"ChangeScene"},"value":{"_value":"Desk"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[System.String,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"eventName":{"_value":"Quizz"},"saveEventValue":{"_name":""},"$type":"NodeCanvas.Tasks.Conditions.CheckEvent`1[[System.String,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"_sourceNode":{"$ref":"24"},"_targetNode":{"$ref":"32"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"16"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"32"},"_targetNode":{"$ref":"36"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"44"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"conditions":[{"_invert":true,"$type":"CheckDialogueRunning"},{"eventName":{"_value":"ChangeScene"},"value":{"_value":"Desk"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[System.String,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"$type":"NodeCanvas.Framework.ConditionList"},"_sourceNode":{"$ref":"44"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}}}'
-  _objectReferences:
-  - {fileID: 0}
-  - {fileID: 550832000}
-  - {fileID: 1157324103}
-  - {fileID: 1326184918}
-  _deserializationFailed: 0
+  m_PrefabParentObject: {fileID: 114172087275872318, guid: d5c807b9c26ae4f40b582820037509d3,
+    type: 2}
+  m_PrefabInternal: {fileID: 516766333}
+  m_Script: {fileID: 11500000, guid: 3d71fb7c52372e244baf2e69a9d0d116, type: 3}
 --- !u!1001 &550831999
 Prefab:
   m_ObjectHideFlags: 0
@@ -231,7 +382,7 @@ Prefab:
         type: 2}
       propertyPath: _graph
       value: 
-      objectReference: {fileID: 415621647}
+      objectReference: {fileID: 143655514}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1afdb1720b290ef46a7486cdb15afe6c, type: 2}
   m_IsPrefabParent: 0
@@ -263,7 +414,7 @@ Light:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 802182858}
   m_Enabled: 1
-  serializedVersion: 7
+  serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
@@ -288,6 +439,8 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &802182860
@@ -373,6 +526,8 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 0
+  m_AllowMSAA: 1
+  m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
@@ -418,6 +573,9 @@ RectTransform:
   - {fileID: 1594761238}
   - {fileID: 1571288529}
   - {fileID: 198721754}
+  - {fileID: 516766334}
+  - {fileID: 1325936372}
+  - {fileID: 1127539796}
   m_Father: {fileID: 1157324107}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -426,6 +584,166 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1127539794
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 947379728}
+    m_Modifications:
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458376343040516, guid: d5c807b9c26ae4f40b582820037509d3, type: 2}
+      propertyPath: m_Name
+      value: Maria
+      objectReference: {fileID: 0}
+    - target: {fileID: 114172087275872318, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: _name
+      value: Maria
+      objectReference: {fileID: 0}
+    - target: {fileID: 224965506000180532, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 590.19995
+      objectReference: {fileID: 0}
+    - target: {fileID: 224965506000180532, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 18.984993
+      objectReference: {fileID: 0}
+    - target: {fileID: 224965506000180532, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224965506000180532, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224965506000180532, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 295.09998
+      objectReference: {fileID: 0}
+    - target: {fileID: 224965506000180532, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224507089758427172, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.800003
+      objectReference: {fileID: 0}
+    - target: {fileID: 114172087275872318, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: _portrait
+      value: 
+      objectReference: {fileID: 2800000, guid: aa671c690e72ed442ad38b043b76d8b1, type: 3}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d5c807b9c26ae4f40b582820037509d3, type: 2}
+  m_IsPrefabParent: 0
+--- !u!114 &1127539795 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114172087275872318, guid: d5c807b9c26ae4f40b582820037509d3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1127539794}
+  m_Script: {fileID: 11500000, guid: 3d71fb7c52372e244baf2e69a9d0d116, type: 3}
+--- !u!224 &1127539796 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1127539794}
 --- !u!1 &1157324103
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,6 +778,9 @@ MonoBehaviour:
   - dialogueActor: {fileID: 71721946}
   - dialogueActor: {fileID: 1571288528}
   - dialogueActor: {fileID: 198721756}
+  - dialogueActor: {fileID: 516766335}
+  - dialogueActor: {fileID: 1325936373}
+  - dialogueActor: {fileID: 1127539795}
 --- !u!114 &1157324105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -488,7 +809,7 @@ Canvas:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1157324103}
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
@@ -497,6 +818,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -535,6 +857,166 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!1001 &1325936371
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 947379728}
+    m_Modifications:
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458376343040516, guid: d5c807b9c26ae4f40b582820037509d3, type: 2}
+      propertyPath: m_Name
+      value: Ted
+      objectReference: {fileID: 0}
+    - target: {fileID: 114172087275872318, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: _name
+      value: Ted
+      objectReference: {fileID: 0}
+    - target: {fileID: 224965506000180532, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 590.19995
+      objectReference: {fileID: 0}
+    - target: {fileID: 224965506000180532, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 18.984993
+      objectReference: {fileID: 0}
+    - target: {fileID: 224965506000180532, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224965506000180532, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224965506000180532, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 295.09998
+      objectReference: {fileID: 0}
+    - target: {fileID: 224965506000180532, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224507089758427172, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.800003
+      objectReference: {fileID: 0}
+    - target: {fileID: 114172087275872318, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: _portrait
+      value: 
+      objectReference: {fileID: 2800000, guid: 0fd17ceffbb1bb049bf2c0a4f3f627ff, type: 3}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d5c807b9c26ae4f40b582820037509d3, type: 2}
+  m_IsPrefabParent: 0
+--- !u!224 &1325936372 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224083165157348202, guid: d5c807b9c26ae4f40b582820037509d3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1325936371}
+--- !u!114 &1325936373 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114172087275872318, guid: d5c807b9c26ae4f40b582820037509d3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1325936371}
+  m_Script: {fileID: 11500000, guid: 3d71fb7c52372e244baf2e69a9d0d116, type: 3}
 --- !u!1001 &1326184917
 Prefab:
   m_ObjectHideFlags: 0
