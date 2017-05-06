@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using EquilibreGames;
 
 // Script gérant l'interface du joueur
 public class HUD : MonoBehaviour {
@@ -14,6 +15,8 @@ public class HUD : MonoBehaviour {
     }
     
     public CanvasGroup canvasGroup;             // le CanvasGroup gérant l'interface (permet de masquer celle-ci)
+    public CanvasGroup actionBarCanvasGroup;    // le CanvasGroup gérant la barre d'action
+    public CanvasGroup notebookCanvasGroup;     // le CanvasGroup gérant le bouton du notebook
     // [HideInInspector]
     public List<InventoryItem> inventoryItems;  // la liste des items dans l'inventaire (nécessite d'appeler RefreshInventoryView après modif)
     public GameObject inventoryItemGUI_Prefab;  // prefab d'un item visible dans l'inventaire
@@ -39,9 +42,20 @@ public class HUD : MonoBehaviour {
             buttons.ShowButton.interactable = isNPC && isActive;
             foreach (InventoryItemGUI item in inventoryItemGUIs)
                 item.SetInteractable(isNPCShow);
+            actionBarCanvasGroup.alpha = isNPC ? 1: .75f;
+            actionBarCanvasGroup.interactable = actionBarCanvasGroup.blocksRaycasts = isNPC;
         }
         get {
             return mode;
+        }
+    }
+    bool hasNotebook;
+    public bool HasNotebook {
+        get { return hasNotebook; }
+        set {
+            hasNotebook = value;
+            notebookCanvasGroup.alpha = value ? 1:0;
+            notebookCanvasGroup.interactable = notebookCanvasGroup.blocksRaycasts = value;
         }
     }
     
@@ -100,6 +114,18 @@ public class HUD : MonoBehaviour {
         Notebook.Instance.Hide();
         Mode = HUDMode.none;
         DeselectNPC();
+        RefreshFromSavedSettings();
+    }
+    
+    // Restaure/rafraichit la config de l'UI en fonction des données de jeu sauvegardées (inventaire, intégration, etc.)
+    public void RefreshFromSavedSettings()
+    {
+        progressPanel.Day = GameManager.Instance.currentDay;
+        PlayerSavedData data = PersistentDataSystem.Instance.GetSavedData<PlayerSavedData>();
+        progressPanel.Progression = data.integrationScore / 100;
+        inventoryItems = data.inventoryItems;
+        HasNotebook = data.hasNotebook;
+        RefreshInventoryView();
     }
     
     // Supprime et réinstancie les visuels de l'inventaire
@@ -183,9 +209,9 @@ public class HUD : MonoBehaviour {
     {
         currentNPC = npc;
         Mode = HUDMode.npc;
-        npcSprite.sprite = npc.NpcSprite;
-        npcSprite.color = Color.white;
-        npcBackground.color = Color.white;
+        // npcSprite.sprite = npc.NpcSprite;
+        // npcSprite.color = Color.white;
+        // npcBackground.color = Color.white;
     }
     public void DeselectNPC()
     {

@@ -7,5 +7,7 @@ using EquilibreGames;
 public class PlayerSavedData : SavedData {
 
     public int integrationScore = 0;
+    public List<InventoryItem> inventoryItems = new List<InventoryItem>();
+    public bool hasNotebook = false;
 
 }
