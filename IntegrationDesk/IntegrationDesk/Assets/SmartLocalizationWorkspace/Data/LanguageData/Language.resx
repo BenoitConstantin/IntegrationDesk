@@ -116,28 +116,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-	<data name="Charles.alreadyTalkAboutAccount" xml:space="preserve">
+	<data name="Charles.alreadyTalkAboutAccount.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Charles.beAutonome" xml:space="preserve">
+	<data name="Charles.beAutonome.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Charles.classicButNotDontKnowHowToDo" xml:space="preserve">
+	<data name="Charles.classicButNotDontKnowHowToDo.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Charles.classicProbleme" xml:space="preserve">
+	<data name="Charles.classicProbleme.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Charles.dontDisturbHim" xml:space="preserve">
+	<data name="Charles.dontDisturbHim.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Charles.presentation" xml:space="preserve">
+	<data name="Charles.presentation.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Charles.presentation.dontWantToExchange" xml:space="preserve">
+	<data name="Charles.presentation.dontWantToExchange.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Charles.thxForHelp" xml:space="preserve">
+	<data name="Charles.thxForHelp.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
 	<data name="Edward.accueil.0" xml:space="preserve">
@@ -248,28 +248,28 @@
 	<data name="Player.accueil.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Ted.alreadyTalkAboutAccount" xml:space="preserve">
+	<data name="Ted.alreadyTalkAboutAccount.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Ted.beAutonome" xml:space="preserve">
+	<data name="Ted.beAutonome.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Ted.classicButNotDontKnowHowToDo" xml:space="preserve">
+	<data name="Ted.classicButNotDontKnowHowToDo.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Ted.classicProbleme" xml:space="preserve">
+	<data name="Ted.classicProbleme.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Ted.dontDisturbHim" xml:space="preserve">
+	<data name="Ted.dontDisturbHim.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
 	<data name="Ted.presentation.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Ted.presentation.tired" xml:space="preserve">
+	<data name="Ted.presentation.tired.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="Ted.thxForHelp" xml:space="preserve">
+	<data name="Ted.thxForHelp.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
 	<data name="Yann.alreadyTalkAboutAccount.0" xml:space="preserve">

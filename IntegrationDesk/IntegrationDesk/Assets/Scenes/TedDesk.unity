@@ -154,7 +154,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4541509612866402, guid: 3efb89b15b5ae2f42be27cbea1694705, type: 2}
       propertyPath: m_LocalScale.y
-      value: 23.244068
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541509612866402, guid: 3efb89b15b5ae2f42be27cbea1694705, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3efb89b15b5ae2f42be27cbea1694705, type: 2}
@@ -273,36 +277,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2528696, y: 1.2517214}
   m_EdgeRadius: 0
---- !u!114 &805772616
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c3f478ef69fbe04fa9ed3664a8a443e, type: 3}
-  m_Name: DialogueTree
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.DialogueTrees.DialogueTree","name":"DialogueTree","translation":{"x":-4765.0,"y":-5292.0},"zoomFactor":0.9997411,"nodes":[{"conditions":[{"day":"Lundi","$type":"CheckDay"}],"_position":{"x":5018.261,"y":4999.599},"$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"2"},{"conditions":[null,{"eventName":{"_value":"Speak"},"value":{"_value":"Ted"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[System.String,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"_position":{"x":4846.645,"y":5192.458},"$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"5"},{"conditions":[{"eventName":{"_value":"Object"},"value":{"_value":"READ_MATERIAL_LIST"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"eventName":{"_value":"Object"},"value":{"_value":"USE_TED_COMPUTER"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"_position":{"x":4844.19,"y":5363.062},"_name":"","_tag":"ObjectToTake","$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"10"},{"mode":"LIMIT_TO_MAX","_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4648.802,"y":5502.914},"_tag":"MaterialList","$type":"SequencedConditionNode","$id":"18"},{"statement":{"_text":"Object.materialList.read"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4519.586,"y":5634.316},"$type":"SmartSay","$id":"19"},{"statement":{"_text":"Object.materialList.dontRead"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4710.586,"y":5630.316},"$type":"SmartSay","$id":"21"},{"mode":"LIMIT_TO_MAX","_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_collapsed":true,"_position":{"x":4857.599,"y":5501.872},"_tag":"TedComputer","$type":"SequencedConditionNode","$id":"23"},{"statement":{"_text":"Object.tedComputer.look"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4727.258,"y":5633.274},"$type":"SmartSay","$id":"24"},{"statement":{"_text":"Object.tedComputer.dontDisturb"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4918.257,"y":5629.274},"$type":"SmartSay","$id":"26"},{"availableChoices":[{"statement":{"_text":"Se
-    pr\u00e9senter"},"condition":{"conditions":[{"storyEvent":"SPEAK_TO_TED_PRESENTATION","_invert":true,"$type":"CheckEventRealized"},{"storyEvent":"SPEAK_TO_TED_ACCOUNT_PROBLEM","_invert":true,"$type":"CheckEventRealized"}],"$type":"NodeCanvas.Framework.ConditionList"}},{"statement":{"_text":"Probl\u00e8me
-    de compte"}}],"_actorName":"Ted","_actorParameterID":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_position":{"x":5408.119,"y":5430.701},"$type":"NodeCanvas.DialogueTrees.MultipleChoiceNode","$id":"28"},{"statement":{"_text":"Ted.presentation"},"_actorName":"Ted","_actorParameterID":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_position":{"x":5265.556,"y":5589.998},"$type":"SmartSay","$id":"38"},{"statement":{"_text":"Ted.presentation.tired"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5200.467,"y":5682.01},"$type":"SmartSay","$id":"40"},{"_action":{"actions":[{"storyEvent":"SPEAK_TO_TED_PRESENTATION","$type":"RealizeStoryEvent"},{"$type":"AddIntegrationScore"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5209.591,"y":5800.74},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"42"},{"conditions":[{"storyEvent":"SPEAK_TO_TED_ACCOUNT_PROBLEM","$type":"CheckEventRealized"},{"storyEvent":"SPEAK_TO_TED_PRESENTATION","_invert":true,"$type":"CheckEventRealized"},null],"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5564.3,"y":5656.235},"$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"47"},{"statement":{"_text":"Ted.alreadyTalkAboutAccount"},"_actorName":"Ted","_actorParameterID":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_position":{"x":5453.226,"y":5794.308},"$type":"SmartSay","$id":"51"},{"statement":{"_text":"Ted.dontDisturbHim"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5480.243,"y":5898.528},"$type":"SmartSay","$id":"53"},{"statement":{"_text":"Ted.beAutonome"},"_actorName":"Ted","_actorParameterID":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_position":{"x":5672.878,"y":5792.025},"$type":"SmartSay","$id":"55"},{"statement":{"_text":"Ted.thxForHelp"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5641.081,"y":5896.244},"$type":"SmartSay","$id":"57"},{"_action":{"storyEvent":"SPEAK_TO_TED_ACCOUNT_PROBLEM","$type":"RealizeStoryEvent"},"_position":{"x":5781.143,"y":6026.82},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"59"},{"statement":{"_text":"Ted.classicProbleme"},"_actorName":"Ted","_actorParameterID":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_position":{"x":5877.125,"y":5794.308},"$type":"SmartSay","$id":"61"},{"statement":{"_text":"Ted.classicButNotDontKnowHowToDo"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5836.45,"y":5889.65},"$type":"SmartSay","$id":"63"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"10"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"18"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"23"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"18"},"_targetNode":{"$ref":"19"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"18"},"_targetNode":{"$ref":"21"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"23"},"_targetNode":{"$ref":"24"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"23"},"_targetNode":{"$ref":"26"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"38"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"47"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"38"},"_targetNode":{"$ref":"40"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"42"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"47"},"_targetNode":{"$ref":"51"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"47"},"_targetNode":{"$ref":"55"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"47"},"_targetNode":{"$ref":"61"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"51"},"_targetNode":{"$ref":"53"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"55"},"_targetNode":{"$ref":"57"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"57"},"_targetNode":{"$ref":"59"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"61"},"_targetNode":{"$ref":"63"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"63"},"_targetNode":{"$ref":"59"},"$type":"NodeCanvas.DialogueTrees.DTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}},"derivedData":{"actorParameters":[{"_keyName":"Player","_id":"bdf95645-0dea-44af-b9f4-7f4384983892","_actorObject":1},{"_keyName":"Ted","_id":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_actorObject":2}],"$type":"NodeCanvas.DialogueTrees.DialogueTree+DerivedSerializationData"}}'
-  _objectReferences:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  _deserializationFailed: 0
-  _actorParameters:
-  - _keyName: Player
-    _id: bdf95645-0dea-44af-b9f4-7f4384983892
-    _actorObject: {fileID: 0}
-  - _keyName: Ted
-    _id: f34ca8f3-56ac-41d4-81bd-cd142e9d13dc
-    _actorObject: {fileID: 0}
 --- !u!1 &823583880
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,25 +440,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storyScene: {fileID: 1733395623}
   storyEvent: 10
---- !u!114 &995006512
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a686a47eee2fa44cb0a34b5d86e4d5e, type: 3}
-  m_Name: StoryScene
-  m_EditorClassIdentifier: 
-  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.BehaviourTrees.BehaviourTree","name":"BehaviourTree","translation":{"x":-3112.0,"y":-4689.0},"zoomFactor":0.908418,"nodes":[{"_nodeColor":{"r":0.7019608,"g":1.0,"b":0.4980392,"a":1.0},"_position":{"x":3807.853,"y":5259.796},"$type":"NodeCanvas.BehaviourTrees.Selector","$id":"2"},{"_position":{"x":3528.611,"y":5449.801},"$type":"NodeCanvas.BehaviourTrees.Optional","$id":"3"},{"_action":{"actions":[{"actorName":"Player","dialogueTreeController":1,"$type":"GetActor"},{"actorName":"Ted","dialogueTreeController":1,"$type":"GetActor"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":3529.025,"y":5493.401},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"4"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":4031.573,"y":5458.16},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"9"},{"_action":{"dialogueTreeController":{"_value":1},"$type":"NodeCanvas.Tasks.Actions.StartDialogueTree"},"_position":{"x":3988.986,"y":5515.783},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"10"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"9"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"10"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
-    Blackboard","_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
-  _objectReferences:
-  - {fileID: 0}
-  - {fileID: 1281106755}
-  _deserializationFailed: 0
-  repeat: 1
-  updateInterval: 0
 --- !u!1 &1265874042
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,12 +496,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c32e4b851ebd8fa4ea0645b99be1cf97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boundGraphSerialization: '{"version":2.6,"type":"NodeCanvas.DialogueTrees.DialogueTree","name":"DialogueTree","translation":{"x":-4765.0,"y":-5292.0},"zoomFactor":0.9997411,"nodes":[{"conditions":[{"day":"Lundi","$type":"CheckDay"}],"_position":{"x":5018.261,"y":4999.599},"$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"2"},{"conditions":[null,{"eventName":{"_value":"Speak"},"value":{"_value":"Ted"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[System.String,
-    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"_position":{"x":4846.645,"y":5192.458},"$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"5"},{"conditions":[{"eventName":{"_value":"Object"},"value":{"_value":"READ_MATERIAL_LIST"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
+  boundGraphSerialization: '{"version":2.6,"type":"NodeCanvas.DialogueTrees.DialogueTree","name":"DialogueTree","translation":{"x":-4666.0,"y":-5137.0},"zoomFactor":0.9997411,"nodes":[{"conditions":[{"day":"Lundi","$type":"CheckDay"}],"_position":{"x":5018.261,"y":4999.599},"$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"2"},{"conditions":[null],"_position":{"x":4846.645,"y":5192.458},"$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"5"},{"conditions":[{"eventName":{"_value":"Object"},"value":{"_value":"READ_MATERIAL_LIST"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
     Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"eventName":{"_value":"Object"},"value":{"_value":"USE_TED_COMPUTER"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
-    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}],"_position":{"x":4844.19,"y":5363.062},"_name":"","_tag":"ObjectToTake","$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"10"},{"mode":"LIMIT_TO_MAX","_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4648.802,"y":5502.914},"_tag":"MaterialList","$type":"SequencedConditionNode","$id":"18"},{"statement":{"_text":"Object.materialList.read"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4519.586,"y":5634.316},"$type":"SmartSay","$id":"19"},{"statement":{"_text":"Object.materialList.dontRead"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4710.586,"y":5630.316},"$type":"SmartSay","$id":"21"},{"mode":"LIMIT_TO_MAX","_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_collapsed":true,"_position":{"x":4857.599,"y":5501.872},"_tag":"TedComputer","$type":"SequencedConditionNode","$id":"23"},{"statement":{"_text":"Object.tedComputer.look"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4727.258,"y":5633.274},"$type":"SmartSay","$id":"24"},{"statement":{"_text":"Object.tedComputer.dontDisturb"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4918.257,"y":5629.274},"$type":"SmartSay","$id":"26"},{"availableChoices":[{"statement":{"_text":"Se
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"eventName":{"_value":"Speak"},"value":{"_value":"Ted"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[System.String,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"_position":{"x":4844.19,"y":5363.062},"_name":"","_tag":"ObjectToTake","$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"7"},{"mode":"LIMIT_TO_MAX","_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4648.802,"y":5502.914},"_tag":"MaterialList","$type":"SequencedConditionNode","$id":"18"},{"statement":{"_text":"Object.materialList.read"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4519.586,"y":5634.316},"$type":"SmartSay","$id":"19"},{"statement":{"_text":"Object.materialList.dontRead"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4710.586,"y":5630.316},"$type":"SmartSay","$id":"21"},{"mode":"LIMIT_TO_MAX","_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_collapsed":true,"_position":{"x":4857.599,"y":5501.872},"_tag":"TedComputer","$type":"SequencedConditionNode","$id":"23"},{"statement":{"_text":"Object.tedComputer.look"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4727.258,"y":5633.274},"$type":"SmartSay","$id":"24"},{"statement":{"_text":"Object.tedComputer.dontDisturb"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4918.257,"y":5629.274},"$type":"SmartSay","$id":"26"},{"availableChoices":[{"statement":{"_text":"Se
     pr\u00e9senter"},"condition":{"conditions":[{"storyEvent":"SPEAK_TO_TED_PRESENTATION","_invert":true,"$type":"CheckEventRealized"},{"storyEvent":"SPEAK_TO_TED_ACCOUNT_PROBLEM","_invert":true,"$type":"CheckEventRealized"}],"$type":"NodeCanvas.Framework.ConditionList"}},{"statement":{"_text":"Probl\u00e8me
-    de compte"}}],"_actorName":"Ted","_actorParameterID":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_position":{"x":5408.119,"y":5430.701},"$type":"NodeCanvas.DialogueTrees.MultipleChoiceNode","$id":"28"},{"statement":{"_text":"Ted.presentation"},"_actorName":"Ted","_actorParameterID":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_position":{"x":5265.556,"y":5589.998},"$type":"SmartSay","$id":"38"},{"statement":{"_text":"Ted.presentation.tired"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5200.467,"y":5682.01},"$type":"SmartSay","$id":"40"},{"_action":{"actions":[{"storyEvent":"SPEAK_TO_TED_PRESENTATION","$type":"RealizeStoryEvent"},{"$type":"AddIntegrationScore"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5209.591,"y":5800.74},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"42"},{"conditions":[{"storyEvent":"SPEAK_TO_TED_ACCOUNT_PROBLEM","$type":"CheckEventRealized"},{"storyEvent":"SPEAK_TO_TED_PRESENTATION","_invert":true,"$type":"CheckEventRealized"},null],"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5564.3,"y":5656.235},"$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"47"},{"statement":{"_text":"Ted.alreadyTalkAboutAccount"},"_actorName":"Ted","_actorParameterID":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_position":{"x":5453.226,"y":5794.308},"$type":"SmartSay","$id":"51"},{"statement":{"_text":"Ted.dontDisturbHim"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5480.243,"y":5898.528},"$type":"SmartSay","$id":"53"},{"statement":{"_text":"Ted.beAutonome"},"_actorName":"Ted","_actorParameterID":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_position":{"x":5672.878,"y":5792.025},"$type":"SmartSay","$id":"55"},{"statement":{"_text":"Ted.thxForHelp"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5641.081,"y":5896.244},"$type":"SmartSay","$id":"57"},{"_action":{"storyEvent":"SPEAK_TO_TED_ACCOUNT_PROBLEM","$type":"RealizeStoryEvent"},"_position":{"x":5781.143,"y":6026.82},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"59"},{"statement":{"_text":"Ted.classicProbleme"},"_actorName":"Ted","_actorParameterID":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_position":{"x":5877.125,"y":5794.308},"$type":"SmartSay","$id":"61"},{"statement":{"_text":"Ted.classicButNotDontKnowHowToDo"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5836.45,"y":5889.65},"$type":"SmartSay","$id":"63"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"10"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"18"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"10"},"_targetNode":{"$ref":"23"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"18"},"_targetNode":{"$ref":"19"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"18"},"_targetNode":{"$ref":"21"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"23"},"_targetNode":{"$ref":"24"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"23"},"_targetNode":{"$ref":"26"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"38"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"47"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"38"},"_targetNode":{"$ref":"40"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"42"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"47"},"_targetNode":{"$ref":"51"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"47"},"_targetNode":{"$ref":"55"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"47"},"_targetNode":{"$ref":"61"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"51"},"_targetNode":{"$ref":"53"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"55"},"_targetNode":{"$ref":"57"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"57"},"_targetNode":{"$ref":"59"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"61"},"_targetNode":{"$ref":"63"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"63"},"_targetNode":{"$ref":"59"},"$type":"NodeCanvas.DialogueTrees.DTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    de compte"}}],"_actorName":"Ted","_actorParameterID":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_position":{"x":5408.119,"y":5430.701},"$type":"NodeCanvas.DialogueTrees.MultipleChoiceNode","$id":"28"},{"statement":{"_text":"Ted.presentation"},"_actorName":"Ted","_actorParameterID":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_position":{"x":5265.556,"y":5589.998},"$type":"SmartSay","$id":"38"},{"statement":{"_text":"Ted.presentation.tired"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5200.467,"y":5682.01},"$type":"SmartSay","$id":"40"},{"_action":{"actions":[{"storyEvent":"SPEAK_TO_TED_PRESENTATION","$type":"RealizeStoryEvent"},{"$type":"AddIntegrationScore"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5209.591,"y":5800.74},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"42"},{"conditions":[{"storyEvent":"SPEAK_TO_TED_ACCOUNT_PROBLEM","$type":"CheckEventRealized"},{"storyEvent":"SPEAK_TO_TED_PRESENTATION","_invert":true,"$type":"CheckEventRealized"},null],"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5564.3,"y":5656.235},"$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"47"},{"statement":{"_text":"Ted.alreadyTalkAboutAccount"},"_actorName":"Ted","_actorParameterID":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_position":{"x":5453.226,"y":5794.308},"$type":"SmartSay","$id":"51"},{"statement":{"_text":"Ted.dontDisturbHim"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5480.243,"y":5898.528},"$type":"SmartSay","$id":"53"},{"statement":{"_text":"Ted.beAutonome"},"_actorName":"Ted","_actorParameterID":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_position":{"x":5672.878,"y":5792.025},"$type":"SmartSay","$id":"55"},{"statement":{"_text":"Ted.thxForHelp"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5641.081,"y":5896.244},"$type":"SmartSay","$id":"57"},{"_action":{"storyEvent":"SPEAK_TO_TED_ACCOUNT_PROBLEM","$type":"RealizeStoryEvent"},"_position":{"x":5781.143,"y":6026.82},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"59"},{"statement":{"_text":"Ted.classicProbleme"},"_actorName":"Ted","_actorParameterID":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_position":{"x":5877.125,"y":5794.308},"$type":"SmartSay","$id":"61"},{"statement":{"_text":"Ted.classicButNotDontKnowHowToDo"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5836.45,"y":5889.65},"$type":"SmartSay","$id":"63"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"7"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"7"},"_targetNode":{"$ref":"18"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"7"},"_targetNode":{"$ref":"23"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"7"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"18"},"_targetNode":{"$ref":"19"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"18"},"_targetNode":{"$ref":"21"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"23"},"_targetNode":{"$ref":"24"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"23"},"_targetNode":{"$ref":"26"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"38"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"47"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"38"},"_targetNode":{"$ref":"40"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"42"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"47"},"_targetNode":{"$ref":"51"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"47"},"_targetNode":{"$ref":"55"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"47"},"_targetNode":{"$ref":"61"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"51"},"_targetNode":{"$ref":"53"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"55"},"_targetNode":{"$ref":"57"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"57"},"_targetNode":{"$ref":"59"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"61"},"_targetNode":{"$ref":"63"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"63"},"_targetNode":{"$ref":"59"},"$type":"NodeCanvas.DialogueTrees.DTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
     Blackboard","_variables":{}},"derivedData":{"actorParameters":[{"_keyName":"Player","_id":"bdf95645-0dea-44af-b9f4-7f4384983892","_actorObject":1},{"_keyName":"Ted","_id":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_actorObject":2}],"$type":"NodeCanvas.DialogueTrees.DialogueTree+DerivedSerializationData"}}'
   boundGraphObjectReferences:
   - {fileID: 0}
@@ -555,7 +510,7 @@ MonoBehaviour:
   enableAction: 1
   disableAction: 2
   versionUpdateProxyGraph: {fileID: 0}
-  _graph: {fileID: 805772616}
+  _graph: {fileID: 1547019512}
   _blackboard: {fileID: 0}
 --- !u!4 &1281106756
 Transform:
@@ -581,6 +536,7 @@ GameObject:
   - component: {fileID: 1295144538}
   - component: {fileID: 1295144537}
   - component: {fileID: 1295144536}
+  - component: {fileID: 1295144539}
   m_Layer: 0
   m_Name: Ted
   m_TagString: Untagged
@@ -613,7 +569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   storyScene: {fileID: 1733395623}
-  storyEvent: 0
+  storyEvent: 16
   npcName: Ted
   npcSprite: {fileID: 21300000, guid: 0fd17ceffbb1bb049bf2c0a4f3f627ff, type: 3}
 --- !u!212 &1295144537
@@ -662,6 +618,31 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1295144534}
+--- !u!61 &1295144539
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1295144534}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8.16, y: 6.08}
+    newSize: {x: 8.16, y: 6.08}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.16, y: 6.08}
+  m_EdgeRadius: 0
 --- !u!1 &1502472160
 GameObject:
   m_ObjectHideFlags: 0
@@ -751,6 +732,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1547019512
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c3f478ef69fbe04fa9ed3664a8a443e, type: 3}
+  m_Name: DialogueTree
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.DialogueTrees.DialogueTree","name":"DialogueTree","translation":{"x":-4666.0,"y":-5137.0},"zoomFactor":0.9997411,"nodes":[{"conditions":[{"day":"Lundi","$type":"CheckDay"}],"_position":{"x":5018.261,"y":4999.599},"$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"2"},{"conditions":[null],"_position":{"x":4846.645,"y":5192.458},"$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"5"},{"conditions":[{"eventName":{"_value":"Object"},"value":{"_value":"READ_MATERIAL_LIST"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"eventName":{"_value":"Object"},"value":{"_value":"USE_TED_COMPUTER"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[StoryEvent,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"eventName":{"_value":"Speak"},"value":{"_value":"Ted"},"$type":"NodeCanvas.Tasks.Conditions.CheckEventValue`1[[System.String,
+    mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}],"_position":{"x":4844.19,"y":5363.062},"_name":"","_tag":"ObjectToTake","$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"7"},{"mode":"LIMIT_TO_MAX","_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4648.802,"y":5502.914},"_tag":"MaterialList","$type":"SequencedConditionNode","$id":"18"},{"statement":{"_text":"Object.materialList.read"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4519.586,"y":5634.316},"$type":"SmartSay","$id":"19"},{"statement":{"_text":"Object.materialList.dontRead"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4710.586,"y":5630.316},"$type":"SmartSay","$id":"21"},{"mode":"LIMIT_TO_MAX","_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_collapsed":true,"_position":{"x":4857.599,"y":5501.872},"_tag":"TedComputer","$type":"SequencedConditionNode","$id":"23"},{"statement":{"_text":"Object.tedComputer.look"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4727.258,"y":5633.274},"$type":"SmartSay","$id":"24"},{"statement":{"_text":"Object.tedComputer.dontDisturb"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":4918.257,"y":5629.274},"$type":"SmartSay","$id":"26"},{"availableChoices":[{"statement":{"_text":"Se
+    pr\u00e9senter"},"condition":{"conditions":[{"storyEvent":"SPEAK_TO_TED_PRESENTATION","_invert":true,"$type":"CheckEventRealized"},{"storyEvent":"SPEAK_TO_TED_ACCOUNT_PROBLEM","_invert":true,"$type":"CheckEventRealized"}],"$type":"NodeCanvas.Framework.ConditionList"}},{"statement":{"_text":"Probl\u00e8me
+    de compte"}}],"_actorName":"Ted","_actorParameterID":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_position":{"x":5408.119,"y":5430.701},"$type":"NodeCanvas.DialogueTrees.MultipleChoiceNode","$id":"28"},{"statement":{"_text":"Ted.presentation"},"_actorName":"Ted","_actorParameterID":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_position":{"x":5265.556,"y":5589.998},"$type":"SmartSay","$id":"38"},{"statement":{"_text":"Ted.presentation.tired"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5200.467,"y":5682.01},"$type":"SmartSay","$id":"40"},{"_action":{"actions":[{"storyEvent":"SPEAK_TO_TED_PRESENTATION","$type":"RealizeStoryEvent"},{"$type":"AddIntegrationScore"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5209.591,"y":5800.74},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"42"},{"conditions":[{"storyEvent":"SPEAK_TO_TED_ACCOUNT_PROBLEM","$type":"CheckEventRealized"},{"storyEvent":"SPEAK_TO_TED_PRESENTATION","_invert":true,"$type":"CheckEventRealized"},null],"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5564.3,"y":5656.235},"$type":"NodeCanvas.DialogueTrees.MultipleConditionNode","$id":"47"},{"statement":{"_text":"Ted.alreadyTalkAboutAccount"},"_actorName":"Ted","_actorParameterID":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_position":{"x":5453.226,"y":5794.308},"$type":"SmartSay","$id":"51"},{"statement":{"_text":"Ted.dontDisturbHim"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5480.243,"y":5898.528},"$type":"SmartSay","$id":"53"},{"statement":{"_text":"Ted.beAutonome"},"_actorName":"Ted","_actorParameterID":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_position":{"x":5672.878,"y":5792.025},"$type":"SmartSay","$id":"55"},{"statement":{"_text":"Ted.thxForHelp"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5641.081,"y":5896.244},"$type":"SmartSay","$id":"57"},{"_action":{"storyEvent":"SPEAK_TO_TED_ACCOUNT_PROBLEM","$type":"RealizeStoryEvent"},"_position":{"x":5781.143,"y":6026.82},"$type":"NodeCanvas.DialogueTrees.ActionNode","$id":"59"},{"statement":{"_text":"Ted.classicProbleme"},"_actorName":"Ted","_actorParameterID":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_position":{"x":5877.125,"y":5794.308},"$type":"SmartSay","$id":"61"},{"statement":{"_text":"Ted.classicButNotDontKnowHowToDo"},"_actorName":"Player","_actorParameterID":"bdf95645-0dea-44af-b9f4-7f4384983892","_position":{"x":5836.45,"y":5889.65},"$type":"SmartSay","$id":"63"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"7"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"7"},"_targetNode":{"$ref":"18"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"7"},"_targetNode":{"$ref":"23"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"7"},"_targetNode":{"$ref":"28"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"18"},"_targetNode":{"$ref":"19"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"18"},"_targetNode":{"$ref":"21"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"23"},"_targetNode":{"$ref":"24"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"23"},"_targetNode":{"$ref":"26"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"38"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"28"},"_targetNode":{"$ref":"47"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"38"},"_targetNode":{"$ref":"40"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"40"},"_targetNode":{"$ref":"42"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"47"},"_targetNode":{"$ref":"51"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"47"},"_targetNode":{"$ref":"55"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"47"},"_targetNode":{"$ref":"61"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"51"},"_targetNode":{"$ref":"53"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"55"},"_targetNode":{"$ref":"57"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"57"},"_targetNode":{"$ref":"59"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"61"},"_targetNode":{"$ref":"63"},"$type":"NodeCanvas.DialogueTrees.DTConnection"},{"_sourceNode":{"$ref":"63"},"_targetNode":{"$ref":"59"},"$type":"NodeCanvas.DialogueTrees.DTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}},"derivedData":{"actorParameters":[{"_keyName":"Player","_id":"bdf95645-0dea-44af-b9f4-7f4384983892","_actorObject":1},{"_keyName":"Ted","_id":"f34ca8f3-56ac-41d4-81bd-cd142e9d13dc","_actorObject":2}],"$type":"NodeCanvas.DialogueTrees.DialogueTree+DerivedSerializationData"}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _deserializationFailed: 0
+  _actorParameters:
+  - _keyName: Player
+    _id: bdf95645-0dea-44af-b9f4-7f4384983892
+    _actorObject: {fileID: 0}
+  - _keyName: Ted
+    _id: f34ca8f3-56ac-41d4-81bd-cd142e9d13dc
+    _actorObject: {fileID: 0}
 --- !u!1 &1733395619
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,7 +813,7 @@ MonoBehaviour:
   enableAction: 0
   disableAction: 0
   versionUpdateProxyGraph: {fileID: 0}
-  _graph: {fileID: 995006512}
+  _graph: {fileID: 1830581555}
   _blackboard: {fileID: 1733395620}
 --- !u!114 &1733395622
 MonoBehaviour:
@@ -846,3 +857,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1830581555
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a686a47eee2fa44cb0a34b5d86e4d5e, type: 3}
+  m_Name: StoryScene
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.BehaviourTrees.BehaviourTree","name":"BehaviourTree","translation":{"x":-3112.0,"y":-4689.0},"zoomFactor":0.908418,"nodes":[{"_nodeColor":{"r":0.7019608,"g":1.0,"b":0.4980392,"a":1.0},"_position":{"x":3807.853,"y":5259.796},"$type":"NodeCanvas.BehaviourTrees.Selector","$id":"2"},{"_position":{"x":3528.611,"y":5449.801},"$type":"NodeCanvas.BehaviourTrees.Optional","$id":"3"},{"_action":{"actions":[{"actorName":"Player","dialogueTreeController":1,"$type":"GetActor"},{"actorName":"Ted","dialogueTreeController":1,"$type":"GetActor"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":3529.025,"y":5493.401},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"4"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":4031.573,"y":5458.16},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"9"},{"_action":{"dialogueTreeController":{"_value":1},"$type":"NodeCanvas.Tasks.Actions.StartDialogueTree"},"_position":{"x":3988.986,"y":5515.783},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"10"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"9"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"9"},"_targetNode":{"$ref":"10"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"primeNode":{"$ref":"2"},"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 1281106755}
+  _deserializationFailed: 0
+  repeat: 1
+  updateInterval: 0
