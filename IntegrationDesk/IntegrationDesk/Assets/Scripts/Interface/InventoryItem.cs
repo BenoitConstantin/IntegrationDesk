@@ -8,4 +8,5 @@ public class InventoryItem {
     public string itemName;     // nom de l'objet
     public Sprite image;    // image de l'objet
     public StoryEvent obtainObjectEvent;    // événement à partir duquel le joueur à l'objet
+    public StoryEvent inspectObjectEvent;    // événement lancé lorsque le joueur examine l'objet
 }

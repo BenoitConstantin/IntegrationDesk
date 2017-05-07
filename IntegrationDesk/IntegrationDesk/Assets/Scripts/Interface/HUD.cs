@@ -41,7 +41,7 @@ public class HUD : MonoBehaviour {
             buttons.LookButton.interactable = isNPC && isActive;
             buttons.ShowButton.interactable = isNPC && isActive;
             foreach (InventoryItemGUI item in inventoryItemGUIs)
-                item.SetInteractable(isNPCShow);
+                item.SetInteractable(!isNPC || isNPCShow);
             actionBarCanvasGroup.alpha = isNPC ? 1: .75f;
             actionBarCanvasGroup.interactable = actionBarCanvasGroup.blocksRaycasts = isNPC;
         }
@@ -195,7 +195,10 @@ public class HUD : MonoBehaviour {
         if (currentNPC != null)
             currentNPC.Show(item.itemName);
         else
-            Debug.LogError("Impossible de montrer l'objet car pas de NPC");
+        {
+            StoryScene scene = (StoryScene)FindObjectOfType(typeof(StoryScene));
+            scene.InspectInventoryItem(item);
+        }
     }
     
     // masque l'intégralité de l'interface

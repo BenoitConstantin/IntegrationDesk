@@ -2443,9 +2443,9 @@ CanvasGroup:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 871276436}
   m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 1
 --- !u!1 &873610119
 GameObject:
@@ -3189,21 +3189,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 1184306062}
-  actionBarCanvasGroup: {fileID: 1722766360}
+  actionBarCanvasGroup: {fileID: 1926733493}
   notebookCanvasGroup: {fileID: 1495015542}
   inventoryItems:
   - itemName: Crayon
     image: {fileID: 21300000, guid: 39672fb5ad4c7db49bf0b16be444933e, type: 3}
     obtainObjectEvent: 3
+    inspectObjectEvent: 26
   - itemName: Lettre de Maria
     image: {fileID: 21300000, guid: f864c7582241a6d49bbb768895dfcd28, type: 3}
     obtainObjectEvent: 4
+    inspectObjectEvent: 24
   - itemName: Contrat de travail
     image: {fileID: 21300000, guid: 4dee826dfcfdac8469cef251811f5cd6, type: 3}
     obtainObjectEvent: 5
+    inspectObjectEvent: 27
   - itemName: Guide des bonnes pratiques
     image: {fileID: 21300000, guid: 68fd4aaad85be2f47af8f2fb5e1b8985, type: 3}
     obtainObjectEvent: 6
+    inspectObjectEvent: 28
+  - itemName: Bloc-note
+    image: {fileID: 21300000, guid: 68fd4aaad85be2f47af8f2fb5e1b8985, type: 3}
+    obtainObjectEvent: 2
+    inspectObjectEvent: 25
   inventoryItemGUI_Prefab: {fileID: 1512442222942112, guid: b40a4b26b476e4c4989aa057e69fbf25,
     type: 2}
   inventoryPanel: {fileID: 280837224}
@@ -3225,9 +3233,9 @@ CanvasGroup:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1184306056}
   m_Enabled: 1
-  m_Alpha: 0
-  m_Interactable: 0
-  m_BlocksRaycasts: 0
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
 --- !u!1 &1208199653
 GameObject:
@@ -4256,7 +4264,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1722766357}
-  - component: {fileID: 1722766360}
   - component: {fileID: 1722766359}
   - component: {fileID: 1722766358}
   m_Layer: 5
@@ -4319,17 +4326,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1722766356}
---- !u!225 &1722766360
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1722766356}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &1763319728
 GameObject:
   m_ObjectHideFlags: 0
@@ -4704,6 +4700,7 @@ GameObject:
   - component: {fileID: 1926733491}
   - component: {fileID: 1926733490}
   - component: {fileID: 1926733492}
+  - component: {fileID: 1926733493}
   m_Layer: 5
   m_Name: InteractionCommandsPanel
   m_TagString: Untagged
@@ -4787,6 +4784,17 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
+--- !u!225 &1926733493
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1926733488}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &2050834448
 GameObject:
   m_ObjectHideFlags: 0

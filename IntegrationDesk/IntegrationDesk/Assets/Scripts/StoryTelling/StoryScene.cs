@@ -46,4 +46,10 @@ public class StoryScene : MonoBehaviour {
         behaviourTree.SendEvent("Show_Object_" + npc.NpcName, objectName);
         return false;
     }
+    
+    public bool InspectInventoryItem(InventoryItem item)
+    {
+        behaviourTree.SendEvent("Inspect", item.inspectObjectEvent);
+        return false;
+    }
 }

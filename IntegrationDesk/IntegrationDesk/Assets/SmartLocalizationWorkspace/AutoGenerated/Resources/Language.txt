@@ -296,4 +296,16 @@
 	<data name="Yann.thxForHelp.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
+	<data name="inventory.click.notebook.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="inventory.click.pencil.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="inventory.click.mariasletter.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="inventory.click.contract.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
 </root>

@@ -161,6 +161,18 @@
 	<data name="Edward.accueil.6" xml:space="preserve">
 		<value>Encore une fois bienvenue parmi nous et pas de bétises hein ! Je n'aime pas avoir à jouer de mon rôle hiérarchique... Bonne journée à vous.</value>
 	</data>
+	<data name="inventory.click.contract.0" xml:space="preserve">
+		<value>Développeur front-end de solution multimédia....du 01 Novembre 2016 au 30 Avril 2017... periode d'essai de 2 mois... base de 35h par semaine... Un document contractuel comme tant d'autres en somme</value>
+	</data>
+	<data name="inventory.click.mariasletter.0" xml:space="preserve">
+		<value>Le gag du jour... Ou comment détruire la planète lorsque l'on peut juste saluer les gens en personne</value>
+	</data>
+	<data name="inventory.click.notebook.0" xml:space="preserve">
+		<value>Du papier, rien d'extraordinaire à part si je veux dessiner en attendant ou y écrire des choses importantes, va savoir...</value>
+	</data>
+	<data name="inventory.click.pencil.0" xml:space="preserve">
+		<value>Euh vous êtes sérieux ? Vous ne savez pas à quoi ça sert...?</value>
+	</data>
 	<data name="Object.charlesComputer.dontUse.0" xml:space="preserve">
 		<value>Laisse tomber, c'est déjà un miracle qu'il n'est pas cadnassé sa tour...</value>
 	</data>
