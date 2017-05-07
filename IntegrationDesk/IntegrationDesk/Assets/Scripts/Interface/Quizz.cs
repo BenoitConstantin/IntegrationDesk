@@ -35,7 +35,8 @@ public class Quizz : MonoBehaviour {
     // Supprime et réinstancie les visuels des QR
     public void RefreshQuestionsGUI() {
         foreach (QuizzQuestionGUI child in questionGUIs)
-            Destroy(child);
+            Destroy(child.gameObject);
+        questionGUIs.Clear();
         
         foreach (QuizzQuestion question in questions)
         {
