@@ -108,6 +108,7 @@ public class HUD : MonoBehaviour {
     {
         if (instance == null)
             instance = this;
+        Show();
         inventoryItemGUIs = new List<InventoryItemGUI>();
         RefreshInventoryView();
         Quizz.Instance.Hide();

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 // Script gérant l'interface de quizz
 public class Quizz : MonoBehaviour {
@@ -16,6 +17,8 @@ public class Quizz : MonoBehaviour {
     // [HideInInspector]
     public List<QuizzQuestion> questions;   // les questions du quizz
     public CanvasGroup canvasGroup;         // le CanvasGroup gérant le quizz (permet de masquer celui-ci)
+    public CanvasGroup scorePopupCanvasGroup;
+    public Text scorePopupScore;
     bool visible = true;
     bool finished = false;
     public bool IsFinished {                // retourne vrai si le joueur a terminé de remplir le questionnaire
@@ -58,8 +61,10 @@ public class Quizz : MonoBehaviour {
                 score++;
         
         Debug.Log("Score : " + score + "/" + questionGUIs.Count);
+        scorePopupScore.text = "Score : " + score + "/" + questionGUIs.Count;
         
-        finished = true;
+        scorePopupCanvasGroup.interactable = scorePopupCanvasGroup.blocksRaycasts = true;
+        scorePopupCanvasGroup.alpha = 1;
     }
     
     
@@ -73,12 +78,20 @@ public class Quizz : MonoBehaviour {
     public void Show()
     {
         visible = canvasGroup.interactable = canvasGroup.blocksRaycasts = true;
+        scorePopupCanvasGroup.interactable = scorePopupCanvasGroup.blocksRaycasts = false;
         canvasGroup.alpha = 1;
+        scorePopupCanvasGroup.alpha = 0;
         finished = false;
     }
     // retourne vrai si l'interface est affichée
     public bool IsVisible()
     {
         return visible;
+    }
+    
+    public void OnReturnToGameButton()
+    {
+        finished = true;
+        Hide();
     }
 }
