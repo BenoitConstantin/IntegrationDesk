@@ -245,6 +245,9 @@
 	<data name="Object.yannComputer.dontUse.0" xml:space="preserve">
 		<value>Même pas en rêve ! J'ai déjà assez mangé comme ça !!</value>
 	</data>
+	<data name="Player.accueil.0" xml:space="preserve">
+		<value>Wow... ça commence bien ! J'ai même pas commencé à faire mes preuves que déjà on me prend de haut... et la journée commence à peine.</value>
+	</data>
 	<data name="Ted.alreadyTalkAboutAccount" xml:space="preserve">
 		<value>Je vais vraiment finir par fermer mon bureau à clé si ça continue...</value>
 	</data>
