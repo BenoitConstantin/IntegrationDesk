@@ -9,7 +9,7 @@ public class QuizzQuestionGUI : MonoBehaviour {
     public GameObject[] answerGOs;      // gameobjects des checkboxes réponses
     public Text[] answerLabels;         // label des checkboxes réponses
     public Toggle[] answerToggles;      // toggle des checkboxes réponses
-    QuizzQuestion question;             // question liée à ce visuel
+    public QuizzQuestion question;             // question liée à ce visuel
     
     // paramètre les différents champs en fonction d'une QuizzQuestion
     public void FromQuizzQuestion(QuizzQuestion question) {

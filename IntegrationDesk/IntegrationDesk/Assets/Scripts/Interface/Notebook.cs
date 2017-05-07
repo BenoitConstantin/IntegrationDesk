@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using EquilibreGames;
 
 public class Notebook : MonoBehaviour {
     static Notebook instance;
@@ -9,8 +10,14 @@ public class Notebook : MonoBehaviour {
         get { return instance; }
     }
     
+    [System.Serializable]
+    public class Entry {
+        public string content;
+        public StoryEvent unlockEvent;
+    }
+    
     public Text textObj;            // l'objet dans lequel est affiché le contenu du journal
-    public List<string> entries;    // les entrées du journal. Nécessite d'appeler UpdateNotebookContent après mise à jour
+    public List<Entry> entries;     // les entrées du journal. Nécessite d'appeler UpdateNotebookContent après mise à jour
     public CanvasGroup canvasGroup; // le CanvasGroup gérant le notebook (permet de masquer celui-ci)
     bool visible = true;
     
@@ -18,14 +25,16 @@ public class Notebook : MonoBehaviour {
         if (instance == null)
             instance = this;
         UpdateNotebookContent();
+        Hide();
 	}
     
     // met à jour le texte du notebook
     public void UpdateNotebookContent()
     {
         string combined = "";
-        foreach (string entry in entries)
-            combined += entry + "\n\n";
+        foreach (Entry entry in entries)
+            if (PersistentDataSystem.Instance.GetSavedData<StoryTellingSavedData>().EventIsRealized(entry.unlockEvent))
+                combined += entry.content + "\n\n";
         textObj.text = combined;
     }
     
@@ -41,6 +50,7 @@ public class Notebook : MonoBehaviour {
     {
         visible = canvasGroup.interactable = canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1;
+        UpdateNotebookContent();
     }
     // retourne vrai si l'interface est affichée
     public bool IsVisible()

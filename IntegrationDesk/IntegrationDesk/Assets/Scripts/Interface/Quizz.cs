@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using EquilibreGames;
 
 // Script gérant l'interface de quizz
 public class Quizz : MonoBehaviour {
@@ -56,12 +57,30 @@ public class Quizz : MonoBehaviour {
         Debug.Log("Quizz : bouton terminé");
         
         int score = 0;
+        string str = "";
+        
         foreach (QuizzQuestionGUI questionGUI in questionGUIs)
+        {
+            str += questionGUI.question.question + "\n";
             if (questionGUI.IsRight())
+            {
+                PersistentDataSystem.Instance.GetSavedData<PlayerSavedData>().integrationScore += (int)questionGUI.question.addToIntegration;
+                str += "    Vous avez bien répondu !\n";
                 score++;
+            }
+            else
+                str += "    Vous n'avez pas donné la bonne réponse !\n";
+            str += "    La réponse est :\n";
+            foreach (QuizzQuestion.QuizzAnswer answ in questionGUI.question.answers)
+                if (answ.isRight)
+                    str += "       " + answ.name + "\n";
+            str += questionGUI.question.explanation;
+            str += "\n";
+            str += "\n";
+        }
         
         Debug.Log("Score : " + score + "/" + questionGUIs.Count);
-        scorePopupScore.text = "Score : " + score + "/" + questionGUIs.Count;
+        scorePopupScore.text = "Score : " + score + "/" + questionGUIs.Count + "\n\n" + str;
         
         scorePopupCanvasGroup.interactable = scorePopupCanvasGroup.blocksRaycasts = true;
         scorePopupCanvasGroup.alpha = 1;
@@ -91,6 +110,7 @@ public class Quizz : MonoBehaviour {
     
     public void OnReturnToGameButton()
     {
+        HUD.Instance.RefreshFromSavedSettings();
         finished = true;
         Hide();
     }

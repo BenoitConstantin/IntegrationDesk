@@ -13,4 +13,6 @@ public class QuizzQuestion {
     
     public string question;     // intitulé de la question
     public QuizzAnswer[] answers; // les réponses proposées /!\ Pas plus de 4 réponses
+    public string explanation; // l'explication de la réponse à cette question
+    public float addToIntegration=5;
 }

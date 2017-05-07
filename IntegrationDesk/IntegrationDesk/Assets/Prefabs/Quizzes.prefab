@@ -42,6 +42,89 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1316488348270596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224549613155434036}
+  - component: {fileID: 114915171868216830}
+  m_Layer: 0
+  m_Name: QuizzLundiV2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &114915171868216830
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1316488348270596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6911b7b399dca48b43ac8be7c65e15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questions:
+  - question: "Sur quelle base horaire une journ\xE9e de travail classique se d\xE9roule
+      t'elle dans notre entreprise ?"
+    answers:
+    - name: "40 heures hebdomadaire, soit 8 heures journali\xE8re"
+      isRight: 0
+    - name: "35 heures hebdomadaire, soit 7 heures journali\xE8re"
+      isRight: 1
+    - name: "Je peux les moduler \xE0 ma guise"
+      isRight: 0
+    explanation: 
+    addToIntegration: 10
+  - question: "Qui poss\xE8de, sans accord, la l\xE9gitimit\xE9 en mati\xE8re de prise
+      de d\xE9cision importante au sein de notre organisation ?"
+    answers:
+    - name: Edward, le directeur seulement
+      isRight: 0
+    - name: "La d\xE9cision finale est prise par consensus avec l'ensemble des employ\xE9s"
+      isRight: 0
+    - name: Edward et Maria
+      isRight: 1
+    explanation: 
+    addToIntegration: 10
+  - question: "Quel est le bon r\xE9flexe \xE0 avoir lorsque l'on quitte l'entreprise
+      ?"
+    answers:
+    - name: Nettoyer le bureau pour le lendemain
+      isRight: 0
+    - name: "Envoyer un mail pour pr\xE9venir de notre d\xE9part"
+      isRight: 0
+    - name: Eteindre correctement son ordinateur et saluer tout le monde
+      isRight: 1
+    explanation: 
+    addToIntegration: 10
+  - question: "Quel est le d\xE9lai minimum l\xE9gal pour effectuer une demande de
+      cong\xE9s ?"
+    answers:
+    - name: "Les cong\xE9s c'est sacr\xE9 ! C'est quand je veux"
+      isRight: 0
+    - name: 3 semaines
+      isRight: 1
+    - name: "Aucune id\xE9e, c'\xE9tait vraiment marqu\xE9 dans la doc ?"
+      isRight: 0
+    explanation: 
+    addToIntegration: 10
+  - question: "A quelle p\xE9riode est ce que le solde de cong\xE9s est recr\xE9dit\xE9
+      pour l'ann\xE9e ?"
+    answers:
+    - name: "Aucune id\xE9e. Cette information n'est pas d\xE9crite dans le guide"
+      isRight: 1
+    - name: "Au 1er Janvier de chaque ann\xE9e"
+      isRight: 0
+    - name: "Au 1er Juin de chaque ann\xE9e"
+      isRight: 0
+    explanation: 
+    addToIntegration: 10
 --- !u!114 &114936187666343962
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54,30 +137,60 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - question: 2+3
+  - question: "I - Quel \xE9l\xE9ment de dialogue \xE9tait essentiel \xE0 r\xE9aliser
+      lorsque vous vous addressiez \xE0 un nouveau collaborateur ?"
     answers:
-    - name: 3
+    - name: "1) La r\xE9p\xE9tition des demandes pour s'assurer de la prise en compte
+        des informations"
       isRight: 0
-    - name: 4
-      isRight: 0
-    - name: 5
+    - name: "2) La pr\xE9sentation personnelle afin de commencer un dialogue sur de
+        bonnes bases"
       isRight: 1
-    - name: 6
+    - name: "3) La possibilit\xE9 d'\xE9voquer ses probl\xE8mes avec tous les interlocuteurs"
       isRight: 0
-  - question: 1+1
+    explanation: "Explications : Le proc\xE9d\xE9 soulign\xE9 ici fait partie de l'int\xE9gration
+      organisationnelle et notamment du processus de sociabilisation organisationnel
+      qui souligne l'importance des premiers \xE9changes entre les nouvelles recrues
+      et les collaborateurs. Il est essentiel de partir sur une base de discussion
+      saine d\xE8s les premiers \xE9changes. Le fait de se pr\xE9senter est \xE0 la
+      fois une marque de politesse et de volont\xE9 d'engager une vraie relation."
+    addToIntegration: 5
+  - question: "II - Qu'est ce qui rend Ted particuli\xE8rement difficile \xE0 appr\xE9hender
+      ?"
     answers:
-    - name: 11
+    - name: "1) Il est compl\xE8tement d\xE9motiv\xE9 par le poste qu'il occupe"
       isRight: 0
-    - name: 2
+    - name: "2) Il n'\xE9coute rien et ne veut rien savoir"
+      isRight: 0
+    - name: "3) Il s'invente des difficult\xE9s"
+      isRight: 0
+    - name: "4) Il est tr\xE8s attach\xE9 au processus et ne collabore que si tout
+        est fait dans les r\xE8gles"
       isRight: 1
-  - question: 5+6
+    explanation: "Explications : Ted fait parti des personnes difficiles \xE0 manager
+      en raison de son retrait social. Il connait son m\xE9tier sur le bout des doigts
+      mais reste tr\xE8s ferm\xE9 sur lui m\xEAme. Comprendre les habitudes et le
+      caract\xE8re de chaque personnes travaillant \xE0 vos c\xF4t\xE9s est essentiel
+      pour ne pas vous retrouver au milieu d'un conflit et ainsi mieux vous int\xE9grer
+      dans l'\xE9quipe."
+    addToIntegration: 5
+  - question: III - Pourquoi Maria attache t'elle autant d'importance au guide des
+      bonnes pratiques selon vous ?
     answers:
-    - name: 11
+    - name: "1) C'est elle qui l'a \xE9crit donc elle veut le montrer"
+      isRight: 0
+    - name: 2) C'est une femme psychorigide qui veut absolument formater l'esprit
+        des gens
+      isRight: 0
+    - name: "3) Le guide contient des \xE9l\xE9ments cl\xE9s du fonctionnement de
+        l'entreprise"
       isRight: 1
-    - name: 10
-      isRight: 0
-    - name: 12
-      isRight: 0
+    explanation: "Explications : Les \xE9l\xE9ments d\xE9crits dans ce guide pr\xE9sentent
+      les grandes lignes organisationnelles de l'entreprise. Ces grandes lignes s'inscrivent
+      dans le processus de \"sociabilisation anticip\xE9e\" qui est normalement r\xE9alis\xE9
+      avant l'entr\xE9e dans l'organisation. Il s'agit donc l\xE0 d'\xE9l\xE9ments
+      cl\xE9s d'int\xE9gration que les jeunes recrues doivent int\xE9grer"
+    addToIntegration: 5
 --- !u!224 &224272780683192782
 RectTransform:
   m_ObjectHideFlags: 1
@@ -107,8 +220,27 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224272780683192782}
+  - {fileID: 224549613155434036}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224549613155434036
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1316488348270596}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224434733896107546}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

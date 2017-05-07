@@ -661,11 +661,11 @@ RectTransform:
   m_Father: {fileID: 322350502}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 14.999999}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 7.69, y: -8.73}
+  m_SizeDelta: {x: 333.66, y: 30.9}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &220446798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,11 +737,11 @@ RectTransform:
   m_Father: {fileID: 322350502}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -45}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0}
 --- !u!114 &276693193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -931,10 +931,10 @@ RectTransform:
   m_Father: {fileID: 824590346}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.2, y: 0.1}
+  m_AnchorMax: {x: 0.8, y: 0.9}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 227.35, y: 129.7}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &322350503
 MonoBehaviour:
@@ -976,7 +976,7 @@ CanvasGroup:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 322350501}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0.36
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -1341,8 +1341,8 @@ RectTransform:
   m_Father: {fileID: 824590346}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.074863255}
-  m_AnchorMax: {x: 1, y: 0.9275897}
+  m_AnchorMin: {x: 0, y: 0.02}
+  m_AnchorMax: {x: 1, y: 0.98}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2026,12 +2026,16 @@ MonoBehaviour:
       isRight: 0
     - name: Racine de deux
       isRight: 0
+    explanation: 
+    addToIntegration: 5
   - question: Csdpfij
     answers:
     - name: sdfsd
       isRight: 1
     - name: sdf
       isRight: 0
+    explanation: 
+    addToIntegration: 5
   - question: sdfsdf
     answers:
     - name: wxc
@@ -2040,16 +2044,28 @@ MonoBehaviour:
       isRight: 1
     - name: dwxc
       isRight: 0
+    explanation: 
+    addToIntegration: 5
   - question: 
     answers: []
+    explanation: 
+    addToIntegration: 5
   - question: 
     answers: []
+    explanation: 
+    addToIntegration: 5
   - question: 
     answers: []
+    explanation: 
+    addToIntegration: 5
   - question: 
     answers: []
+    explanation: 
+    addToIntegration: 5
   - question: 
     answers: []
+    explanation: 
+    addToIntegration: 5
   canvasGroup: {fileID: 824590347}
   scorePopupCanvasGroup: {fileID: 322350505}
   scorePopupScore: {fileID: 849568455}
@@ -2138,9 +2154,9 @@ CanvasGroup:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 824590341}
   m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!1 &841557187
 GameObject:
@@ -2293,11 +2309,11 @@ RectTransform:
   m_Father: {fileID: 322350502}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -15}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 10.3, y: -38}
+  m_SizeDelta: {x: -24, y: -38}
+  m_Pivot: {x: 0, y: 1}
 --- !u!1 &871276436
 GameObject:
   m_ObjectHideFlags: 0
@@ -2331,9 +2347,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textObj: {fileID: 2050834449}
   entries:
-  - sfksgfdfhksdf\nssdfdsf
-  - sqsd
-  - qsdqsd
+  - content: "Et c'est partit pour une journ\xE9e de pur bonheur ! Esp\xE9rons que
+      mes coll\xE8gues soient sympa... Bon, commen\xE7ons, j'imagine que je pourrais
+      commencer par allumer mon PC, ou aller saluer mes coll\xE8gues..."
+    unlockEvent: 2
+  - content: "Mouais, ben c'est mal barr\xE9, j'ai pas d'identifiants pour mon PC.
+      Bon, autant aller demander de l'aide aux coll\xE8gues, ils pourront s\xFBrement
+      m'aider..."
+    unlockEvent: 1
+  - content: "Identifiant de mon PC (\xE7a peut servir) : ID-1337"
+    unlockEvent: 23
   canvasGroup: {fileID: 871276442}
 --- !u!114 &871276438
 MonoBehaviour:
@@ -2420,7 +2443,7 @@ CanvasGroup:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 871276436}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 1
