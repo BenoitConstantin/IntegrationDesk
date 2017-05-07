@@ -108,7 +108,7 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &46183258
+--- !u!114 &62661241
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
@@ -382,7 +382,7 @@ Prefab:
         type: 2}
       propertyPath: _graph
       value: 
-      objectReference: {fileID: 46183258}
+      objectReference: {fileID: 62661241}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1afdb1720b290ef46a7486cdb15afe6c, type: 2}
   m_IsPrefabParent: 0
@@ -1491,6 +1491,26 @@ Prefab:
       propertyPath: _portrait
       value: 
       objectReference: {fileID: 2800000, guid: 5dbc3233aa23eda48bb0cc0242ceb77e, type: 3}
+    - target: {fileID: 114815085995528194, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: subtitleDelays.characterDelay
+      value: 0.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 114815085995528194, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: subtitleDelays.sentenceDelay
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 114815085995528194, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: subtitleDelays.commaDelay
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 114815085995528194, guid: d5c807b9c26ae4f40b582820037509d3,
+        type: 2}
+      propertyPath: subtitleDelays.finalDelay
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d5c807b9c26ae4f40b582820037509d3, type: 2}
   m_IsPrefabParent: 0

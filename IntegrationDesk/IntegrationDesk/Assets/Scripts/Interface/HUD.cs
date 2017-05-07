@@ -115,6 +115,7 @@ public class HUD : MonoBehaviour {
         Mode = HUDMode.none;
         DeselectNPC();
         RefreshFromSavedSettings();
+        StartCoroutine(RefreshInventoryViewCoroutineHack());
     }
     
     // Restaure/rafraichit la config de l'UI en fonction des données de jeu sauvegardées (inventaire, intégration, etc.)
@@ -123,18 +124,27 @@ public class HUD : MonoBehaviour {
         progressPanel.Day = GameManager.Instance.currentDay;
         PlayerSavedData data = PersistentDataSystem.Instance.GetSavedData<PlayerSavedData>();
         progressPanel.Progression = data.integrationScore / 100;
-        inventoryItems = data.inventoryItems;
+        // inventoryItems = data.inventoryItems;
         HasNotebook = data.hasNotebook;
         RefreshInventoryView();
     }
     
     // Supprime et réinstancie les visuels de l'inventaire
     public void RefreshInventoryView() {
+        int numItems = 0;
+        foreach (InventoryItem item in inventoryItems)
+            if (PersistentDataSystem.Instance.GetSavedData<StoryTellingSavedData>().EventIsRealized(item.obtainObjectEvent))
+                numItems++;
+        if (numItems == inventoryItemGUIs.Count)
+            return;
         
         foreach (InventoryItemGUI gui in inventoryItemGUIs)
-            Destroy(gui);
+            Destroy(gui.gameObject);
+        inventoryItemGUIs.Clear();
         foreach (InventoryItem item in inventoryItems)
         {
+            if (!PersistentDataSystem.Instance.GetSavedData<StoryTellingSavedData>().EventIsRealized(item.obtainObjectEvent))
+                continue;
             GameObject itemGuiGO = Instantiate(inventoryItemGUI_Prefab);
             InventoryItemGUI itemGui = itemGuiGO.GetComponent<InventoryItemGUI>();
             itemGui.FromInventoryItem(item);
@@ -180,9 +190,9 @@ public class HUD : MonoBehaviour {
     // Appelé lors d'un clic sur un des boutons d'inventaires
     public void OnInventoryItemClicked(InventoryItem item)
     {
-        Debug.Log("Clic objet " + item.name);
+        Debug.Log("Clic objet " + item.itemName);
         if (currentNPC != null)
-            currentNPC.Show(item.name);
+            currentNPC.Show(item.itemName);
         else
             Debug.LogError("Impossible de montrer l'objet car pas de NPC");
     }
@@ -220,5 +230,14 @@ public class HUD : MonoBehaviour {
         npcSprite.sprite = null;
         npcSprite.color = new Color(0,0,0,0);
         npcBackground.color = new Color(0,0,0,0);
+    }
+    
+    IEnumerator RefreshInventoryViewCoroutineHack()
+    {
+        while (true)
+        {
+            RefreshInventoryView();
+            yield return new WaitForSeconds(1);
+        }
     }
 }

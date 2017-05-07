@@ -19,7 +19,7 @@ public class InventoryItemGUI : MonoBehaviour {
     // paramètre les composants du gameobject en fonction d'un InventoryItem
     public void FromInventoryItem(InventoryItem item) {
         inventoryItem = item;
-        itemName.text = item.name;
+        itemName.text = item.itemName;
         itemImage.sprite = item.image;
     }
     

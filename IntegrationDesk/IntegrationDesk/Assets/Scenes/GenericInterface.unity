@@ -2736,7 +2736,19 @@ MonoBehaviour:
   canvasGroup: {fileID: 1184306062}
   actionBarCanvasGroup: {fileID: 1722766360}
   notebookCanvasGroup: {fileID: 1495015542}
-  inventoryItems: []
+  inventoryItems:
+  - itemName: Crayon
+    image: {fileID: 21300000, guid: 39672fb5ad4c7db49bf0b16be444933e, type: 3}
+    obtainObjectEvent: 3
+  - itemName: Lettre de Maria
+    image: {fileID: 21300000, guid: f864c7582241a6d49bbb768895dfcd28, type: 3}
+    obtainObjectEvent: 4
+  - itemName: Contrat de travail
+    image: {fileID: 21300000, guid: 4dee826dfcfdac8469cef251811f5cd6, type: 3}
+    obtainObjectEvent: 5
+  - itemName: Guide des bonnes pratiques
+    image: {fileID: 21300000, guid: 68fd4aaad85be2f47af8f2fb5e1b8985, type: 3}
+    obtainObjectEvent: 6
   inventoryItemGUI_Prefab: {fileID: 1512442222942112, guid: b40a4b26b476e4c4989aa057e69fbf25,
     type: 2}
   inventoryPanel: {fileID: 280837224}

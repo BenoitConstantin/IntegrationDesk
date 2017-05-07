@@ -17,6 +17,13 @@ public class Quizz : MonoBehaviour {
     public List<QuizzQuestion> questions;   // les questions du quizz
     public CanvasGroup canvasGroup;         // le CanvasGroup gérant le quizz (permet de masquer celui-ci)
     bool visible = true;
+    bool finished = false;
+    public bool IsFinished {                // retourne vrai si le joueur a terminé de remplir le questionnaire
+        get {
+            return finished;
+        }
+    }
+    
     
     void Start() {
         if (instance == null)
@@ -51,7 +58,7 @@ public class Quizz : MonoBehaviour {
         
         Debug.Log("Score : " + score + "/" + questionGUIs.Count);
         
-        // TODO
+        finished = true;
     }
     
     
@@ -66,6 +73,7 @@ public class Quizz : MonoBehaviour {
     {
         visible = canvasGroup.interactable = canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1;
+        finished = false;
     }
     // retourne vrai si l'interface est affichée
     public bool IsVisible()
