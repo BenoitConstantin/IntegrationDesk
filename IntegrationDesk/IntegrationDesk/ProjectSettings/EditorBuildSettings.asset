@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TedDesk.unity
     guid: ec588fa3c3145a8439b759801d3202a9
   - enabled: 0
-    path: Assets/Scenes/Quizz.unity
+    path: 
     guid: 3f22302cff79ebc4eafe700f234e00f5
   - enabled: 0
     path: Assets/Scenes/DevelopersRoom.unity
@@ -26,3 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GenericInterface.unity
     guid: b5b47acf11bd085449735e1b9f2f8b3c
+  - enabled: 1
+    path: Assets/Scenes/MariasDesk.unity
+    guid: e3aae7c288298ef459310c95931fe059
+  - enabled: 1
+    path: Assets/Scenes/MariasQuizz.unity
+    guid: 7386a6cad97dfa54a934dfdf9900109f
+  - enabled: 1
+    path: Assets/Scenes/Quizz.unity
+    guid: ef9f525b7620a6742a624b50d5ba1ef0

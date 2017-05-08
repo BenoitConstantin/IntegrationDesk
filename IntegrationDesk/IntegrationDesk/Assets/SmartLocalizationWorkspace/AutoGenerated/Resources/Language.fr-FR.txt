@@ -137,6 +137,18 @@
 	<data name="Charles.presentation.dontWantToExchange.0" xml:space="preserve">
 		<value>Ou autrement dit, ne me demande jamais quoi que ce soit... la collaboration, la vraie !</value>
 	</data>
+	<data name="Charles.showRandomObject1.0" xml:space="preserve">
+		<value>Je suis ravi de voir que tu as de belles fournitures mais... tu veux que j'en fasse quoi au juste ?</value>
+	</data>
+	<data name="Charles.showRandomObject1Player.0" xml:space="preserve">
+		<value>Ok, ravi de te connaître M. Rigidité... Premier échange, il me fait déjà passer pour un idiot.. j'adore !</value>
+	</data>
+	<data name="Charles.showRandomObject2.0" xml:space="preserve">
+		<value>*Regard intense*</value>
+	</data>
+	<data name="Charles.showRandomObject2Player.0" xml:space="preserve">
+		<value>Plus j'apprends à le connaître, plus j'ai l'impression qu'il m'apprécie... ça fait plaisir</value>
+	</data>
 	<data name="Charles.thxForHelp.0" xml:space="preserve">
 		<value>Et tu crois pas que ça irai plus vite si tu me donnais un coup de main ?!</value>
 	</data>
@@ -164,6 +176,39 @@
 	<data name="inventory.click.contract.0" xml:space="preserve">
 		<value>Développeur front-end de solution multimédia....du 01 Novembre 2016 au 30 Avril 2017... periode d'essai de 2 mois... base de 35h par semaine... Un document contractuel comme tant d'autres en somme</value>
 	</data>
+	<data name="inventory.click.goodpractice.0" xml:space="preserve">
+		<value>"I - Vos horaires sont 8h30 - 12h, 13h30 - 17h. En cas de retard, ces horaires pourront éventuellement et en de très rares occasions être modifiée."</value>
+	</data>
+	<data name="inventory.click.goodpractice.1" xml:space="preserve">
+		<value>"II - Merci de travailler dans le silence : musique et autres objets bruyants sont proscrits."</value>
+	</data>
+	<data name="inventory.click.goodpractice.10" xml:space="preserve">
+		<value>"Et ben... rien que ça. Décidemment je sens que je vais vraiment m'amuser ici..."</value>
+	</data>
+	<data name="inventory.click.goodpractice.2" xml:space="preserve">
+		<value>"III - Pour toute demande de congés, en faire la demande au minimum 3 semaines avant la date effective demandée sous peine de quoi ils pourront être refusé."</value>
+	</data>
+	<data name="inventory.click.goodpractice.3" xml:space="preserve">
+		<value>"IV - Rappelez vous que vous êtes au sein d'une équipe, toute manoeuvre d'innovation personnelle non validée se verra très rapidement abandonnée."</value>
+	</data>
+	<data name="inventory.click.goodpractice.4" xml:space="preserve">
+		<value>"V - Votre ordinateur est votre outil de travail. Prenez en soin en l'éteignant tous les soirs lorsque vous quitter votre poste par exemple."</value>
+	</data>
+	<data name="inventory.click.goodpractice.5" xml:space="preserve">
+		<value>"VI - En cas de litige ou de conflit avec un membre de l'équipe, en avertir immédiatement Maria qui prendra les dispositions nécessaires."</value>
+	</data>
+	<data name="inventory.click.goodpractice.6" xml:space="preserve">
+		<value>"VII - L'ensemble de vos réalisations et travaux appartiennent exclusivement à l'entreprise. Il est formellement interdit d'en faire un usage personnel."</value>
+	</data>
+	<data name="inventory.click.goodpractice.7" xml:space="preserve">
+		<value>"VIII - La décision revient au directeur, ou en son absence à Maria. Toute manoeuvre décisionnelle personnelle doit faire l'objet d'un accord."</value>
+	</data>
+	<data name="inventory.click.goodpractice.8" xml:space="preserve">
+		<value>"IX - En cas d'absence, fournir les justificatifs dans les plus brefs délais à Maria sous peine de se voir infliger une retenue sur salaire"</value>
+	</data>
+	<data name="inventory.click.goodpractice.9" xml:space="preserve">
+		<value>"X - Les congés payés sont au nombre de 25 jours par année, excepté la première année. Si la demande formulée la première année est accompagnée d'un motif suffisant, un congé par anticipation peut éventuellement être pris"</value>
+	</data>
 	<data name="inventory.click.mariasletter.0" xml:space="preserve">
 		<value>Le gag du jour... Ou comment détruire la planète lorsque l'on peut juste saluer les gens en personne</value>
 	</data>
@@ -172,6 +217,36 @@
 	</data>
 	<data name="inventory.click.pencil.0" xml:space="preserve">
 		<value>Euh vous êtes sérieux ? Vous ne savez pas à quoi ça sert...?</value>
+	</data>
+	<data name="Maria.greetings.0" xml:space="preserve">
+		<value>Ah je vois que vous êtes en plein apprentissage, j'en suis ravi ! Mais puisque vous semblez avoir déjà terminé, vérifions ensemble que tout est clair dans votre esprit voulez-vous ?</value>
+	</data>
+	<data name="Maria.greetingsPlayer.0" xml:space="preserve">
+		<value>J'ai vraiment le choix là ?..</value>
+	</data>
+	<data name="Maria.quizzFailure.0" xml:space="preserve">
+		<value>Bizarrement je ne suis pas surprise ! Vous avez l'air de prendre pas mal de choses à la légère. Attention à jeu là avec moi, je n'aime pas avoir des contestataires au sein de mon équipe ! Votre opinion est entendable mais il faut savoir y mettre les formes et faire ce que l'on vous demande. Vous ne réussirez jamais à vous intégrer en conservant une attitude aussi laxiste et individuelle !!</value>
+	</data>
+	<data name="Maria.quizzFailure.1" xml:space="preserve">
+		<value>Ici, on privilégie l'équipe, la collaboration et le savoir vivre ! Je vous conseille vivement de vous remettre à l'étude et d'adopter une attitude plus professionnel ! Il ne tient qu'à vous de faire en sorte que votre intégration se passe en douceur. En tant que référente, il est de mon devoir de vous avertir ! Alors au travail !</value>
+	</data>
+	<data name="Maria.quizzFailurePlayer.0" xml:space="preserve">
+		<value>Pan ! Ça c'est envoyé.. j'ai presque envie de pleurer, jamais on ne s'est adressé à moi comme ça... Bonjour le savoir-vivre, en tout cas je n'ai vraiment pas intérêt à la mettre en colère.</value>
+	</data>
+	<data name="Maria.quizzSuccess.0" xml:space="preserve">
+		<value>Eh ben c'est pas mal du tout ! Ravi de voir que vous prenez mes demandes très au sérieux. Je me présente, je m'appelle Maria, je suis votre référente technique. Pour moi, il est très important que les valeurs de notre entreprise perdure et s'enrichisse de jour en jour. Continuez comme ça et vous deviendrez un pilier de notre organisation.</value>
+	</data>
+	<data name="Maria.quizzSuccess.1" xml:space="preserve">
+		<value>Comment se passe votre première journée parmi nous sinon ? Avez-vous reçu vos codes de connexion ? Hum.. je vois, on ne vous a donc rien dis ? Sacré Ted... Bon, prenez votre notebook et notez y votre nom, votre prénom et l'identifiant de votre ordinateur et adressez ces informations à Ted, cela devrait accélérer les choses. En tout cas je suis ravi de vous compter dans mon équipe, j'espère que vous vous y sentirez bien. Ah et si vous avez le moindre soucis, n'hésitez pas à venir me voir.</value>
+	</data>
+	<data name="Maria.quizzSuccessPlayer.0" xml:space="preserve">
+		<value>Eh ben, elle n'est finalement pas si terrible que ça. Elle est même particulièrement efficace et agréable. Toutefois méfiance... On reconnait un tyran que lorsqu'il est en colère !</value>
+	</data>
+	<data name="Maria.repassTest.0" xml:space="preserve">
+		<value>Bon, c'est bon ? Vous pensez pouvoir repasser le test cette fois-ci ? Sinon, vous avez tenté de réponde par élimination ? Ca prendra jamais que quelques centaines d'essais. J'ai tout mon temps, vous savez, je suis en CDI moi.</value>
+	</data>
+	<data name="Maria.repassTestPlayer.0" xml:space="preserve">
+		<value>C'est ça, continue de m'enfoncer... on va voir ce que l'on va voir.</value>
 	</data>
 	<data name="Object.charlesComputer.dontUse.0" xml:space="preserve">
 		<value>Laisse tomber, c'est déjà un miracle qu'il n'est pas cadnassé sa tour...</value>
@@ -198,7 +273,7 @@
 		<value>Quel genre d'entreprise offre une tasse à café à ces employés dès le premier jour ? A croire qu'ils savent à quel point le travail qu'ils demandent est fatiguant... c'est vraiment étrange !</value>
 	</data>
 	<data name="Object.computer.locked.0" xml:space="preserve">
-		<value>Allé au travail ! Il est temps de montrer ce que l'on sait faire et de... Raaah ça commence ! Ils ont même pas été capable de créer mes identifiants avant mon arrivée... ça promet l'organisation !</value>
+		<value>Allez au travail ! Il est temps de montrer ce que l'on sait faire et de... Raaah ça commence ! Ils ont même pas été capable de créer mes identifiants avant mon arrivée... ça promet l'organisation !</value>
 	</data>
 	<data name="Object.computer.locked.1" xml:space="preserve">
 		<value>Super ! Je fais comment pour travailler moi ?</value>
@@ -281,6 +356,30 @@
 	<data name="Ted.presentation.tired.0" xml:space="preserve">
 		<value>C'est la première fois que je vois quelqu'un fatigué a l'idée de parler... un vrai phénomène ce Ted</value>
 	</data>
+	<data name="Ted.showNotebookCorrect.0" xml:space="preserve">
+		<value>Montre moi ça... hum d'accord tout est bon. Je m'occupe de ça dans quelques minutes. Merci pour ta coopération, tu vois quand tu veux !</value>
+	</data>
+	<data name="Ted.showNotebookCorrectPlayer.0" xml:space="preserve">
+		<value>Et en plus il continue de se payer ma tête...heureusement que j'ai fini, j'en peux déjà plus de cette journée.</value>
+	</data>
+	<data name="Ted.showNotebookIncorrect.0" xml:space="preserve">
+		<value>Montre moi ça... Ben, t'es sympa mon gars, mais comment veux-tu que je t'ouvre ton compte ? Je sais même pas sur quel PC tu est censé bosser. Va me chercher ton numéro de machine et on en reparlera !</value>
+	</data>
+	<data name="Ted.showNotebookIncorrectPlayer.0" xml:space="preserve">
+		<value>Ah bah forcément, si j'avais pensé à prendre ma boule de cristal aujourd'hui, j'aurai su direct que t'avais besoin du numéro. Bon, on est repartis...</value>
+	</data>
+	<data name="Ted.showRandomObject1.0" xml:space="preserve">
+		<value>Ça y est ça commence ? Tu viens a peine d'arriver que déjà tu te sens le besoin de me parler pour rien dire ?</value>
+	</data>
+	<data name="Ted.showRandomObject1Player.0" xml:space="preserve">
+		<value>Euh.. ok, c'est pas parce que tu as dormi que 10h qu'il faut commencer à être désagréable</value>
+	</data>
+	<data name="Ted.showRandomObject2.0" xml:space="preserve">
+		<value>Mais tu veux que je fasse quoi de ça au juste ?! Reviens lorsque tu auras des informations interessantes à me soumettre</value>
+	</data>
+	<data name="Ted.showRandomObject2Player.0" xml:space="preserve">
+		<value>Des informations interessantes ?! Je me demande bien ce que cela veut dire dans sa tête...</value>
+	</data>
 	<data name="Ted.thxForHelp.0" xml:space="preserve">
 		<value>Ted, zéro, le café un ! Faudrait pas qu'il en boit trop, ça risquerait d'être dangereux pour sa santé...</value>
 	</data>
@@ -304,6 +403,18 @@
 	</data>
 	<data name="Yann.presentation.dontWantToExchange.0" xml:space="preserve">
 		<value>Mouais...ben pour le moment j'ai tout sauf envie d'échanger avec toi...</value>
+	</data>
+	<data name="Yann.showRandomObject1.0" xml:space="preserve">
+		<value>Hey, c'est cool ! A peine arrivé que déjà tu m'apportes des choses ! Je sens qu'on va bien s'entendre tous les deux.. Mais bon c'est nul ce que tu me donnes là ! Tu veux pas m'apporter de quoi grignoter plutôt ?</value>
+	</data>
+	<data name="Yann.showRandomObject1Player.0" xml:space="preserve">
+		<value>Il est sérieux ?! Il est que 10h...Et si je refuse, il me mange ?</value>
+	</data>
+	<data name="Yann.showRandomObject2.0" xml:space="preserve">
+		<value>Reviens quand tu auras quelque chose qui sent bon à m'apporter. En attendant je travaille à oublier ma faim</value>
+	</data>
+	<data name="Yann.showRandomObject2Player.0" xml:space="preserve">
+		<value>A croire que c'est le genre de mec à ne parler que la bouche pleine... ça promet les échanges</value>
 	</data>
 	<data name="Yann.thxForHelp.0" xml:space="preserve">
 		<value>Wouah ok... super ! Ben.. merci pour ton aide hein</value>

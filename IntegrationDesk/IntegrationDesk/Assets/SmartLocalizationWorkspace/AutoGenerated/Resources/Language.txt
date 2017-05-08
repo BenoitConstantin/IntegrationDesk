@@ -161,6 +161,81 @@
 	<data name="Edward.accueil.6" xml:space="preserve">
 		<value>Ce que dit le directeur pour l'accueil de l'alternan</value>
 	</data>
+	<data name="inventory.click.contract.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="inventory.click.goodpractice.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="inventory.click.goodpractice.1" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="inventory.click.goodpractice.10" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="inventory.click.goodpractice.2" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="inventory.click.goodpractice.3" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="inventory.click.goodpractice.4" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="inventory.click.goodpractice.5" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="inventory.click.goodpractice.6" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="inventory.click.goodpractice.7" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="inventory.click.goodpractice.8" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="inventory.click.goodpractice.9" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="inventory.click.mariasletter.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="inventory.click.notebook.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="inventory.click.pencil.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Maria.greetings.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Maria.greetingsPlayer.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Maria.quizzFailure.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Maria.quizzFailure.1" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Maria.quizzFailurePlayer.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Maria.quizzSuccess.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Maria.quizzSuccess.1" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Maria.quizzSuccessPlayer.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Maria.repassTest.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Maria.repassTestPlayer.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
 	<data name="Object.charlesComputer.dontUse.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
@@ -269,6 +344,30 @@
 	<data name="Ted.presentation.tired.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
+	<data name="Ted.showNotebookCorrect.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Ted.showNotebookCorrectPlayer.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Ted.showNotebookIncorrect.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Ted.showNotebookIncorrectPlayer.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Ted.showRandomObject1.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Ted.showRandomObject1Player.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Ted.showRandomObject2.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Ted.showRandomObject2Player.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
 	<data name="Ted.thxForHelp.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
@@ -296,16 +395,28 @@
 	<data name="Yann.thxForHelp.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="inventory.click.notebook.0" xml:space="preserve">
+	<data name="Yann.showRandomObject1.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="inventory.click.pencil.0" xml:space="preserve">
+	<data name="Yann.showRandomObject1Player.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="inventory.click.mariasletter.0" xml:space="preserve">
+	<data name="Yann.showRandomObject2.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
-	<data name="inventory.click.contract.0" xml:space="preserve">
+	<data name="Yann.showRandomObject2Player.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Charles.showRandomObject1.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Charles.showRandomObject1Player.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Charles.showRandomObject2.0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="Charles.showRandomObject2Player.0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
 </root>

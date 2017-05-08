@@ -17,8 +17,10 @@ public class Quizz : MonoBehaviour {
     
     // [HideInInspector]
     public List<QuizzQuestion> questions;   // les questions du quizz
+    public IntegrationDeskQuizz idquizz;
     public CanvasGroup canvasGroup;         // le CanvasGroup gérant le quizz (permet de masquer celui-ci)
     public CanvasGroup scorePopupCanvasGroup;
+    public CanvasGroup DawnOf;
     public Text scorePopupScore;
     bool visible = true;
     bool finished = false;
@@ -82,6 +84,10 @@ public class Quizz : MonoBehaviour {
         Debug.Log("Score : " + score + "/" + questionGUIs.Count);
         scorePopupScore.text = "Score : " + score + "/" + questionGUIs.Count + "\n\n" + str;
         
+        float successRatio = score / (float)questionGUIs.Count;
+        if (successRatio >= idquizz.successRatioThreshold)
+            PersistentDataSystem.Instance.GetSavedData<StoryTellingSavedData>().RealizeEvent(idquizz.onSuccessUnlockEvent);
+        
         scorePopupCanvasGroup.interactable = scorePopupCanvasGroup.blocksRaycasts = true;
         scorePopupCanvasGroup.alpha = 1;
     }
@@ -98,9 +104,15 @@ public class Quizz : MonoBehaviour {
     {
         visible = canvasGroup.interactable = canvasGroup.blocksRaycasts = true;
         scorePopupCanvasGroup.interactable = scorePopupCanvasGroup.blocksRaycasts = false;
+        DawnOf.alpha = 0;
         canvasGroup.alpha = 1;
         scorePopupCanvasGroup.alpha = 0;
         finished = false;
+    }
+    public void ShowEEgg()
+    {
+        canvasGroup.alpha = 1;
+        DawnOf.alpha = 1;
     }
     // retourne vrai si l'interface est affichée
     public bool IsVisible()

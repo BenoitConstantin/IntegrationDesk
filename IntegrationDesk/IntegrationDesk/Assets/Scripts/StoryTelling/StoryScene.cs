@@ -52,4 +52,10 @@ public class StoryScene : MonoBehaviour {
         behaviourTree.SendEvent("Inspect", item.inspectObjectEvent);
         return false;
     }
+
+    public bool Haxxxxxxxxx(StoryEvent sevent)
+    {
+        behaviourTree.SendEvent("Object", sevent);
+        return true;
+    }
 }

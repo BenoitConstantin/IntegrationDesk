@@ -36,7 +36,7 @@ GameObject:
   - component: {fileID: 224272780683192782}
   - component: {fileID: 114936187666343962}
   m_Layer: 0
-  m_Name: QuizzLundi
+  m_Name: QuizzLundiFinal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,7 +52,7 @@ GameObject:
   - component: {fileID: 224549613155434036}
   - component: {fileID: 114915171868216830}
   m_Layer: 0
-  m_Name: QuizzLundiV2
+  m_Name: QuizzLundiMaria
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,6 +125,8 @@ MonoBehaviour:
       isRight: 0
     explanation: 
     addToIntegration: 10
+  onSuccessUnlockEvent: 30
+  successRatioThreshold: 0.9
 --- !u!114 &114936187666343962
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -191,6 +193,8 @@ MonoBehaviour:
       avant l'entr\xE9e dans l'organisation. Il s'agit donc l\xE0 d'\xE9l\xE9ments
       cl\xE9s d'int\xE9gration que les jeunes recrues doivent int\xE9grer"
     addToIntegration: 5
+  onSuccessUnlockEvent: 0
+  successRatioThreshold: 0.9
 --- !u!224 &224272780683192782
 RectTransform:
   m_ObjectHideFlags: 1

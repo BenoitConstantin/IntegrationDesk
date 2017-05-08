@@ -14,6 +14,7 @@ public class StartQuizz : ActionTask {
     {
         base.OnExecute();
         Quizz.Instance.questions = quizz.questions;
+        Quizz.Instance.idquizz = quizz;
         Quizz.Instance.RefreshQuestionsGUI();
         Quizz.Instance.Show();
         HUD.Instance.RefreshFromSavedSettings();

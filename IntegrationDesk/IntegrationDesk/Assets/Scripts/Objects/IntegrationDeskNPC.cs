@@ -45,6 +45,10 @@ public class IntegrationDeskNPC : MonoBehaviour {
     }
     public void Show(string objectName)
     {
+        Debug.Log("Montre l'objet " + objectName + " à " + NpcName);
+        if (objectName == "Bloc-note" && NpcName == "Ted")
+            // DAT HAKS !
+            storyScene.Haxxxxxxxxx(StoryEvent.HAXXXXXX);
         storyScene.ShowObjectToNPC(this, objectName);
     }
 }
