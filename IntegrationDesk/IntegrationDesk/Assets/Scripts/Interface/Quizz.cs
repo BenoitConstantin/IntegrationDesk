@@ -60,13 +60,14 @@ public class Quizz : MonoBehaviour {
         
         int score = 0;
         string str = "";
+        float integrationScoreToAdd = 0;
         
         foreach (QuizzQuestionGUI questionGUI in questionGUIs)
         {
             str += questionGUI.question.question + "\n";
             if (questionGUI.IsRight())
             {
-                PersistentDataSystem.Instance.GetSavedData<PlayerSavedData>().integrationScore += (int)questionGUI.question.addToIntegration;
+                integrationScoreToAdd += questionGUI.question.addToIntegration;
                 str += "    Vous avez bien répondu !\n";
                 score++;
             }
@@ -86,7 +87,10 @@ public class Quizz : MonoBehaviour {
         
         float successRatio = score / (float)questionGUIs.Count;
         if (successRatio >= idquizz.successRatioThreshold)
+        {
+            PersistentDataSystem.Instance.GetSavedData<PlayerSavedData>().integrationScore += (int)integrationScoreToAdd;
             PersistentDataSystem.Instance.GetSavedData<StoryTellingSavedData>().RealizeEvent(idquizz.onSuccessUnlockEvent);
+        }
         
         scorePopupCanvasGroup.interactable = scorePopupCanvasGroup.blocksRaycasts = true;
         scorePopupCanvasGroup.alpha = 1;
