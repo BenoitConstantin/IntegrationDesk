@@ -126,7 +126,7 @@ MonoBehaviour:
     explanation: 
     addToIntegration: 10
   onSuccessUnlockEvent: 30
-  successRatioThreshold: 0.9
+  successRatioThreshold: 0.78
 --- !u!114 &114936187666343962
 MonoBehaviour:
   m_ObjectHideFlags: 1
