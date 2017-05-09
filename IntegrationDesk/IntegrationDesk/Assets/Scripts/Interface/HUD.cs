@@ -124,7 +124,8 @@ public class HUD : MonoBehaviour {
     {
         progressPanel.Day = GameManager.Instance.currentDay;
         PlayerSavedData data = PersistentDataSystem.Instance.GetSavedData<PlayerSavedData>();
-        progressPanel.Progression = data.integrationScore / 100;
+        // Debug.Log("Refresh score: " + data.integrationScore);
+        progressPanel.Progression = data.integrationScore / (float)100;
         // inventoryItems = data.inventoryItems;
         HasNotebook = data.hasNotebook;
         RefreshInventoryView();
